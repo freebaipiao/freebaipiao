@@ -5,117 +5,233 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: "31.171.153.163:39772 tg@freebaipiao", server: 31.171.153.163, port: 39772, type: ss, cipher: aes-256-gcm, password: CUndSZnYsPKcu6Kj8THVMBHD}
-  - {name: "89.187.168.41:40093 tg@freebaipiao", server: 89.187.168.41, port: 40093, type: ss, cipher: aes-256-gcm, password: x23Z4LGkGDkThZ9Kaz4DURQp}
-  - {name: "拉脱维亚 tg@freebaipiao", server: 188.92.78.145, port: 40093, type: ss, cipher: aes-256-gcm, password: x23Z4LGkGDkThZ9Kaz4DURQp}
-  - {name: "加拿大 tg@freebaipiao", server: ca01.v2net.top, port: 443, type: vmess, uuid: FD62FBFE-DD70-4772-B712-BB74F4C3264A, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /ray, ws-headers: {Host: ca01.v2net.top}}
-  - {name: "英国 tg@freebaipiao", server: node10-v2ray.cloudddns.icu, port: 58888, type: vmess, uuid: 6eed0024-10a8-4ada-a8b8-c8516be06800, alterId: 2, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /, ws-headers: {Host: node10-v2ray.cloudddns.icu}}
-  - {name: "未知 tg@freebaipiao", server: 23.225.165.242, port: 443, type: vmess, uuid: 34f8dd2e-55f0-4d95-bfda-714f50b6c0e1, alterId: 64, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /path/160317342506, ws-headers: {Host: www.10925848.xyz}}
-  - {name: "未知 tg@freebaipiao", server: 23.225.165.242, port: 443, type: vmess, uuid: 34f8dd2e-55f0-4d95-bfda-714f50b6c0e1, alterId: 64, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /path/160317342506, ws-headers: {Host: www.10925848.xyz}}
-  - {name: "澳大利亚1 tg@freebaipiao", server: ap1-au.er3.xyz, port: 29980, type: http, username: 439853970228252672, password: 59752e65-d5a2-4bcd-8000-8e9d2b4efe2e, tls: true, skip-cert-verify: false}
-  - {name: "澳大利亚2 tg@freebaipiao", server: ap1-au.er3.xyz, port: 29982, type: http, username: 439853970228252672, password: 59752e65-d5a2-4bcd-8000-8e9d2b4efe2e, tls: true, skip-cert-verify: false}
-  - {name: "澳大利亚3 tg@freebaipiao", server: ap1-au.er3.xyz, port: 29983, type: http, username: 439853970228252672, password: 59752e65-d5a2-4bcd-8000-8e9d2b4efe2e, tls: true, skip-cert-verify: false}
-  - {name: "澳大利亚4 tg@freebaipiao", server: ap1-au.er3.xyz, port: 29984, type: http, username: 439853970228252672, password: 59752e65-d5a2-4bcd-8000-8e9d2b4efe2e, tls: true, skip-cert-verify: false}
-  - {name: "澳大利亚5 tg@freebaipiao", server: ap1-au.er3.xyz, port: 29985, type: http, username: 439853970228252672, password: 59752e65-d5a2-4bcd-8000-8e9d2b4efe2e, tls: true, skip-cert-verify: false}
-  - {name: "澳大利亚6 tg@freebaipiao", server: ap1-au.er3.xyz, port: 29986, type: http, username: 439853970228252672, password: 59752e65-d5a2-4bcd-8000-8e9d2b4efe2e, tls: true, skip-cert-verify: false}
-  - {name: "澳大利亚7 tg@freebaipiao", server: ap1-au.er3.xyz, port: 29987, type: http, username: 439853970228252672, password: 59752e65-d5a2-4bcd-8000-8e9d2b4efe2e, tls: true, skip-cert-verify: false}
-  - {name: "澳大利亚8 tg@freebaipiao", server: ap1-au.er3.xyz, port: 29988, type: http, username: 439853970228252672, password: 59752e65-d5a2-4bcd-8000-8e9d2b4efe2e, tls: true, skip-cert-verify: false}
-  - {name: "澳大利亚9 tg@freebaipiao", server: a1.er3.xyz, port: 29982, type: http, username: 439853970228252672, password: 59752e65-d5a2-4bcd-8000-8e9d2b4efe2e, tls: true, skip-cert-verify: false}
-  - {name: "澳大利亚10 tg@freebaipiao", server: ap1-ge.er3.xyz, port: 29982, type: http, username: 439853970228252672, password: 59752e65-d5a2-4bcd-8000-8e9d2b4efe2e, tls: true, skip-cert-verify: false}
-  - {name: "澳大利亚11 tg@freebaipiao", server: global.ap.fastqvpn.com, port: 29982, type: http, username: 439853970228252672, password: 59752e65-d5a2-4bcd-8000-8e9d2b4efe2e, tls: true, skip-cert-verify: false}
-  - {name: "澳大利亚 12tg@freebaipiao", server: tx.wy.fastqvpn.com, port: 29982, type: http, username: 439853970228252672, password: 59752e65-d5a2-4bcd-8000-8e9d2b4efe2e, tls: true, skip-cert-verify: false}
-  - {name: "加拿大1 tg@freebaipiao", server: a1.er3.xyz, port: 29983, type: http, username: 439853970228252672, password: 59752e65-d5a2-4bcd-8000-8e9d2b4efe2e, tls: true, skip-cert-verify: false}
-  - {name: "加拿大2 tg@freebaipiao", server: ap1-ca.er3.xyz, port: 29980, type: http, username: 439853970228252672, password: 59752e65-d5a2-4bcd-8000-8e9d2b4efe2e, tls: true, skip-cert-verify: false}
-  - {name: "加拿大3 tg@freebaipiao", server: ap1-ca.er3.xyz, port: 29982, type: http, username: 439853970228252672, password: 59752e65-d5a2-4bcd-8000-8e9d2b4efe2e, tls: true, skip-cert-verify: false}
-  - {name: "加拿大4 tg@freebaipiao", server: ap1-ca.er3.xyz, port: 29983, type: http, username: 439853970228252672, password: 59752e65-d5a2-4bcd-8000-8e9d2b4efe2e, tls: true, skip-cert-verify: false}
-  - {name: "加拿大5 tg@freebaipiao", server: ap1-ca.er3.xyz, port: 29984, type: http, username: 439853970228252672, password: 59752e65-d5a2-4bcd-8000-8e9d2b4efe2e, tls: true, skip-cert-verify: false}
-  - {name: "加拿大6 tg@freebaipiao", server: ap1-ca.er3.xyz, port: 29985, type: http, username: 439853970228252672, password: 59752e65-d5a2-4bcd-8000-8e9d2b4efe2e, tls: true, skip-cert-verify: false}
-  - {name: "加拿大7 tg@freebaipiao", server: ap1-ca.er3.xyz, port: 29986, type: http, username: 439853970228252672, password: 59752e65-d5a2-4bcd-8000-8e9d2b4efe2e, tls: true, skip-cert-verify: false}
-  - {name: "加拿大8 tg@freebaipiao", server: ap1-ca.er3.xyz, port: 29987, type: http, username: 439853970228252672, password: 59752e65-d5a2-4bcd-8000-8e9d2b4efe2e, tls: true, skip-cert-verify: false}
-  - {name: "加拿大9 tg@freebaipiao", server: ap1-ca.er3.xyz, port: 29988, type: http, username: 439853970228252672, password: 59752e65-d5a2-4bcd-8000-8e9d2b4efe2e, tls: true, skip-cert-verify: false}
-  - {name: "加拿大10 tg@freebaipiao", server: ap1-ge.er3.xyz, port: 29983, type: http, username: 439853970228252672, password: 59752e65-d5a2-4bcd-8000-8e9d2b4efe2e, tls: true, skip-cert-verify: false}
-  - {name: "加拿大11 tg@freebaipiao", server: global.ap.fastqvpn.com, port: 29983, type: http, username: 439853970228252672, password: 59752e65-d5a2-4bcd-8000-8e9d2b4efe2e, tls: true, skip-cert-verify: false}
-  - {name: "加拿大12 tg@freebaipiao", server: tx.wy.fastqvpn.com, port: 29983, type: http, username: 439853970228252672, password: 59752e65-d5a2-4bcd-8000-8e9d2b4efe2e, tls: true, skip-cert-verify: false}
-  - {name: "台湾1 tg@freebaipiao", server: 103.152.151.19, port: 31572, type: ss, cipher: aes-256-gcm, password: n8w4StnbVD9dmXYn4Ajt87EA}
-  - {name: "台湾2 tg@freebaipiao", server: 103.152.151.19, port: 31764, type: ss, cipher: aes-256-gcm, password: YgusH2MWA8PWc3p2VDsR7AVv}
-  - {name: "台湾3 tg@freebaipiao", server: 103.152.151.19, port: 31944, type: ss, cipher: aes-256-gcm, password: aYNeKDMzYQYw4KbUbJA8Wszq}
-  - {name: "台湾4 tg@freebaipiao", server: 103.152.151.19, port: 32843, type: ss, cipher: aes-256-gcm, password: G35YSR2LFNEM9bq2dkjmKQRr}
-  - {name: "台湾5 tg@freebaipiao", server: 103.152.151.19, port: 33148, type: ss, cipher: aes-256-gcm, password: CMduaFXddcQbwNAAs7xFDnc8}
-  - {name: "台湾6 tg@freebaipiao", server: 103.152.151.19, port: 33992, type: ss, cipher: aes-256-gcm, password: 8n6pwAcrrv2pj6tFY2p3TbQ6}
-  - {name: "台湾7 tg@freebaipiao", server: 103.152.151.19, port: 33998, type: ss, cipher: aes-256-gcm, password: NHwQTPLCfaTMSqTnU3mjcSxe}
-  - {name: "台湾8 tg@freebaipiao", server: 103.152.151.19, port: 34815, type: ss, cipher: aes-256-gcm, password: LkFAzkzXkSCRYa2CsRdL8cGb}
-  - {name: "台湾9 tg@freebaipiao", server: 103.152.151.19, port: 35294, type: ss, cipher: aes-256-gcm, password: J9Y2ncrdPEC38gwydNFFGBna}
-  - {name: "台湾10 tg@freebaipiao", server: 103.152.151.19, port: 37473, type: ss, cipher: aes-256-gcm, password: enctdKyJfSu76VqznKwTt6Ap}
-  - {name: "台湾11 tg@freebaipiao", server: 103.152.151.19, port: 37588, type: ss, cipher: aes-256-gcm, password: kD9vkjnE6dsUzwQfvKkPkQAd}
-  - {name: "台湾12 tg@freebaipiao", server: 103.152.151.19, port: 38033, type: ss, cipher: aes-256-gcm, password: xpQwyV4W5FdA6NMANJJx73US}
-  - {name: "台湾13 tg@freebaipiao", server: 103.152.151.19, port: 38747, type: ss, cipher: aes-256-gcm, password: RtbLkxbJZpUQ6m8y4qAeLYZj}
-  - {name: "台湾14 tg@freebaipiao", server: 103.152.151.19, port: 39772, type: ss, cipher: aes-256-gcm, password: CUndSZnYsPKcu6Kj8THVMBHD}
-  - {name: "台湾15 tg@freebaipiao", server: 2.58.242.53, port: 40220, type: ss, cipher: aes-256-gcm, password: ugyBkSEFxVEmUYSHyvxmWNj9}
-  - {name: "台湾中继1 流媒体 tg@freebaipiao", server: wyyjm01.gnzz.xyz, port: 32137, type: vmess, uuid: 58be4e64-b7bf-42e5-a08c-cd1305f186ac, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /downloads, ws-headers: {Host: support.apple.com}}
-  - {name: "台湾中继2 流媒体 tg@freebaipiao", server: wyygz01.gnzz.xyz, port: 13010, type: vmess, uuid: 58be4e64-b7bf-42e5-a08c-cd1305f186ac, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /downloads, ws-headers: {Host: support.apple.com}}
-  - {name: "台湾中继3 流媒体 tg@freebaipiao", server: klgzcm.3sx.xyz, port: 21378, type: vmess, uuid: 3702d4b7-1b8f-421f-ac85-7ea0cc5004d0, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /index, ws-headers: {Host: klgzcm.3sx.xyz}}
-  - {name: "德国1 tg@freebaipiao", server: shcu.cnhost.xyz, port: 10282, type: ssr, cipher: aes-256-cfb, password: TuXJdt, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 12013:Megtjt, obfs-param: .microsoft.com}
-  - {name: "德国2 tg@freebaipiao", server: node07-v2ray.cloudddns.icu, port: 58888, type: vmess, uuid: 6eed0024-10a8-4ada-a8b8-c8516be06800, alterId: 2, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /, ws-headers: {Host: node07-v2ray.cloudddns.icu}}
-  - {name: "德国3 tg@freebaipiao", server: node08-v2ray.cloudddns.icu, port: 58888, type: vmess, uuid: 6eed0024-10a8-4ada-a8b8-c8516be06800, alterId: 2, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /, ws-headers: {Host: node08-v2ray.cloudddns.icu}}
-  - {name: "德国4 tg@freebaipiao", server: klgzcm.3sx.xyz, port: 21363, type: vmess, uuid: 3702d4b7-1b8f-421f-ac85-7ea0cc5004d0, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /index, ws-headers: {Host: klgzcm.3sx.xyz}}
-  - {name: "德国5 tg@freebaipiao", server: a1.er3.xyz, port: 29984, type: http, username: 439853970228252672, password: 59752e65-d5a2-4bcd-8000-8e9d2b4efe2e, tls: true, skip-cert-verify: false}
-  - {name: "德国6 tg@freebaipiao", server: ap1-ge.er3.xyz, port: 29984, type: http, username: 439853970228252672, password: 59752e65-d5a2-4bcd-8000-8e9d2b4efe2e, tls: true, skip-cert-verify: false}
-  - {name: "德国7 tg@freebaipiao", server: global.ap.fastqvpn.com, port: 29984, type: http, username: 439853970228252672, password: 59752e65-d5a2-4bcd-8000-8e9d2b4efe2e, tls: true, skip-cert-verify: false}
-  - {name: "德国8 tg@freebaipiao", server: tx.wy.fastqvpn.com, port: 29984, type: http, username: 439853970228252672, password: 59752e65-d5a2-4bcd-8000-8e9d2b4efe2e, tls: true, skip-cert-verify: false}
-  - {name: "法国 tg@freebaipiao", server: node09-v2ray.cloudddns.icu, port: 58888, type: vmess, uuid: 6eed0024-10a8-4ada-a8b8-c8516be06800, alterId: 2, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /, ws-headers: {Host: node09-v2ray.cloudddns.icu}}
-  - {name: "英国1 tg@freebaipiao", server: klcscu.3sx.xyz, port: 21364, type: vmess, uuid: 3702d4b7-1b8f-421f-ac85-7ea0cc5004d0, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /index, ws-headers: {Host: klcscu.3sx.xyz}}
-  - {name: "英国2 tg@freebaipiao", server: a1.er3.xyz, port: 29987, type: http, username: 439853970228252672, password: 59752e65-d5a2-4bcd-8000-8e9d2b4efe2e, tls: true, skip-cert-verify: false}
-  - {name: "英国3 tg@freebaipiao", server: ap1-ge.er3.xyz, port: 29987, type: http, username: 439853970228252672, password: 59752e65-d5a2-4bcd-8000-8e9d2b4efe2e, tls: true, skip-cert-verify: false}
-  - {name: "英国4 tg@freebaipiao", server: ap1-uk.er3.xyz, port: 29980, type: http, username: 439853970228252672, password: 59752e65-d5a2-4bcd-8000-8e9d2b4efe2e, tls: true, skip-cert-verify: false}
-  - {name: "英国5 tg@freebaipiao", server: ap1-uk.er3.xyz, port: 29982, type: http, username: 439853970228252672, password: 59752e65-d5a2-4bcd-8000-8e9d2b4efe2e, tls: true, skip-cert-verify: false}
-  - {name: "英国6 tg@freebaipiao", server: ap1-uk.er3.xyz, port: 29983, type: http, username: 439853970228252672, password: 59752e65-d5a2-4bcd-8000-8e9d2b4efe2e, tls: true, skip-cert-verify: false}
-  - {name: "英国7 tg@freebaipiao", server: ap1-uk.er3.xyz, port: 29984, type: http, username: 439853970228252672, password: 59752e65-d5a2-4bcd-8000-8e9d2b4efe2e, tls: true, skip-cert-verify: false}
-  - {name: "英国8 tg@freebaipiao", server: ap1-uk.er3.xyz, port: 29985, type: http, username: 439853970228252672, password: 59752e65-d5a2-4bcd-8000-8e9d2b4efe2e, tls: true, skip-cert-verify: false}
-  - {name: "英国9 tg@freebaipiao", server: ap1-uk.er3.xyz, port: 29986, type: http, username: 439853970228252672, password: 59752e65-d5a2-4bcd-8000-8e9d2b4efe2e, tls: true, skip-cert-verify: false}
-  - {name: "英国10 tg@freebaipiao", server: ap1-uk.er3.xyz, port: 29987, type: http, username: 439853970228252672, password: 59752e65-d5a2-4bcd-8000-8e9d2b4efe2e, tls: true, skip-cert-verify: false}
-  - {name: "英国11 tg@freebaipiao", server: ap1-uk.er3.xyz, port: 29988, type: http, username: 439853970228252672, password: 59752e65-d5a2-4bcd-8000-8e9d2b4efe2e, tls: true, skip-cert-verify: false}
-  - {name: "英国12 tg@freebaipiao", server: global.ap.fastqvpn.com, port: 29987, type: http, username: 439853970228252672, password: 59752e65-d5a2-4bcd-8000-8e9d2b4efe2e, tls: true, skip-cert-verify: false}
-  - {name: "英国13 tg@freebaipiao", server: tx.wy.fastqvpn.com, port: 29987, type: http, username: 439853970228252672, password: 59752e65-d5a2-4bcd-8000-8e9d2b4efe2e, tls: true, skip-cert-verify: false}
-  - {name: "香港原生1 tg@freebaipiao", server: dog.gkd.world, port: 10256, type: ssr, cipher: aes-256-cfb, password: TuXJdt, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 12013:Megtjt, obfs-param: .microsoft.com}
-  - {name: "香港原生2 tg@freebaipiao", server: cm.gkd.world, port: 22884, type: ssr, cipher: aes-256-cfb, password: TuXJdt, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 12013:Megtjt, obfs-param: .microsoft.com}
-  - {name: "香港中转1 tg@freebaipiao", server: 137.116.163.248, port: 10007, type: trojan, password: 0dcf1227-f21c-42a9-9af9-e3d8fb91c0cb, skip-cert-verify: false}
-  - {name: "香港中转2 tg@freebaipiao", server: 23.98.34.223, port: 10000, type: trojan, password: 0dcf1227-f21c-42a9-9af9-e3d8fb91c0cb, skip-cert-verify: false}
-  - {name: "香港直连1 tg@freebaipiao", server: 13.75.92.10, port: 20020, type: vmess, uuid: f88ee780-153b-4179-a5d0-6684ee058afc, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /, ws-headers: {Host: 13.75.92.10}}
-  - {name: "香港直连2 tg@freebaipiao", server: 13.94.38.177, port: 20020, type: vmess, uuid: f88ee780-153b-4179-a5d0-6684ee058afc, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /, ws-headers: {Host: 13.94.38.177}}
-  - {name: "香港直连3 tg@freebaipiao", server: 137.116.166.227, port: 20020, type: vmess, uuid: f88ee780-153b-4179-a5d0-6684ee058afc, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /, ws-headers: {Host: 137.116.166.227}}
-  - {name: "香港直连4 tg@freebaipiao", server: 137.116.163.52, port: 20020, type: vmess, uuid: f88ee780-153b-4179-a5d0-6684ee058afc, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /, ws-headers: {Host: 137.116.163.52}}
-  - {name: "香港直连5 tg@freebaipiao", server: 13.75.46.85, port: 20020, type: vmess, uuid: f88ee780-153b-4179-a5d0-6684ee058afc, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /, ws-headers: {Host: 13.75.46.85}}
-  - {name: "香港直连6 tg@freebaipiao", server: s115.snodes.xyz, port: 443, type: vmess, uuid: 172fe7ea-30e3-3139-8f07-c8318c248cfb, alterId: 1, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /panel, ws-headers: {Host: s115.snodes.xyz}}
-  - {name: "香港直连7 tg@freebaipiao", server: s115.snodes.xyz, port: 80, type: vmess, uuid: 172fe7ea-30e3-3139-8f07-c8318c248cfb, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /panel, ws-headers: {Host: s115.snodes.xyz}}
-  - {name: "香港1 tg@freebaipiao", server: 23.97.66.222, port: 25001, type: vmess, uuid: b9c87e2d-c584-36e3-8824-db489c7c3a3c, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /ny, ws-headers: {Host: 23.97.66.222}}
-  - {name: "香港2 tg@freebaipiao", server: klhkna.2sx.xyz, port: 20086, type: vmess, uuid: 423b14c1-676f-4f7e-aa66-f360bca3de66, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /index, ws-headers: {Host: klhkna.2sx.xyz}}
-  - {name: "香港3 tg@freebaipiao", server: 137.116.163.248, port: 10009, type: vmess, uuid: 0dcf1227-f21c-42a9-9af9-e3d8fb91c0cb, alterId: 2, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /index, ws-headers: {Host: hk2.xxl123.fun}}
-  - {name: "香港4 tg@freebaipiao", server: 40.83.101.225, port: 25001, type: vmess, uuid: b9c87e2d-c584-36e3-8824-db489c7c3a3c, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /ny, ws-headers: {Host: 149.129.56.249}}
-  - {name: "香港5 tg@freebaipiao", server: 40.83.101.225, port: 25002, type: vmess, uuid: b9c87e2d-c584-36e3-8824-db489c7c3a3c, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /ny, ws-headers: {Host: 40.83.101.225}}
-  - {name: "香港6 tg@freebaipiao", server: 40.83.101.225, port: 25003, type: vmess, uuid: b9c87e2d-c584-36e3-8824-db489c7c3a3c, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /ny, ws-headers: {Host: 40.83.101.225}}
-  - {name: "香港7 tg@freebaipiao", server: 18.166.249.246, port: 20086, type: vmess, uuid: 3702d4b7-1b8f-421f-ac85-7ea0cc5004d0, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /index, ws-headers: {Host: 18.166.249.246}}
-  - {name: "香港8 tg@freebaipiao", server: klhzcm.3sx.xyz, port: 51000, type: vmess, uuid: 3702d4b7-1b8f-421f-ac85-7ea0cc5004d0, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /index, ws-headers: {Host: klhzcm.3sx.xyz}}
-  - {name: "香港9 tg@freebaipiao", server: 23.97.66.222, port: 39004, type: vmess, uuid: 55c89b13-9e7f-3a94-a7f2-bc7213364c5d, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /, ws-headers: {Host: 23.97.66.222}}
-  - {name: "香港10 tg@freebaipiao", server: 23.97.66.222, port: 39005, type: vmess, uuid: 55c89b13-9e7f-3a94-a7f2-bc7213364c5d, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /, ws-headers: {Host: 23.97.66.222}}
-  - {name: "香港11 tg@freebaipiao", server: 168.63.132.199, port: 39004, type: vmess, uuid: 55c89b13-9e7f-3a94-a7f2-bc7213364c5d, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /, ws-headers: {Host: 168.63.132.199}}
-  - {name: "香港12 tg@freebaipiao", server: 168.63.132.199, port: 39005, type: vmess, uuid: 55c89b13-9e7f-3a94-a7f2-bc7213364c5d, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /, ws-headers: {Host: 168.63.132.199}}
-  - {name: "香港13 tg@freebaipiao", server: 168.63.132.199, port: 39005, type: vmess, uuid: 55c89b13-9e7f-3a94-a7f2-bc7213364c5d, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /, ws-headers: {Host: 168.63.132.199}}
-  - {name: "香港14 tg@freebaipiao", server: 168.63.132.199, port: 39006, type: vmess, uuid: 55c89b13-9e7f-3a94-a7f2-bc7213364c5d, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /, ws-headers: {Host: 168.63.132.199}}
-  - {name: "香港15 tg@freebaipiao", server: 13.248.165.181, port: 39005, type: vmess, uuid: 55c89b13-9e7f-3a94-a7f2-bc7213364c5d, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /, ws-headers: {Host: 13.248.165.181}}
-  - {name: "香港16 tg@freebaipiao", server: 13.248.165.181, port: 39006, type: vmess, uuid: 55c89b13-9e7f-3a94-a7f2-bc7213364c5d, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /, ws-headers: {Host: 13.248.165.181}}
-  - {name: "香港17 tg@freebaipiao", server: 13.248.189.78, port: 39005, type: vmess, uuid: 55c89b13-9e7f-3a94-a7f2-bc7213364c5d, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /, ws-headers: {Host: 13.248.189.78}}
-  - {name: "香港18 tg@freebaipiao", server: 13.248.189.78, port: 39006, type: vmess, uuid: 55c89b13-9e7f-3a94-a7f2-bc7213364c5d, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /, ws-headers: {Host: 13.248.189.78}}
-  - {name: "香港19 tg@freebaipiao", server: a1.er3.xyz, port: 29980, type: http, username: 439853970228252672, password: 59752e65-d5a2-4bcd-8000-8e9d2b4efe2e, tls: true, skip-cert-verify: false}
-  - {name: "香港20 tg@freebaipiao", server: ap1-ge.er3.xyz, port: 29980, type: http, username: 439853970228252672, password: 59752e65-d5a2-4bcd-8000-8e9d2b4efe2e, tls: true, skip-cert-verify: false}
-  - {name: "香港21 tg@freebaipiao", server: global.ap.fastqvpn.com, port: 29980, type: http, username: 439853970228252672, password: 59752e65-d5a2-4bcd-8000-8e9d2b4efe2e, tls: true, skip-cert-verify: false}
-  - {name: "香港22 tg@freebaipiao", server: tx.wy.fastqvpn.com, port: 29980, type: http, username: 439853970228252672, password: 59752e65-d5a2-4bcd-8000-8e9d2b4efe2e, tls: true, skip-cert-verify: false}
-  - {name: "香港23 tg@freebaipiao", server: a1.ap.fastqvpn.com, port: 29980, type: http, username: 439853970228252672, password: 59752e65-d5a2-4bcd-8000-8e9d2b4efe2e, tls: true, skip-cert-verify: false}
-  - {name: "香港24 tg@freebaipiao", server: a2.ap.fastqvpn.com, port: 29980, type: http, username: 439853970228252672, password: 59752e65-d5a2-4bcd-8000-8e9d2b4efe2e, tls: true, skip-cert-verify: false}
-  - {name: "香港25 tg@freebaipiao", server: a3.ap.fastqvpn.com, port: 29980, type: http, username: 439853970228252672, password: 59752e65-d5a2-4bcd-8000-8e9d2b4efe2e, tls: true, skip-cert-verify: false}
-  - {name: "香港26 tg@freebaipiao", server: a4.ap.fastqvpn.com, port: 29980, type: http, username: 439853970228252672, password: 59752e65-d5a2-4bcd-8000-8e9d2b4efe2e, tls: true, skip-cert-verify: false}
-  - {name: "香港27 tg@freebaipiao", server: a5.ap.fastqvpn.com, port: 29980, type: http, username: 439853970228252672, password: 59752e65-d5a2-4bcd-8000-8e9d2b4efe2e, tls: true, skip-cert-verify: false}
-  - {name: "香港iplc tg@freebaipiao", server: iplc.hkt.insss.xyz, port: 11103, type: vmess, uuid: 2c89246c-ba60-4371-b768-ae8cf940fbe1, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /, ws-headers: {Host: hk-hkt-1.lldns.xyz}}
-  - {name: "印度 tg@freebaipiao", server: shcu.cnhost.xyz, port: 10691, type: ssr, cipher: aes-256-cfb, password: tFlIIS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 10579:BZGUdk, obfs-param: .www.bing.com}
+  - {name: "[SS] [SS] [SS] [SS] 31.171.153.163:39772", server: 31.171.153.163, port: 39772, type: ss, cipher: aes-256-gcm, password: CUndSZnYsPKcu6Kj8THVMBHD}
+  - {name: "[SS] [SS] [SS] [SS] 31.171.153.163:39772 2", server: 31.171.153.163, port: 39772, type: ss, cipher: aes-256-gcm, password: CUndSZnYsPKcu6Kj8THVMBHD}
+  - {name: "[SS] [SS] [SS] [SS] 89.187.168.41:40093", server: 89.187.168.41, port: 40093, type: ss, cipher: aes-256-gcm, password: x23Z4LGkGDkThZ9Kaz4DURQp}
+  - {name: "[SS] [SS] [SS] [SS] 拉脱维亚(Youtube频道：工具大师！)", server: 188.92.78.145, port: 40093, type: ss, cipher: aes-256-gcm, password: x23Z4LGkGDkThZ9Kaz4DURQp}
+  - {name: "[VMess] [VMess] [VMess] [VMess] CA_131 |177.41Mb", server: ca01.v2net.top, port: 443, type: vmess, uuid: FD62FBFE-DD70-4772-B712-BB74F4C3264A, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /ray, ws-headers: {Host: ca01.v2net.top}}
+  - {name: "[VMess] [VMess] [VMess] [VMess] GB_193 |62.15Mb", server: node10-v2ray.cloudddns.icu, port: 58888, type: vmess, uuid: 6eed0024-10a8-4ada-a8b8-c8516be06800, alterId: 2, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /, ws-headers: {Host: node10-v2ray.cloudddns.icu}}
+  - {name: "[VMess] [VMess] [VMess] [VMess] _109 |48.23Mb", server: 23.225.165.242, port: 443, type: vmess, uuid: 34f8dd2e-55f0-4d95-bfda-714f50b6c0e1, alterId: 64, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /path/160317342506, ws-headers: {Host: www.10925848.xyz}}
+  - {name: "[VMess] [VMess] [VMess] [VMess] _112 |57.12Mb", server: 23.225.165.242, port: 443, type: vmess, uuid: 34f8dd2e-55f0-4d95-bfda-714f50b6c0e1, alterId: 64, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /path/160317342506, ws-headers: {Host: www.10925848.xyz}}
+  - {name: "[HTTPS] 🇦🇺 [HTTPS] 🇦🇺 【ER3_AU】AU/澳大利亚_1", server: ap1-au.er3.xyz, port: 29980, type: http, username: 439853970228252672, password: 59752e65-d5a2-4bcd-8000-8e9d2b4efe2e, tls: true, skip-cert-verify: false}
+  - {name: "[HTTPS] 🇦🇺 [HTTPS] 🇦🇺 【ER3_AU】AU/澳大利亚_2", server: ap1-au.er3.xyz, port: 29982, type: http, username: 439853970228252672, password: 59752e65-d5a2-4bcd-8000-8e9d2b4efe2e, tls: true, skip-cert-verify: false}
+  - {name: "[HTTPS] 🇦🇺 [HTTPS] 🇦🇺 【ER3_AU】AU/澳大利亚_3", server: ap1-au.er3.xyz, port: 29983, type: http, username: 439853970228252672, password: 59752e65-d5a2-4bcd-8000-8e9d2b4efe2e, tls: true, skip-cert-verify: false}
+  - {name: "[HTTPS] 🇦🇺 [HTTPS] 🇦🇺 【ER3_AU】AU/澳大利亚_4", server: ap1-au.er3.xyz, port: 29984, type: http, username: 439853970228252672, password: 59752e65-d5a2-4bcd-8000-8e9d2b4efe2e, tls: true, skip-cert-verify: false}
+  - {name: "[HTTPS] 🇦🇺 [HTTPS] 🇦🇺 【ER3_AU】AU/澳大利亚_5", server: ap1-au.er3.xyz, port: 29985, type: http, username: 439853970228252672, password: 59752e65-d5a2-4bcd-8000-8e9d2b4efe2e, tls: true, skip-cert-verify: false}
+  - {name: "[HTTPS] 🇦🇺 [HTTPS] 🇦🇺 【ER3_AU】AU/澳大利亚_6", server: ap1-au.er3.xyz, port: 29986, type: http, username: 439853970228252672, password: 59752e65-d5a2-4bcd-8000-8e9d2b4efe2e, tls: true, skip-cert-verify: false}
+  - {name: "[HTTPS] 🇦🇺 [HTTPS] 🇦🇺 【ER3_AU】AU/澳大利亚_7", server: ap1-au.er3.xyz, port: 29987, type: http, username: 439853970228252672, password: 59752e65-d5a2-4bcd-8000-8e9d2b4efe2e, tls: true, skip-cert-verify: false}
+  - {name: "[HTTPS] 🇦🇺 [HTTPS] 🇦🇺 【ER3_AU】AU/澳大利亚_8", server: ap1-au.er3.xyz, port: 29988, type: http, username: 439853970228252672, password: 59752e65-d5a2-4bcd-8000-8e9d2b4efe2e, tls: true, skip-cert-verify: false}
+  - {name: "[HTTPS] 🇦🇺 [HTTPS] 🇦🇺 【ER3_A】AU/澳大利亚", server: a1.er3.xyz, port: 29982, type: http, username: 439853970228252672, password: 59752e65-d5a2-4bcd-8000-8e9d2b4efe2e, tls: true, skip-cert-verify: false}
+  - {name: "[HTTPS] 🇦🇺 [HTTPS] 🇦🇺 【ER3_GE】AU/澳大利亚", server: ap1-ge.er3.xyz, port: 29982, type: http, username: 439853970228252672, password: 59752e65-d5a2-4bcd-8000-8e9d2b4efe2e, tls: true, skip-cert-verify: false}
+  - {name: "[HTTPS] 🇦🇺 [HTTPS] 🇦🇺 【FASTQ_G】AU/澳大利亚", server: global.ap.fastqvpn.com, port: 29982, type: http, username: 439853970228252672, password: 59752e65-d5a2-4bcd-8000-8e9d2b4efe2e, tls: true, skip-cert-verify: false}
+  - {name: "[HTTPS] 🇦🇺 [HTTPS] 🇦🇺 【FASTQ_W】AU/澳大利亚", server: tx.wy.fastqvpn.com, port: 29982, type: http, username: 439853970228252672, password: 59752e65-d5a2-4bcd-8000-8e9d2b4efe2e, tls: true, skip-cert-verify: false}
+  - {name: "[HTTPS] 🇨🇦 [HTTPS] 🇨🇦 【ER3_A】CA/加拿大", server: a1.er3.xyz, port: 29983, type: http, username: 439853970228252672, password: 59752e65-d5a2-4bcd-8000-8e9d2b4efe2e, tls: true, skip-cert-verify: false}
+  - {name: "[HTTPS] 🇨🇦 [HTTPS] 🇨🇦 【ER3_CA】CA/加拿大_1", server: ap1-ca.er3.xyz, port: 29980, type: http, username: 439853970228252672, password: 59752e65-d5a2-4bcd-8000-8e9d2b4efe2e, tls: true, skip-cert-verify: false}
+  - {name: "[HTTPS] 🇨🇦 [HTTPS] 🇨🇦 【ER3_CA】CA/加拿大_2", server: ap1-ca.er3.xyz, port: 29982, type: http, username: 439853970228252672, password: 59752e65-d5a2-4bcd-8000-8e9d2b4efe2e, tls: true, skip-cert-verify: false}
+  - {name: "[HTTPS] 🇨🇦 [HTTPS] 🇨🇦 【ER3_CA】CA/加拿大_3", server: ap1-ca.er3.xyz, port: 29983, type: http, username: 439853970228252672, password: 59752e65-d5a2-4bcd-8000-8e9d2b4efe2e, tls: true, skip-cert-verify: false}
+  - {name: "[HTTPS] 🇨🇦 [HTTPS] 🇨🇦 【ER3_CA】CA/加拿大_4", server: ap1-ca.er3.xyz, port: 29984, type: http, username: 439853970228252672, password: 59752e65-d5a2-4bcd-8000-8e9d2b4efe2e, tls: true, skip-cert-verify: false}
+  - {name: "[HTTPS] 🇨🇦 [HTTPS] 🇨🇦 【ER3_CA】CA/加拿大_5", server: ap1-ca.er3.xyz, port: 29985, type: http, username: 439853970228252672, password: 59752e65-d5a2-4bcd-8000-8e9d2b4efe2e, tls: true, skip-cert-verify: false}
+  - {name: "[HTTPS] 🇨🇦 [HTTPS] 🇨🇦 【ER3_CA】CA/加拿大_6", server: ap1-ca.er3.xyz, port: 29986, type: http, username: 439853970228252672, password: 59752e65-d5a2-4bcd-8000-8e9d2b4efe2e, tls: true, skip-cert-verify: false}
+  - {name: "[HTTPS] 🇨🇦 [HTTPS] 🇨🇦 【ER3_CA】CA/加拿大_7", server: ap1-ca.er3.xyz, port: 29987, type: http, username: 439853970228252672, password: 59752e65-d5a2-4bcd-8000-8e9d2b4efe2e, tls: true, skip-cert-verify: false}
+  - {name: "[HTTPS] 🇨🇦 [HTTPS] 🇨🇦 【ER3_CA】CA/加拿大_8", server: ap1-ca.er3.xyz, port: 29988, type: http, username: 439853970228252672, password: 59752e65-d5a2-4bcd-8000-8e9d2b4efe2e, tls: true, skip-cert-verify: false}
+  - {name: "[HTTPS] 🇨🇦 [HTTPS] 🇨🇦 【ER3_GE】CA/加拿大", server: ap1-ge.er3.xyz, port: 29983, type: http, username: 439853970228252672, password: 59752e65-d5a2-4bcd-8000-8e9d2b4efe2e, tls: true, skip-cert-verify: false}
+  - {name: "[HTTPS] 🇨🇦 [HTTPS] 🇨🇦 【FASTQ_G】CA/加拿大", server: global.ap.fastqvpn.com, port: 29983, type: http, username: 439853970228252672, password: 59752e65-d5a2-4bcd-8000-8e9d2b4efe2e, tls: true, skip-cert-verify: false}
+  - {name: "[HTTPS] 🇨🇦 [HTTPS] 🇨🇦 【FASTQ_W】CA/加拿大", server: tx.wy.fastqvpn.com, port: 29983, type: http, username: 439853970228252672, password: 59752e65-d5a2-4bcd-8000-8e9d2b4efe2e, tls: true, skip-cert-verify: false}
+  - {name: "[SS] 🇨🇳 [SS] 🇨🇳 TW_103.152.151.19：31572", server: 103.152.151.19, port: 31572, type: ss, cipher: aes-256-gcm, password: n8w4StnbVD9dmXYn4Ajt87EA}
+  - {name: "[SS] 🇨🇳 [SS] 🇨🇳 TW_103.152.151.19：31764", server: 103.152.151.19, port: 31764, type: ss, cipher: aes-256-gcm, password: YgusH2MWA8PWc3p2VDsR7AVv}
+  - {name: "[SS] 🇨🇳 [SS] 🇨🇳 TW_103.152.151.19：31944", server: 103.152.151.19, port: 31944, type: ss, cipher: aes-256-gcm, password: aYNeKDMzYQYw4KbUbJA8Wszq}
+  - {name: "[SS] 🇨🇳 [SS] 🇨🇳 TW_103.152.151.19：32843", server: 103.152.151.19, port: 32843, type: ss, cipher: aes-256-gcm, password: G35YSR2LFNEM9bq2dkjmKQRr}
+  - {name: "[SS] 🇨🇳 [SS] 🇨🇳 TW_103.152.151.19：33184", server: 103.152.151.19, port: 33148, type: ss, cipher: aes-256-gcm, password: CMduaFXddcQbwNAAs7xFDnc8}
+  - {name: "[SS] 🇨🇳 [SS] 🇨🇳 TW_103.152.151.19：33992", server: 103.152.151.19, port: 33992, type: ss, cipher: aes-256-gcm, password: 8n6pwAcrrv2pj6tFY2p3TbQ6}
+  - {name: "[SS] 🇨🇳 [SS] 🇨🇳 TW_103.152.151.19：33998", server: 103.152.151.19, port: 33998, type: ss, cipher: aes-256-gcm, password: NHwQTPLCfaTMSqTnU3mjcSxe}
+  - {name: "[SS] 🇨🇳 [SS] 🇨🇳 TW_103.152.151.19：34815", server: 103.152.151.19, port: 34815, type: ss, cipher: aes-256-gcm, password: LkFAzkzXkSCRYa2CsRdL8cGb}
+  - {name: "[SS] 🇨🇳 [SS] 🇨🇳 TW_103.152.151.19：35294", server: 103.152.151.19, port: 35294, type: ss, cipher: aes-256-gcm, password: J9Y2ncrdPEC38gwydNFFGBna}
+  - {name: "[SS] 🇨🇳 [SS] 🇨🇳 TW_103.152.151.19：37473", server: 103.152.151.19, port: 37473, type: ss, cipher: aes-256-gcm, password: enctdKyJfSu76VqznKwTt6Ap}
+  - {name: "[SS] 🇨🇳 [SS] 🇨🇳 TW_103.152.151.19：37588", server: 103.152.151.19, port: 37588, type: ss, cipher: aes-256-gcm, password: kD9vkjnE6dsUzwQfvKkPkQAd}
+  - {name: "[SS] 🇨🇳 [SS] 🇨🇳 TW_103.152.151.19：38033", server: 103.152.151.19, port: 38033, type: ss, cipher: aes-256-gcm, password: xpQwyV4W5FdA6NMANJJx73US}
+  - {name: "[SS] 🇨🇳 [SS] 🇨🇳 TW_103.152.151.19：38747", server: 103.152.151.19, port: 38747, type: ss, cipher: aes-256-gcm, password: RtbLkxbJZpUQ6m8y4qAeLYZj}
+  - {name: "[SS] 🇨🇳 [SS] 🇨🇳 TW_103.152.151.19：39772", server: 103.152.151.19, port: 39772, type: ss, cipher: aes-256-gcm, password: CUndSZnYsPKcu6Kj8THVMBHD}
+  - {name: "[SS] 🇨🇳 [SS] 🇨🇳 TW_103.152.151.19：40093", server: 103.152.151.19, port: 40093, type: ss, cipher: aes-256-gcm, password: x23Z4LGkGDkThZ9Kaz4DURQp}
+  - {name: "[SS] 🇨🇳 [SS] 🇨🇳 TW_103.152.151.19：40220", server: 103.152.151.19, port: 40220, type: ss, cipher: aes-256-gcm, password: ugyBkSEFxVEmUYSHyvxmWNj9}
+  - {name: "[SS] 🇨🇳 [SS] 🇨🇳 TW_103.152.151.21:31572", server: 103.152.151.21, port: 31572, type: ss, cipher: aes-256-gcm, password: n8w4StnbVD9dmXYn4Ajt87EA}
+  - {name: "[SS] 🇨🇳 [SS] 🇨🇳 TW_103.152.151.21:31764", server: 103.152.151.21, port: 31764, type: ss, cipher: aes-256-gcm, password: YgusH2MWA8PWc3p2VDsR7AVv}
+  - {name: "[SS] 🇨🇳 [SS] 🇨🇳 TW_103.152.151.21:31944", server: 103.152.151.21, port: 31944, type: ss, cipher: aes-256-gcm, password: aYNeKDMzYQYw4KbUbJA8Wszq}
+  - {name: "[SS] 🇨🇳 [SS] 🇨🇳 TW_103.152.151.21:32558", server: 103.152.151.21, port: 32558, type: ss, cipher: aes-256-gcm, password: gJYzm3TLbdL495ryQptaJXQk}
+  - {name: "[SS] 🇨🇳 [SS] 🇨🇳 TW_103.152.151.21:32843", server: 103.152.151.21, port: 32843, type: ss, cipher: aes-256-gcm, password: G35YSR2LFNEM9bq2dkjmKQRr}
+  - {name: "[SS] 🇨🇳 [SS] 🇨🇳 TW_103.152.151.21:33148", server: 103.152.151.21, port: 33148, type: ss, cipher: aes-256-gcm, password: CMduaFXddcQbwNAAs7xFDnc8}
+  - {name: "[SS] 🇨🇳 [SS] 🇨🇳 TW_103.152.151.21:33992", server: 103.152.151.21, port: 33992, type: ss, cipher: aes-256-gcm, password: 8n6pwAcrrv2pj6tFY2p3TbQ6}
+  - {name: "[SS] 🇨🇳 [SS] 🇨🇳 TW_103.152.151.21:33998", server: 103.152.151.21, port: 33998, type: ss, cipher: aes-256-gcm, password: NHwQTPLCfaTMSqTnU3mjcSxe}
+  - {name: "[SS] 🇨🇳 [SS] 🇨🇳 TW_103.152.151.21:34687", server: 103.152.151.21, port: 34687, type: ss, cipher: aes-256-gcm, password: txmK9WhwP6WPhP7hqSBLVxpN}
+  - {name: "[SS] 🇨🇳 [SS] 🇨🇳 TW_103.152.151.21:34815", server: 103.152.151.21, port: 34815, type: ss, cipher: aes-256-gcm, password: LkFAzkzXkSCRYa2CsRdL8cGb}
+  - {name: "[SS] 🇨🇳 [SS] 🇨🇳 TW_103.152.151.21:35294", server: 103.152.151.21, port: 35294, type: ss, cipher: aes-256-gcm, password: J9Y2ncrdPEC38gwydNFFGBna}
+  - {name: "[SS] 🇨🇳 [SS] 🇨🇳 TW_103.152.151.21:37473", server: 103.152.151.21, port: 37473, type: ss, cipher: aes-256-gcm, password: enctdKyJfSu76VqznKwTt6Ap}
+  - {name: "[SS] 🇨🇳 [SS] 🇨🇳 TW_103.152.151.21:37588", server: 103.152.151.21, port: 37588, type: ss, cipher: aes-256-gcm, password: kD9vkjnE6dsUzwQfvKkPkQAd}
+  - {name: "[SS] 🇨🇳 [SS] 🇨🇳 TW_103.152.151.21:38033", server: 103.152.151.21, port: 38033, type: ss, cipher: aes-256-gcm, password: xpQwyV4W5FdA6NMANJJx73US}
+  - {name: "[SS] 🇨🇳 [SS] 🇨🇳 TW_103.152.151.21:38620", server: 103.152.151.21, port: 38620, type: ss, cipher: aes-256-gcm, password: Kquv5UhvZXNMemAQy8DxZ7qn}
+  - {name: "[SS] 🇨🇳 [SS] 🇨🇳 TW_103.152.151.21:38742", server: 103.152.151.21, port: 38742, type: ss, cipher: aes-256-gcm, password: DKXfWwc4ebscpXTKpbt85rSH}
+  - {name: "[SS] 🇨🇳 [SS] 🇨🇳 TW_103.152.151.21:38747", server: 103.152.151.21, port: 38747, type: ss, cipher: aes-256-gcm, password: RtbLkxbJZpUQ6m8y4qAeLYZj}
+  - {name: "[SS] 🇨🇳 [SS] 🇨🇳 TW_103.152.151.21:39772", server: 103.152.151.21, port: 39772, type: ss, cipher: aes-256-gcm, password: CUndSZnYsPKcu6Kj8THVMBHD}
+  - {name: "[SS] 🇨🇳 [SS] 🇨🇳 TW_103.152.151.21:40093", server: 103.152.151.21, port: 40093, type: ss, cipher: aes-256-gcm, password: x23Z4LGkGDkThZ9Kaz4DURQp}
+  - {name: "[SS] 🇨🇳 [SS] 🇨🇳 TW_103.152.151.21:40220", server: 103.152.151.21, port: 40220, type: ss, cipher: aes-256-gcm, password: ugyBkSEFxVEmUYSHyvxmWNj9}
+  - {name: "[SS] 🇨🇳 [SS] 🇨🇳 TW_103.152.151.21:44236", server: 103.152.151.21, port: 44236, type: ss, cipher: aes-256-gcm, password: FWrXcxPZjJxAN89xLgqY3Acp}
+  - {name: "[SS] 🇨🇳 [SS] 🇨🇳 TW_103.152.151.21:44820", server: 103.152.151.21, port: 44820, type: ss, cipher: aes-256-gcm, password: jspgz9G3VmvBMCgMUWLBaZHu}
+  - {name: "[SS] 🇨🇳 [SS] 🇨🇳 TW_103.152.151.21:45329", server: 103.152.151.21, port: 45329, type: ss, cipher: aes-256-gcm, password: CXSjgD7u7Ar7GxkZ4CgTMUsj}
+  - {name: "[SS] 🇨🇳 [SS] 🇨🇳 TW_103.152.151.21:49339", server: 103.152.151.21, port: 49339, type: ss, cipher: aes-256-gcm, password: suucSeVLmt6PQKAP77NtGw9x}
+  - {name: "[SS] 🇨🇳 [SS] 🇨🇳 TW_103.152.151.21:49396", server: 103.152.151.21, port: 49396, type: ss, cipher: aes-256-gcm, password: BdRWC38L5JUDMTYNNxJGcUwB}
+  - {name: "[SS] 🇨🇳 [SS] 🇨🇳 TW_103.152.151.3：31572", server: 103.152.151.3, port: 31572, type: ss, cipher: aes-256-gcm, password: n8w4StnbVD9dmXYn4Ajt87EA}
+  - {name: "[SS] 🇨🇳 [SS] 🇨🇳 TW_103.152.151.3：31764", server: 103.152.151.3, port: 31764, type: ss, cipher: aes-256-gcm, password: YgusH2MWA8PWc3p2VDsR7AVv}
+  - {name: "[SS] 🇨🇳 [SS] 🇨🇳 TW_103.152.151.3：31944", server: 103.152.151.3, port: 31944, type: ss, cipher: aes-256-gcm, password: aYNeKDMzYQYw4KbUbJA8Wszq}
+  - {name: "[SS] 🇨🇳 [SS] 🇨🇳 TW_103.152.151.3：32843", server: 103.152.151.3, port: 32843, type: ss, cipher: aes-256-gcm, password: G35YSR2LFNEM9bq2dkjmKQRr}
+  - {name: "[SS] 🇨🇳 [SS] 🇨🇳 TW_103.152.151.3：33184", server: 103.152.151.3, port: 33148, type: ss, cipher: aes-256-gcm, password: CMduaFXddcQbwNAAs7xFDnc8}
+  - {name: "[SS] 🇨🇳 [SS] 🇨🇳 TW_103.152.151.3：33992", server: 103.152.151.3, port: 33992, type: ss, cipher: aes-256-gcm, password: 8n6pwAcrrv2pj6tFY2p3TbQ6}
+  - {name: "[SS] 🇨🇳 [SS] 🇨🇳 TW_103.152.151.3：33998", server: 103.152.151.3, port: 33998, type: ss, cipher: aes-256-gcm, password: NHwQTPLCfaTMSqTnU3mjcSxe}
+  - {name: "[SS] 🇨🇳 [SS] 🇨🇳 TW_103.152.151.3：34815", server: 103.152.151.3, port: 34815, type: ss, cipher: aes-256-gcm, password: LkFAzkzXkSCRYa2CsRdL8cGb}
+  - {name: "[SS] 🇨🇳 [SS] 🇨🇳 TW_103.152.151.3：35294", server: 103.152.151.3, port: 35294, type: ss, cipher: aes-256-gcm, password: J9Y2ncrdPEC38gwydNFFGBna}
+  - {name: "[SS] 🇨🇳 [SS] 🇨🇳 TW_103.152.151.3：37473", server: 103.152.151.3, port: 37473, type: ss, cipher: aes-256-gcm, password: enctdKyJfSu76VqznKwTt6Ap}
+  - {name: "[SS] 🇨🇳 [SS] 🇨🇳 TW_103.152.151.3：37588", server: 103.152.151.3, port: 37588, type: ss, cipher: aes-256-gcm, password: kD9vkjnE6dsUzwQfvKkPkQAd}
+  - {name: "[SS] 🇨🇳 [SS] 🇨🇳 TW_103.152.151.3：38033", server: 103.152.151.3, port: 38033, type: ss, cipher: aes-256-gcm, password: xpQwyV4W5FdA6NMANJJx73US}
+  - {name: "[SS] 🇨🇳 [SS] 🇨🇳 TW_103.152.151.3：38747", server: 103.152.151.3, port: 38747, type: ss, cipher: aes-256-gcm, password: RtbLkxbJZpUQ6m8y4qAeLYZj}
+  - {name: "[SS] 🇨🇳 [SS] 🇨🇳 TW_103.152.151.3：39772", server: 103.152.151.3, port: 39772, type: ss, cipher: aes-256-gcm, password: CUndSZnYsPKcu6Kj8THVMBHD}
+  - {name: "[SS] 🇨🇳 [SS] 🇨🇳 TW_103.152.151.3：40093", server: 103.152.151.3, port: 40093, type: ss, cipher: aes-256-gcm, password: x23Z4LGkGDkThZ9Kaz4DURQp}
+  - {name: "[SS] 🇨🇳 [SS] 🇨🇳 TW_103.152.151.3：40220", server: 103.152.151.3, port: 40220, type: ss, cipher: aes-256-gcm, password: ugyBkSEFxVEmUYSHyvxmWNj9}
+  - {name: "[SS] 🇨🇳 [SS] 🇨🇳 TW_103.152.151.5：31572", server: 103.152.151.5, port: 31572, type: ss, cipher: aes-256-gcm, password: n8w4StnbVD9dmXYn4Ajt87EA}
+  - {name: "[SS] 🇨🇳 [SS] 🇨🇳 TW_103.152.151.5：31764", server: 103.152.151.5, port: 31764, type: ss, cipher: aes-256-gcm, password: YgusH2MWA8PWc3p2VDsR7AVv}
+  - {name: "[SS] 🇨🇳 [SS] 🇨🇳 TW_103.152.151.5：31944", server: 103.152.151.5, port: 31944, type: ss, cipher: aes-256-gcm, password: aYNeKDMzYQYw4KbUbJA8Wszq}
+  - {name: "[SS] 🇨🇳 [SS] 🇨🇳 TW_103.152.151.5：32843", server: 103.152.151.5, port: 32843, type: ss, cipher: aes-256-gcm, password: G35YSR2LFNEM9bq2dkjmKQRr}
+  - {name: "[SS] 🇨🇳 [SS] 🇨🇳 TW_103.152.151.5：33184", server: 103.152.151.5, port: 33148, type: ss, cipher: aes-256-gcm, password: CMduaFXddcQbwNAAs7xFDnc8}
+  - {name: "[SS] 🇨🇳 [SS] 🇨🇳 TW_103.152.151.5：33992", server: 103.152.151.5, port: 33992, type: ss, cipher: aes-256-gcm, password: 8n6pwAcrrv2pj6tFY2p3TbQ6}
+  - {name: "[SS] 🇨🇳 [SS] 🇨🇳 TW_103.152.151.5：33998", server: 103.152.151.5, port: 33998, type: ss, cipher: aes-256-gcm, password: NHwQTPLCfaTMSqTnU3mjcSxe}
+  - {name: "[SS] 🇨🇳 [SS] 🇨🇳 TW_103.152.151.5：34815", server: 103.152.151.5, port: 34815, type: ss, cipher: aes-256-gcm, password: LkFAzkzXkSCRYa2CsRdL8cGb}
+  - {name: "[SS] 🇨🇳 [SS] 🇨🇳 TW_103.152.151.5：35294", server: 103.152.151.5, port: 35294, type: ss, cipher: aes-256-gcm, password: J9Y2ncrdPEC38gwydNFFGBna}
+  - {name: "[SS] 🇨🇳 [SS] 🇨🇳 TW_103.152.151.5：37473", server: 103.152.151.5, port: 37473, type: ss, cipher: aes-256-gcm, password: enctdKyJfSu76VqznKwTt6Ap}
+  - {name: "[SS] 🇨🇳 [SS] 🇨🇳 TW_103.152.151.5：37588", server: 103.152.151.5, port: 37588, type: ss, cipher: aes-256-gcm, password: kD9vkjnE6dsUzwQfvKkPkQAd}
+  - {name: "[SS] 🇨🇳 [SS] 🇨🇳 TW_103.152.151.5：38033", server: 103.152.151.5, port: 38033, type: ss, cipher: aes-256-gcm, password: xpQwyV4W5FdA6NMANJJx73US}
+  - {name: "[SS] 🇨🇳 [SS] 🇨🇳 TW_103.152.151.5：38747", server: 103.152.151.5, port: 38747, type: ss, cipher: aes-256-gcm, password: RtbLkxbJZpUQ6m8y4qAeLYZj}
+  - {name: "[SS] 🇨🇳 [SS] 🇨🇳 TW_103.152.151.5：39772", server: 103.152.151.5, port: 39772, type: ss, cipher: aes-256-gcm, password: CUndSZnYsPKcu6Kj8THVMBHD}
+  - {name: "[SS] 🇨🇳 [SS] 🇨🇳 TW_103.152.151.5：40093", server: 103.152.151.5, port: 40093, type: ss, cipher: aes-256-gcm, password: x23Z4LGkGDkThZ9Kaz4DURQp}
+  - {name: "[SS] 🇨🇳 [SS] 🇨🇳 TW_103.152.151.5：40220", server: 103.152.151.5, port: 40220, type: ss, cipher: aes-256-gcm, password: ugyBkSEFxVEmUYSHyvxmWNj9}
+  - {name: "[SS] 🇨🇳 [SS] 🇨🇳 TW_2.58.242.133：31572", server: 2.58.242.133, port: 31572, type: ss, cipher: aes-256-gcm, password: n8w4StnbVD9dmXYn4Ajt87EA}
+  - {name: "[SS] 🇨🇳 [SS] 🇨🇳 TW_2.58.242.133：31764", server: 2.58.242.133, port: 31764, type: ss, cipher: aes-256-gcm, password: YgusH2MWA8PWc3p2VDsR7AVv}
+  - {name: "[SS] 🇨🇳 [SS] 🇨🇳 TW_2.58.242.133：31944", server: 2.58.242.133, port: 31944, type: ss, cipher: aes-256-gcm, password: aYNeKDMzYQYw4KbUbJA8Wszq}
+  - {name: "[SS] 🇨🇳 [SS] 🇨🇳 TW_2.58.242.133：32843", server: 2.58.242.133, port: 32843, type: ss, cipher: aes-256-gcm, password: G35YSR2LFNEM9bq2dkjmKQRr}
+  - {name: "[SS] 🇨🇳 [SS] 🇨🇳 TW_2.58.242.133：33184", server: 2.58.242.133, port: 33148, type: ss, cipher: aes-256-gcm, password: CMduaFXddcQbwNAAs7xFDnc8}
+  - {name: "[SS] 🇨🇳 [SS] 🇨🇳 TW_2.58.242.133：33992", server: 2.58.242.133, port: 33992, type: ss, cipher: aes-256-gcm, password: 8n6pwAcrrv2pj6tFY2p3TbQ6}
+  - {name: "[SS] 🇨🇳 [SS] 🇨🇳 TW_2.58.242.133：33998", server: 2.58.242.133, port: 33998, type: ss, cipher: aes-256-gcm, password: NHwQTPLCfaTMSqTnU3mjcSxe}
+  - {name: "[SS] 🇨🇳 [SS] 🇨🇳 TW_2.58.242.133：34815", server: 2.58.242.133, port: 34815, type: ss, cipher: aes-256-gcm, password: LkFAzkzXkSCRYa2CsRdL8cGb}
+  - {name: "[SS] 🇨🇳 [SS] 🇨🇳 TW_2.58.242.133：35294", server: 2.58.242.133, port: 35294, type: ss, cipher: aes-256-gcm, password: J9Y2ncrdPEC38gwydNFFGBna}
+  - {name: "[SS] 🇨🇳 [SS] 🇨🇳 TW_2.58.242.133：37473", server: 2.58.242.133, port: 37473, type: ss, cipher: aes-256-gcm, password: enctdKyJfSu76VqznKwTt6Ap}
+  - {name: "[SS] 🇨🇳 [SS] 🇨🇳 TW_2.58.242.133：37588", server: 2.58.242.133, port: 37588, type: ss, cipher: aes-256-gcm, password: kD9vkjnE6dsUzwQfvKkPkQAd}
+  - {name: "[SS] 🇨🇳 [SS] 🇨🇳 TW_2.58.242.133：38033", server: 2.58.242.133, port: 38033, type: ss, cipher: aes-256-gcm, password: xpQwyV4W5FdA6NMANJJx73US}
+  - {name: "[SS] 🇨🇳 [SS] 🇨🇳 TW_2.58.242.133：38747", server: 2.58.242.133, port: 38747, type: ss, cipher: aes-256-gcm, password: RtbLkxbJZpUQ6m8y4qAeLYZj}
+  - {name: "[SS] 🇨🇳 [SS] 🇨🇳 TW_2.58.242.133：39772", server: 2.58.242.133, port: 39772, type: ss, cipher: aes-256-gcm, password: CUndSZnYsPKcu6Kj8THVMBHD}
+  - {name: "[SS] 🇨🇳 [SS] 🇨🇳 TW_2.58.242.133：40093", server: 2.58.242.133, port: 40093, type: ss, cipher: aes-256-gcm, password: x23Z4LGkGDkThZ9Kaz4DURQp}
+  - {name: "[SS] 🇨🇳 [SS] 🇨🇳 TW_2.58.242.133：40220", server: 2.58.242.133, port: 40220, type: ss, cipher: aes-256-gcm, password: ugyBkSEFxVEmUYSHyvxmWNj9}
+  - {name: "[SS] 🇨🇳 [SS] 🇨🇳 TW_2.58.242.43:31572", server: 2.58.242.43, port: 31572, type: ss, cipher: aes-256-gcm, password: n8w4StnbVD9dmXYn4Ajt87EA}
+  - {name: "[SS] 🇨🇳 [SS] 🇨🇳 TW_2.58.242.43:31764", server: 2.58.242.43, port: 31764, type: ss, cipher: aes-256-gcm, password: YgusH2MWA8PWc3p2VDsR7AVv}
+  - {name: "[SS] 🇨🇳 [SS] 🇨🇳 TW_2.58.242.43:31944", server: 02.58.242.43, port: 31944, type: ss, cipher: aes-256-gcm, password: aYNeKDMzYQYw4KbUbJA8Wszq}
+  - {name: "[SS] 🇨🇳 [SS] 🇨🇳 TW_2.58.242.43:32558", server: 2.58.242.43, port: 32558, type: ss, cipher: aes-256-gcm, password: gJYzm3TLbdL495ryQptaJXQk}
+  - {name: "[SS] 🇨🇳 [SS] 🇨🇳 TW_2.58.242.43:32843", server: 2.58.242.43, port: 32843, type: ss, cipher: aes-256-gcm, password: G35YSR2LFNEM9bq2dkjmKQRr}
+  - {name: "[SS] 🇨🇳 [SS] 🇨🇳 TW_2.58.242.43:33148", server: 2.58.242.43, port: 33148, type: ss, cipher: aes-256-gcm, password: CMduaFXddcQbwNAAs7xFDnc8}
+  - {name: "[SS] 🇨🇳 [SS] 🇨🇳 TW_2.58.242.43:33992", server: 2.58.242.43, port: 33992, type: ss, cipher: aes-256-gcm, password: 8n6pwAcrrv2pj6tFY2p3TbQ6}
+  - {name: "[SS] 🇨🇳 [SS] 🇨🇳 TW_2.58.242.43:33998", server: 2.58.242.43, port: 33998, type: ss, cipher: aes-256-gcm, password: NHwQTPLCfaTMSqTnU3mjcSxe}
+  - {name: "[SS] 🇨🇳 [SS] 🇨🇳 TW_2.58.242.43:34687", server: 2.58.242.43, port: 34687, type: ss, cipher: aes-256-gcm, password: txmK9WhwP6WPhP7hqSBLVxpN}
+  - {name: "[SS] 🇨🇳 [SS] 🇨🇳 TW_2.58.242.43:34815", server: 2.58.242.43, port: 34815, type: ss, cipher: aes-256-gcm, password: LkFAzkzXkSCRYa2CsRdL8cGb}
+  - {name: "[SS] 🇨🇳 [SS] 🇨🇳 TW_2.58.242.43:35294", server: 2.58.242.43, port: 35294, type: ss, cipher: aes-256-gcm, password: J9Y2ncrdPEC38gwydNFFGBna}
+  - {name: "[SS] 🇨🇳 [SS] 🇨🇳 TW_2.58.242.43:37473", server: 2.58.242.43, port: 37473, type: ss, cipher: aes-256-gcm, password: enctdKyJfSu76VqznKwTt6Ap}
+  - {name: "[SS] 🇨🇳 [SS] 🇨🇳 TW_2.58.242.43:37588", server: 2.58.242.43, port: 37588, type: ss, cipher: aes-256-gcm, password: kD9vkjnE6dsUzwQfvKkPkQAd}
+  - {name: "[SS] 🇨🇳 [SS] 🇨🇳 TW_2.58.242.43:38033", server: 2.58.242.43, port: 38033, type: ss, cipher: aes-256-gcm, password: xpQwyV4W5FdA6NMANJJx73US}
+  - {name: "[SS] 🇨🇳 [SS] 🇨🇳 TW_2.58.242.43:38620", server: 2.58.242.43, port: 38620, type: ss, cipher: aes-256-gcm, password: Kquv5UhvZXNMemAQy8DxZ7qn}
+  - {name: "[SS] 🇨🇳 [SS] 🇨🇳 TW_2.58.242.43:38742", server: 2.58.242.43, port: 38742, type: ss, cipher: aes-256-gcm, password: DKXfWwc4ebscpXTKpbt85rSH}
+  - {name: "[SS] 🇨🇳 [SS] 🇨🇳 TW_2.58.242.43:38747", server: 2.58.242.43, port: 38747, type: ss, cipher: aes-256-gcm, password: RtbLkxbJZpUQ6m8y4qAeLYZj}
+  - {name: "[SS] 🇨🇳 [SS] 🇨🇳 TW_2.58.242.43:39772", server: 2.58.242.43, port: 39772, type: ss, cipher: aes-256-gcm, password: CUndSZnYsPKcu6Kj8THVMBHD}
+  - {name: "[SS] 🇨🇳 [SS] 🇨🇳 TW_2.58.242.43:40093", server: 2.58.242.43, port: 40093, type: ss, cipher: aes-256-gcm, password: x23Z4LGkGDkThZ9Kaz4DURQp}
+  - {name: "[SS] 🇨🇳 [SS] 🇨🇳 TW_2.58.242.43:40220", server: 2.58.242.43, port: 40220, type: ss, cipher: aes-256-gcm, password: ugyBkSEFxVEmUYSHyvxmWNj9}
+  - {name: "[SS] 🇨🇳 [SS] 🇨🇳 TW_2.58.242.43:44236", server: 2.58.242.43, port: 44236, type: ss, cipher: aes-256-gcm, password: FWrXcxPZjJxAN89xLgqY3Acp}
+  - {name: "[SS] 🇨🇳 [SS] 🇨🇳 TW_2.58.242.43:44820", server: 2.58.242.43, port: 44820, type: ss, cipher: aes-256-gcm, password: jspgz9G3VmvBMCgMUWLBaZHu}
+  - {name: "[SS] 🇨🇳 [SS] 🇨🇳 TW_2.58.242.43:45329", server: 2.58.242.43, port: 45329, type: ss, cipher: aes-256-gcm, password: CXSjgD7u7Ar7GxkZ4CgTMUsj}
+  - {name: "[SS] 🇨🇳 [SS] 🇨🇳 TW_2.58.242.43:49339", server: 2.58.242.43, port: 49339, type: ss, cipher: aes-256-gcm, password: suucSeVLmt6PQKAP77NtGw9x}
+  - {name: "[SS] 🇨🇳 [SS] 🇨🇳 TW_2.58.242.43:49396", server: 2.58.242.43, port: 49396, type: ss, cipher: aes-256-gcm, password: BdRWC38L5JUDMTYNNxJGcUwB}
+  - {name: "[SS] 🇨🇳 [SS] 🇨🇳 TW_2.58.242.53：31572", server: 2.58.242.53, port: 31572, type: ss, cipher: aes-256-gcm, password: n8w4StnbVD9dmXYn4Ajt87EA}
+  - {name: "[SS] 🇨🇳 [SS] 🇨🇳 TW_2.58.242.53：31764", server: 2.58.242.53, port: 31764, type: ss, cipher: aes-256-gcm, password: YgusH2MWA8PWc3p2VDsR7AVv}
+  - {name: "[SS] 🇨🇳 [SS] 🇨🇳 TW_2.58.242.53：31944", server: 2.58.242.53, port: 31944, type: ss, cipher: aes-256-gcm, password: aYNeKDMzYQYw4KbUbJA8Wszq}
+  - {name: "[SS] 🇨🇳 [SS] 🇨🇳 TW_2.58.242.53：32843", server: 2.58.242.53, port: 32843, type: ss, cipher: aes-256-gcm, password: G35YSR2LFNEM9bq2dkjmKQRr}
+  - {name: "[SS] 🇨🇳 [SS] 🇨🇳 TW_2.58.242.53：33184", server: 2.58.242.53, port: 33148, type: ss, cipher: aes-256-gcm, password: CMduaFXddcQbwNAAs7xFDnc8}
+  - {name: "[SS] 🇨🇳 [SS] 🇨🇳 TW_2.58.242.53：33992", server: 2.58.242.53, port: 33992, type: ss, cipher: aes-256-gcm, password: 8n6pwAcrrv2pj6tFY2p3TbQ6}
+  - {name: "[SS] 🇨🇳 [SS] 🇨🇳 TW_2.58.242.53：33998", server: 2.58.242.53, port: 33998, type: ss, cipher: aes-256-gcm, password: NHwQTPLCfaTMSqTnU3mjcSxe}
+  - {name: "[SS] 🇨🇳 [SS] 🇨🇳 TW_2.58.242.53：34815", server: 2.58.242.53, port: 34815, type: ss, cipher: aes-256-gcm, password: LkFAzkzXkSCRYa2CsRdL8cGb}
+  - {name: "[SS] 🇨🇳 [SS] 🇨🇳 TW_2.58.242.53：35294", server: 2.58.242.53, port: 35294, type: ss, cipher: aes-256-gcm, password: J9Y2ncrdPEC38gwydNFFGBna}
+  - {name: "[SS] 🇨🇳 [SS] 🇨🇳 TW_2.58.242.53：37473", server: 2.58.242.53, port: 37473, type: ss, cipher: aes-256-gcm, password: enctdKyJfSu76VqznKwTt6Ap}
+  - {name: "[SS] 🇨🇳 [SS] 🇨🇳 TW_2.58.242.53：37588", server: 2.58.242.53, port: 37588, type: ss, cipher: aes-256-gcm, password: kD9vkjnE6dsUzwQfvKkPkQAd}
+  - {name: "[SS] 🇨🇳 [SS] 🇨🇳 TW_2.58.242.53：38033", server: 2.58.242.53, port: 38033, type: ss, cipher: aes-256-gcm, password: xpQwyV4W5FdA6NMANJJx73US}
+  - {name: "[SS] 🇨🇳 [SS] 🇨🇳 TW_2.58.242.53：38747", server: 2.58.242.53, port: 38747, type: ss, cipher: aes-256-gcm, password: RtbLkxbJZpUQ6m8y4qAeLYZj}
+  - {name: "[SS] 🇨🇳 [SS] 🇨🇳 TW_2.58.242.53：39772", server: 2.58.242.53, port: 39772, type: ss, cipher: aes-256-gcm, password: CUndSZnYsPKcu6Kj8THVMBHD}
+  - {name: "[SS] 🇨🇳 [SS] 🇨🇳 TW_2.58.242.53：40093", server: 2.58.242.53, port: 40093, type: ss, cipher: aes-256-gcm, password: x23Z4LGkGDkThZ9Kaz4DURQp}
+  - {name: "[SS] 🇨🇳 [SS] 🇨🇳 TW_2.58.242.53：40220", server: 2.58.242.53, port: 40220, type: ss, cipher: aes-256-gcm, password: ugyBkSEFxVEmUYSHyvxmWNj9}
+  - {name: "[VMess] 🇨🇳 [VMess] 🇨🇳 [VMess] 🇨🇳 [VMess] 🇨🇳 台湾 02丨TW 02丨中继丨V2丨解锁流媒体", server: wyyjm01.gnzz.xyz, port: 32137, type: vmess, uuid: 58be4e64-b7bf-42e5-a08c-cd1305f186ac, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /downloads, ws-headers: {Host: support.apple.com}}
+  - {name: "[VMess] 🇨🇳 [VMess] 🇨🇳 [VMess] 🇨🇳 [VMess] 🇨🇳 台湾 03丨TW 03丨中继丨V2丨解锁流媒体", server: wyygz01.gnzz.xyz, port: 13010, type: vmess, uuid: 58be4e64-b7bf-42e5-a08c-cd1305f186ac, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /downloads, ws-headers: {Host: support.apple.com}}
+  - {name: "[VMess] 🇨🇳 [VMess] 🇨🇳 [VMess] 🇨🇳 [VMess] 🇨🇳 台灣公益[x0.1|广州移动|NF[公益]|Vmess]", server: klgzcm.3sx.xyz, port: 21378, type: vmess, uuid: 3702d4b7-1b8f-421f-ac85-7ea0cc5004d0, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /index, ws-headers: {Host: klgzcm.3sx.xyz}}
+  - {name: "[SSR] 🇩🇪 [SSR] 🇩🇪 [SSR] 🇩🇪 [SSR] 🇩🇪 德国  xinyun2077.com赞助 - 10282 单端口", server: shcu.cnhost.xyz, port: 10282, type: ssr, cipher: aes-256-cfb, password: TuXJdt, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 12013:Megtjt, obfs-param: .microsoft.com}
+  - {name: "[VMess] 🇩🇪 [VMess] 🇩🇪 [VMess] 🇩🇪 [VMess] 🇩🇪 DE_157 |41.03Mb", server: node07-v2ray.cloudddns.icu, port: 58888, type: vmess, uuid: 6eed0024-10a8-4ada-a8b8-c8516be06800, alterId: 2, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /, ws-headers: {Host: node07-v2ray.cloudddns.icu}}
+  - {name: "[VMess] 🇩🇪 [VMess] 🇩🇪 [VMess] 🇩🇪 [VMess] 🇩🇪 DE_158 |40.59Mb", server: node08-v2ray.cloudddns.icu, port: 58888, type: vmess, uuid: 6eed0024-10a8-4ada-a8b8-c8516be06800, alterId: 2, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /, ws-headers: {Host: node08-v2ray.cloudddns.icu}}
+  - {name: "[VMess] 🇩🇪 [VMess] 🇩🇪 [VMess] 🇩🇪 [VMess] 🇩🇪 德国01[x0.5|廣州移動|Vmess]", server: klgzcm.3sx.xyz, port: 21363, type: vmess, uuid: 3702d4b7-1b8f-421f-ac85-7ea0cc5004d0, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /index, ws-headers: {Host: klgzcm.3sx.xyz}}
+  - {name: "[HTTPS] 🇩🇪 [HTTPS] 🇩🇪 【ER3_A】DE/德国", server: a1.er3.xyz, port: 29984, type: http, username: 439853970228252672, password: 59752e65-d5a2-4bcd-8000-8e9d2b4efe2e, tls: true, skip-cert-verify: false}
+  - {name: "[HTTPS] 🇩🇪 [HTTPS] 🇩🇪 【ER3_GE】DE/德国", server: ap1-ge.er3.xyz, port: 29984, type: http, username: 439853970228252672, password: 59752e65-d5a2-4bcd-8000-8e9d2b4efe2e, tls: true, skip-cert-verify: false}
+  - {name: "[HTTPS] 🇩🇪 [HTTPS] 🇩🇪 【FASTQ_G】DE/德国", server: global.ap.fastqvpn.com, port: 29984, type: http, username: 439853970228252672, password: 59752e65-d5a2-4bcd-8000-8e9d2b4efe2e, tls: true, skip-cert-verify: false}
+  - {name: "[HTTPS] 🇩🇪 [HTTPS] 🇩🇪 【FASTQ_W】DE/德国", server: tx.wy.fastqvpn.com, port: 29984, type: http, username: 439853970228252672, password: 59752e65-d5a2-4bcd-8000-8e9d2b4efe2e, tls: true, skip-cert-verify: false}
+  - {name: "[VMess] 🇫🇷 [VMess] 🇫🇷 [VMess] 🇫🇷 [VMess] 🇫🇷 FR_176 |61.60Mb", server: node09-v2ray.cloudddns.icu, port: 58888, type: vmess, uuid: 6eed0024-10a8-4ada-a8b8-c8516be06800, alterId: 2, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /, ws-headers: {Host: node09-v2ray.cloudddns.icu}}
+  - {name: "[VMess] 🇬🇧 [VMess] 🇬🇧 [VMess] 🇬🇧 [VMess] 🇬🇧 英国01[x0.5|长沙联通|Vmess]@200Mbps", server: klcscu.3sx.xyz, port: 21364, type: vmess, uuid: 3702d4b7-1b8f-421f-ac85-7ea0cc5004d0, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /index, ws-headers: {Host: klcscu.3sx.xyz}}
+  - {name: "[HTTPS] 🇬🇧 [HTTPS] 🇬🇧 【ER3_A】UK/英国", server: a1.er3.xyz, port: 29987, type: http, username: 439853970228252672, password: 59752e65-d5a2-4bcd-8000-8e9d2b4efe2e, tls: true, skip-cert-verify: false}
+  - {name: "[HTTPS] 🇬🇧 [HTTPS] 🇬🇧 【ER3_GE】UK/英国", server: ap1-ge.er3.xyz, port: 29987, type: http, username: 439853970228252672, password: 59752e65-d5a2-4bcd-8000-8e9d2b4efe2e, tls: true, skip-cert-verify: false}
+  - {name: "[HTTPS] 🇬🇧 [HTTPS] 🇬🇧 【ER3_UK】UK/英国_1", server: ap1-uk.er3.xyz, port: 29980, type: http, username: 439853970228252672, password: 59752e65-d5a2-4bcd-8000-8e9d2b4efe2e, tls: true, skip-cert-verify: false}
+  - {name: "[HTTPS] 🇬🇧 [HTTPS] 🇬🇧 【ER3_UK】UK/英国_2", server: ap1-uk.er3.xyz, port: 29982, type: http, username: 439853970228252672, password: 59752e65-d5a2-4bcd-8000-8e9d2b4efe2e, tls: true, skip-cert-verify: false}
+  - {name: "[HTTPS] 🇬🇧 [HTTPS] 🇬🇧 【ER3_UK】UK/英国_3", server: ap1-uk.er3.xyz, port: 29983, type: http, username: 439853970228252672, password: 59752e65-d5a2-4bcd-8000-8e9d2b4efe2e, tls: true, skip-cert-verify: false}
+  - {name: "[HTTPS] 🇬🇧 [HTTPS] 🇬🇧 【ER3_UK】UK/英国_4", server: ap1-uk.er3.xyz, port: 29984, type: http, username: 439853970228252672, password: 59752e65-d5a2-4bcd-8000-8e9d2b4efe2e, tls: true, skip-cert-verify: false}
+  - {name: "[HTTPS] 🇬🇧 [HTTPS] 🇬🇧 【ER3_UK】UK/英国_5", server: ap1-uk.er3.xyz, port: 29985, type: http, username: 439853970228252672, password: 59752e65-d5a2-4bcd-8000-8e9d2b4efe2e, tls: true, skip-cert-verify: false}
+  - {name: "[HTTPS] 🇬🇧 [HTTPS] 🇬🇧 【ER3_UK】UK/英国_6", server: ap1-uk.er3.xyz, port: 29986, type: http, username: 439853970228252672, password: 59752e65-d5a2-4bcd-8000-8e9d2b4efe2e, tls: true, skip-cert-verify: false}
+  - {name: "[HTTPS] 🇬🇧 [HTTPS] 🇬🇧 【ER3_UK】UK/英国_7", server: ap1-uk.er3.xyz, port: 29987, type: http, username: 439853970228252672, password: 59752e65-d5a2-4bcd-8000-8e9d2b4efe2e, tls: true, skip-cert-verify: false}
+  - {name: "[HTTPS] 🇬🇧 [HTTPS] 🇬🇧 【ER3_UK】UK/英国_8", server: ap1-uk.er3.xyz, port: 29988, type: http, username: 439853970228252672, password: 59752e65-d5a2-4bcd-8000-8e9d2b4efe2e, tls: true, skip-cert-verify: false}
+  - {name: "[HTTPS] 🇬🇧 [HTTPS] 🇬🇧 【FASTQ_G】UK/英国", server: global.ap.fastqvpn.com, port: 29987, type: http, username: 439853970228252672, password: 59752e65-d5a2-4bcd-8000-8e9d2b4efe2e, tls: true, skip-cert-verify: false}
+  - {name: "[HTTPS] 🇬🇧 [HTTPS] 🇬🇧 【FASTQ_W】UK/英国", server: tx.wy.fastqvpn.com, port: 29987, type: http, username: 439853970228252672, password: 59752e65-d5a2-4bcd-8000-8e9d2b4efe2e, tls: true, skip-cert-verify: false}
+  - {name: "[SSR] 🇭🇰 [SSR] 🇭🇰 [SSR] 🇭🇰 [SSR] 🇭🇰 香港HGC[原生] - 10256 单端口", server: dog.gkd.world, port: 10256, type: ssr, cipher: aes-256-cfb, password: TuXJdt, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 12013:Megtjt, obfs-param: .microsoft.com}
+  - {name: "[SSR] 🇭🇰 [SSR] 🇭🇰 [SSR] 🇭🇰 [SSR] 🇭🇰 香港HKT 原生 - 22884 单端口", server: cm.gkd.world, port: 22884, type: ssr, cipher: aes-256-cfb, password: TuXJdt, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 12013:Megtjt, obfs-param: .microsoft.com}
+  - {name: "[Trojan] 🇭🇰 [Trojan] 🇭🇰 [Trojan] 🇭🇰 [Trojan] 🇭🇰 香港01|中转AZ", server: 137.116.163.248, port: 10007, type: trojan, password: 0dcf1227-f21c-42a9-9af9-e3d8fb91c0cb, skip-cert-verify: false}
+  - {name: "[Trojan] 🇭🇰 [Trojan] 🇭🇰 [Trojan] 🇭🇰 [Trojan] 🇭🇰 香港01|中转AZ 2", server: 23.98.34.223, port: 10000, type: trojan, password: 0dcf1227-f21c-42a9-9af9-e3d8fb91c0cb, skip-cert-verify: false}
+  - {name: "[VMess] 🇭🇰 [VMess] 🇭🇰 [VMess] 🇭🇰 [VMess] 🇭🇰 [VIP]香港-直连-10", server: 13.75.92.10, port: 20020, type: vmess, uuid: f88ee780-153b-4179-a5d0-6684ee058afc, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /, ws-headers: {Host: 13.75.92.10}}
+  - {name: "[VMess] 🇭🇰 [VMess] 🇭🇰 [VMess] 🇭🇰 [VMess] 🇭🇰 [VIP]香港-直连-6", server: 13.94.38.177, port: 20020, type: vmess, uuid: f88ee780-153b-4179-a5d0-6684ee058afc, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /, ws-headers: {Host: 13.94.38.177}}
+  - {name: "[VMess] 🇭🇰 [VMess] 🇭🇰 [VMess] 🇭🇰 [VMess] 🇭🇰 [VIP]香港-直连-7", server: 137.116.166.227, port: 20020, type: vmess, uuid: f88ee780-153b-4179-a5d0-6684ee058afc, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /, ws-headers: {Host: 137.116.166.227}}
+  - {name: "[VMess] 🇭🇰 [VMess] 🇭🇰 [VMess] 🇭🇰 [VMess] 🇭🇰 [VIP]香港-直连-8", server: 137.116.163.52, port: 20020, type: vmess, uuid: f88ee780-153b-4179-a5d0-6684ee058afc, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /, ws-headers: {Host: 137.116.163.52}}
+  - {name: "[VMess] 🇭🇰 [VMess] 🇭🇰 [VMess] 🇭🇰 [VMess] 🇭🇰 [VIP]香港-直连-9", server: 13.75.46.85, port: 20020, type: vmess, uuid: f88ee780-153b-4179-a5d0-6684ee058afc, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /, ws-headers: {Host: 13.75.46.85}}
+  - {name: "[VMess] 🇭🇰 [VMess] 🇭🇰 [VMess] 🇭🇰 [VMess] 🇭🇰 香港", server: s115.snodes.xyz, port: 443, type: vmess, uuid: 172fe7ea-30e3-3139-8f07-c8318c248cfb, alterId: 1, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /panel, ws-headers: {Host: s115.snodes.xyz}}
+  - {name: "[VMess] 🇭🇰 [VMess] 🇭🇰 [VMess] 🇭🇰 [VMess] 🇭🇰 香港 2", server: s115.snodes.xyz, port: 80, type: vmess, uuid: 172fe7ea-30e3-3139-8f07-c8318c248cfb, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /panel, ws-headers: {Host: s115.snodes.xyz}}
+  - {name: "[VMess] 🇭🇰 [VMess] 🇭🇰 [VMess] 🇭🇰 [VMess] 🇭🇰 香港01 三网优化 已解锁流媒体 奈飞", server: 23.97.66.222, port: 25001, type: vmess, uuid: b9c87e2d-c584-36e3-8824-db489c7c3a3c, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /ny, ws-headers: {Host: 23.97.66.222}}
+  - {name: "[VMess] 🇭🇰 [VMess] 🇭🇰 [VMess] 🇭🇰 [VMess] 🇭🇰 香港01[x0.5|直连|NF[原生]|Vmess]@200Mbps", server: klhkna.2sx.xyz, port: 20086, type: vmess, uuid: 423b14c1-676f-4f7e-aa66-f360bca3de66, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /index, ws-headers: {Host: klhkna.2sx.xyz}}
+  - {name: "[VMess] 🇭🇰 [VMess] 🇭🇰 [VMess] 🇭🇰 [VMess] 🇭🇰 香港02|中转AZ", server: 137.116.163.248, port: 10009, type: vmess, uuid: 0dcf1227-f21c-42a9-9af9-e3d8fb91c0cb, alterId: 2, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /index, ws-headers: {Host: hk2.xxl123.fun}}
+  - {name: "[VMess] 🇭🇰 [VMess] 🇭🇰 [VMess] 🇭🇰 [VMess] 🇭🇰 香港06 三网优化 解锁流媒体奈飞", server: 40.83.101.225, port: 25001, type: vmess, uuid: b9c87e2d-c584-36e3-8824-db489c7c3a3c, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /ny, ws-headers: {Host: 149.129.56.249}}
+  - {name: "[VMess] 🇭🇰 [VMess] 🇭🇰 [VMess] 🇭🇰 [VMess] 🇭🇰 香港07 三网优化 解锁流媒体 奈飞", server: 40.83.101.225, port: 25002, type: vmess, uuid: b9c87e2d-c584-36e3-8824-db489c7c3a3c, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /ny, ws-headers: {Host: 40.83.101.225}}
+  - {name: "[VMess] 🇭🇰 [VMess] 🇭🇰 [VMess] 🇭🇰 [VMess] 🇭🇰 香港08 三网优化 解锁流媒体 奈飞", server: 40.83.101.225, port: 25003, type: vmess, uuid: b9c87e2d-c584-36e3-8824-db489c7c3a3c, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /ny, ws-headers: {Host: 40.83.101.225}}
+  - {name: "[VMess] 🇭🇰 [VMess] 🇭🇰 [VMess] 🇭🇰 [VMess] 🇭🇰 香港iplc 更多节点@freebaipiao", server: iplc.hkt.insss.xyz, port: 11103, type: vmess, uuid: 2c89246c-ba60-4371-b768-ae8cf940fbe1, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /, ws-headers: {Host: hk-hkt-1.lldns.xyz}}
+  - {name: "[VMess] 🇭🇰 [VMess] 🇭🇰 [VMess] 🇭🇰 [VMess] 🇭🇰 香港公益2[x0.1|直连|Vmess] Supported By Hase", server: 18.166.249.246, port: 20086, type: vmess, uuid: 3702d4b7-1b8f-421f-ac85-7ea0cc5004d0, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /index, ws-headers: {Host: 18.166.249.246}}
+  - {name: "[VMess] 🇭🇰 [VMess] 🇭🇰 [VMess] 🇭🇰 [VMess] 🇭🇰 香港公益[x0.1|杭州移动|Vmess]", server: klhzcm.3sx.xyz, port: 51000, type: vmess, uuid: 3702d4b7-1b8f-421f-ac85-7ea0cc5004d0, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /index, ws-headers: {Host: klhzcm.3sx.xyz}}
+  - {name: "[VMess] 🇭🇰 [VMess] 🇭🇰 [VMess] 🇭🇰 香港01 奈飞线路", server: 23.97.66.222, port: 39004, type: vmess, uuid: 55c89b13-9e7f-3a94-a7f2-bc7213364c5d, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /, ws-headers: {Host: 23.97.66.222}}
+  - {name: "[VMess] 🇭🇰 [VMess] 🇭🇰 [VMess] 🇭🇰 香港02 奈飞线路", server: 23.97.66.222, port: 39005, type: vmess, uuid: 55c89b13-9e7f-3a94-a7f2-bc7213364c5d, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /, ws-headers: {Host: 23.97.66.222}}
+  - {name: "[VMess] 🇭🇰 [VMess] 🇭🇰 [VMess] 🇭🇰 香港03", server: 168.63.132.199, port: 39004, type: vmess, uuid: 55c89b13-9e7f-3a94-a7f2-bc7213364c5d, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /, ws-headers: {Host: 168.63.132.199}}
+  - {name: "[VMess] 🇭🇰 [VMess] 🇭🇰 [VMess] 🇭🇰 香港04", server: 168.63.132.199, port: 39005, type: vmess, uuid: 55c89b13-9e7f-3a94-a7f2-bc7213364c5d, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /, ws-headers: {Host: 168.63.132.199}}
+  - {name: "[VMess] 🇭🇰 [VMess] 🇭🇰 [VMess] 🇭🇰 香港05", server: 168.63.132.199, port: 39005, type: vmess, uuid: 55c89b13-9e7f-3a94-a7f2-bc7213364c5d, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /, ws-headers: {Host: 168.63.132.199}}
+  - {name: "[VMess] 🇭🇰 [VMess] 🇭🇰 [VMess] 🇭🇰 香港06", server: 168.63.132.199, port: 39006, type: vmess, uuid: 55c89b13-9e7f-3a94-a7f2-bc7213364c5d, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /, ws-headers: {Host: 168.63.132.199}}
+  - {name: "[VMess] 🇭🇰 [VMess] 🇭🇰 [VMess] 🇭🇰 香港07 电信加速", server: 13.248.165.181, port: 39005, type: vmess, uuid: 55c89b13-9e7f-3a94-a7f2-bc7213364c5d, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /, ws-headers: {Host: 13.248.165.181}}
+  - {name: "[VMess] 🇭🇰 [VMess] 🇭🇰 [VMess] 🇭🇰 香港08 电信加速", server: 13.248.165.181, port: 39006, type: vmess, uuid: 55c89b13-9e7f-3a94-a7f2-bc7213364c5d, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /, ws-headers: {Host: 13.248.165.181}}
+  - {name: "[VMess] 🇭🇰 [VMess] 🇭🇰 [VMess] 🇭🇰 香港09 电信优化", server: 13.248.189.78, port: 39005, type: vmess, uuid: 55c89b13-9e7f-3a94-a7f2-bc7213364c5d, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /, ws-headers: {Host: 13.248.189.78}}
+  - {name: "[VMess] 🇭🇰 [VMess] 🇭🇰 [VMess] 🇭🇰 香港10 电信优化", server: 13.248.189.78, port: 39006, type: vmess, uuid: 55c89b13-9e7f-3a94-a7f2-bc7213364c5d, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /, ws-headers: {Host: 13.248.189.78}}
+  - {name: "[HTTPS] 🇭🇰 [HTTPS] 🇭🇰 【ER3_A】HK/香港", server: a1.er3.xyz, port: 29980, type: http, username: 439853970228252672, password: 59752e65-d5a2-4bcd-8000-8e9d2b4efe2e, tls: true, skip-cert-verify: false}
+  - {name: "[HTTPS] 🇭🇰 [HTTPS] 🇭🇰 【ER3_GE】HK/香港", server: ap1-ge.er3.xyz, port: 29980, type: http, username: 439853970228252672, password: 59752e65-d5a2-4bcd-8000-8e9d2b4efe2e, tls: true, skip-cert-verify: false}
+  - {name: "[HTTPS] 🇭🇰 [HTTPS] 🇭🇰 【FASTQ_G】HK/香港", server: global.ap.fastqvpn.com, port: 29980, type: http, username: 439853970228252672, password: 59752e65-d5a2-4bcd-8000-8e9d2b4efe2e, tls: true, skip-cert-verify: false}
+  - {name: "[HTTPS] 🇭🇰 [HTTPS] 🇭🇰 【FASTQ_W】HK/香港", server: tx.wy.fastqvpn.com, port: 29980, type: http, username: 439853970228252672, password: 59752e65-d5a2-4bcd-8000-8e9d2b4efe2e, tls: true, skip-cert-verify: false}
+  - {name: "[HTTPS] 🇭🇰 [HTTPS] 🇭🇰 【TG@FreeYule】HK/香港_1", server: a1.ap.fastqvpn.com, port: 29980, type: http, username: 439853970228252672, password: 59752e65-d5a2-4bcd-8000-8e9d2b4efe2e, tls: true, skip-cert-verify: false}
+  - {name: "[HTTPS] 🇭🇰 [HTTPS] 🇭🇰 【TG@FreeYule】HK/香港_2", server: a2.ap.fastqvpn.com, port: 29980, type: http, username: 439853970228252672, password: 59752e65-d5a2-4bcd-8000-8e9d2b4efe2e, tls: true, skip-cert-verify: false}
+  - {name: "[HTTPS] 🇭🇰 [HTTPS] 🇭🇰 【TG@FreeYule】HK/香港_3", server: a3.ap.fastqvpn.com, port: 29980, type: http, username: 439853970228252672, password: 59752e65-d5a2-4bcd-8000-8e9d2b4efe2e, tls: true, skip-cert-verify: false}
+  - {name: "[HTTPS] 🇭🇰 [HTTPS] 🇭🇰 【TG@FreeYule】HK/香港_4", server: a4.ap.fastqvpn.com, port: 29980, type: http, username: 439853970228252672, password: 59752e65-d5a2-4bcd-8000-8e9d2b4efe2e, tls: true, skip-cert-verify: false}
+  - {name: "[HTTPS] 🇭🇰 [HTTPS] 🇭🇰 【TG@FreeYule】HK/香港_5", server: a5.ap.fastqvpn.com, port: 29980, type: http, username: 439853970228252672, password: 59752e65-d5a2-4bcd-8000-8e9d2b4efe2e, tls: true, skip-cert-verify: false}
+  - {name: "[SSR] 🇮🇳 [SSR] 🇮🇳 [SSR] 🇮🇳 [SSR] 🇮🇳 VIP1  印度孟买-高速", server: shcu.cnhost.xyz, port: 10691, type: ssr, cipher: aes-256-cfb, password: tFlIIS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 10579:BZGUdk, obfs-param: .www.bing.com}
   - {name: "[SSR] 🇯🇵 [SSR] 🇯🇵 [SSR] 🇯🇵 [SSR] 🇯🇵 日本 500M中转 - 10259 单端口", server: shcu.cnhost.xyz, port: 10259, type: ssr, cipher: aes-256-cfb, password: TuXJdt, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 12013:Megtjt, obfs-param: .microsoft.com}
   - {name: "[SSR] 🇯🇵 [SSR] 🇯🇵 [SSR] 🇯🇵 [SSR] 🇯🇵 日本隧道[视频] - 10255 单端口", server: shcu.cnhost.xyz, port: 10255, type: ssr, cipher: aes-256-cfb, password: TuXJdt, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 12013:Megtjt, obfs-param: .microsoft.com}
   - {name: "[VMess] 🇯🇵 [VMess] 🇯🇵 [VMess] 🇯🇵 [VMess] 🇯🇵 日本 03丨JP03丨中继丨V2丨", server: wyygz01.gnzz.xyz, port: 13001, type: vmess, uuid: 58be4e64-b7bf-42e5-a08c-cd1305f186ac, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /downloads, ws-headers: {Host: support.apple.com}}
@@ -236,27 +352,27 @@ proxy-groups:
       - "[VMess] [VMess] [VMess] [VMess] GB_193 |62.15Mb"
       - "[VMess] [VMess] [VMess] [VMess] _109 |48.23Mb"
       - "[VMess] [VMess] [VMess] [VMess] _112 |57.12Mb"
-      - "澳大利亚1"
-      - "澳大利亚2"
-      - "澳大利亚3"
-      - "澳大利亚4"
-      - "澳大利亚5"
-      - "澳大利亚6"
-      - "澳大利亚7"
-      - "澳大利亚8"
+      - "[HTTPS] 🇦🇺 [HTTPS] 🇦🇺 【ER3_AU】AU/澳大利亚_1"
+      - "[HTTPS] 🇦🇺 [HTTPS] 🇦🇺 【ER3_AU】AU/澳大利亚_2"
+      - "[HTTPS] 🇦🇺 [HTTPS] 🇦🇺 【ER3_AU】AU/澳大利亚_3"
+      - "[HTTPS] 🇦🇺 [HTTPS] 🇦🇺 【ER3_AU】AU/澳大利亚_4"
+      - "[HTTPS] 🇦🇺 [HTTPS] 🇦🇺 【ER3_AU】AU/澳大利亚_5"
+      - "[HTTPS] 🇦🇺 [HTTPS] 🇦🇺 【ER3_AU】AU/澳大利亚_6"
+      - "[HTTPS] 🇦🇺 [HTTPS] 🇦🇺 【ER3_AU】AU/澳大利亚_7"
+      - "[HTTPS] 🇦🇺 [HTTPS] 🇦🇺 【ER3_AU】AU/澳大利亚_8"
       - "[HTTPS] 🇦🇺 [HTTPS] 🇦🇺 【ER3_A】AU/澳大利亚"
       - "[HTTPS] 🇦🇺 [HTTPS] 🇦🇺 【ER3_GE】AU/澳大利亚"
       - "[HTTPS] 🇦🇺 [HTTPS] 🇦🇺 【FASTQ_G】AU/澳大利亚"
       - "[HTTPS] 🇦🇺 [HTTPS] 🇦🇺 【FASTQ_W】AU/澳大利亚"
-      - "加拿大"
-      - "加拿大1"
-      - "加拿大2"
-      - "加拿大3"
-      - "加拿大4"
-      - "加拿大5"
-      - "加拿大6"
-      - "加拿大7"
-      - "加拿大8"
+      - "[HTTPS] 🇨🇦 [HTTPS] 🇨🇦 【ER3_A】CA/加拿大"
+      - "[HTTPS] 🇨🇦 [HTTPS] 🇨🇦 【ER3_CA】CA/加拿大_1"
+      - "[HTTPS] 🇨🇦 [HTTPS] 🇨🇦 【ER3_CA】CA/加拿大_2"
+      - "[HTTPS] 🇨🇦 [HTTPS] 🇨🇦 【ER3_CA】CA/加拿大_3"
+      - "[HTTPS] 🇨🇦 [HTTPS] 🇨🇦 【ER3_CA】CA/加拿大_4"
+      - "[HTTPS] 🇨🇦 [HTTPS] 🇨🇦 【ER3_CA】CA/加拿大_5"
+      - "[HTTPS] 🇨🇦 [HTTPS] 🇨🇦 【ER3_CA】CA/加拿大_6"
+      - "[HTTPS] 🇨🇦 [HTTPS] 🇨🇦 【ER3_CA】CA/加拿大_7"
+      - "[HTTPS] 🇨🇦 [HTTPS] 🇨🇦 【ER3_CA】CA/加拿大_8"
       - "[HTTPS] 🇨🇦 [HTTPS] 🇨🇦 【ER3_GE】CA/加拿大"
       - "[HTTPS] 🇨🇦 [HTTPS] 🇨🇦 【FASTQ_G】CA/加拿大"
       - "[HTTPS] 🇨🇦 [HTTPS] 🇨🇦 【FASTQ_W】CA/加拿大"
@@ -575,27 +691,27 @@ proxy-groups:
       - "[VMess] [VMess] [VMess] [VMess] GB_193 |62.15Mb"
       - "[VMess] [VMess] [VMess] [VMess] _109 |48.23Mb"
       - "[VMess] [VMess] [VMess] [VMess] _112 |57.12Mb"
-      - "澳大利亚1"
-      - "澳大利亚2"
-      - "澳大利亚3"
-      - "澳大利亚4"
-      - "澳大利亚5"
-      - "澳大利亚6"
-      - "澳大利亚7"
-      - "澳大利亚8"
+      - "[HTTPS] 🇦🇺 [HTTPS] 🇦🇺 【ER3_AU】AU/澳大利亚_1"
+      - "[HTTPS] 🇦🇺 [HTTPS] 🇦🇺 【ER3_AU】AU/澳大利亚_2"
+      - "[HTTPS] 🇦🇺 [HTTPS] 🇦🇺 【ER3_AU】AU/澳大利亚_3"
+      - "[HTTPS] 🇦🇺 [HTTPS] 🇦🇺 【ER3_AU】AU/澳大利亚_4"
+      - "[HTTPS] 🇦🇺 [HTTPS] 🇦🇺 【ER3_AU】AU/澳大利亚_5"
+      - "[HTTPS] 🇦🇺 [HTTPS] 🇦🇺 【ER3_AU】AU/澳大利亚_6"
+      - "[HTTPS] 🇦🇺 [HTTPS] 🇦🇺 【ER3_AU】AU/澳大利亚_7"
+      - "[HTTPS] 🇦🇺 [HTTPS] 🇦🇺 【ER3_AU】AU/澳大利亚_8"
       - "[HTTPS] 🇦🇺 [HTTPS] 🇦🇺 【ER3_A】AU/澳大利亚"
       - "[HTTPS] 🇦🇺 [HTTPS] 🇦🇺 【ER3_GE】AU/澳大利亚"
       - "[HTTPS] 🇦🇺 [HTTPS] 🇦🇺 【FASTQ_G】AU/澳大利亚"
       - "[HTTPS] 🇦🇺 [HTTPS] 🇦🇺 【FASTQ_W】AU/澳大利亚"
-      - "加拿大"
-      - "加拿大1"
-      - "加拿大2"
-      - "加拿大3"
-      - "加拿大4"
-      - "加拿大5"
-      - "加拿大6"
-      - "加拿大7"
-      - "加拿大8"
+      - "[HTTPS] 🇨🇦 [HTTPS] 🇨🇦 【ER3_A】CA/加拿大"
+      - "[HTTPS] 🇨🇦 [HTTPS] 🇨🇦 【ER3_CA】CA/加拿大_1"
+      - "[HTTPS] 🇨🇦 [HTTPS] 🇨🇦 【ER3_CA】CA/加拿大_2"
+      - "[HTTPS] 🇨🇦 [HTTPS] 🇨🇦 【ER3_CA】CA/加拿大_3"
+      - "[HTTPS] 🇨🇦 [HTTPS] 🇨🇦 【ER3_CA】CA/加拿大_4"
+      - "[HTTPS] 🇨🇦 [HTTPS] 🇨🇦 【ER3_CA】CA/加拿大_5"
+      - "[HTTPS] 🇨🇦 [HTTPS] 🇨🇦 【ER3_CA】CA/加拿大_6"
+      - "[HTTPS] 🇨🇦 [HTTPS] 🇨🇦 【ER3_CA】CA/加拿大_7"
+      - "[HTTPS] 🇨🇦 [HTTPS] 🇨🇦 【ER3_CA】CA/加拿大_8"
       - "[HTTPS] 🇨🇦 [HTTPS] 🇨🇦 【ER3_GE】CA/加拿大"
       - "[HTTPS] 🇨🇦 [HTTPS] 🇨🇦 【FASTQ_G】CA/加拿大"
       - "[HTTPS] 🇨🇦 [HTTPS] 🇨🇦 【FASTQ_W】CA/加拿大"
@@ -914,27 +1030,27 @@ proxy-groups:
       - "[VMess] [VMess] [VMess] [VMess] GB_193 |62.15Mb"
       - "[VMess] [VMess] [VMess] [VMess] _109 |48.23Mb"
       - "[VMess] [VMess] [VMess] [VMess] _112 |57.12Mb"
-      - "澳大利亚1"
-      - "澳大利亚2"
-      - "澳大利亚3"
-      - "澳大利亚4"
-      - "澳大利亚5"
-      - "澳大利亚6"
-      - "澳大利亚7"
-      - "澳大利亚8"
+      - "[HTTPS] 🇦🇺 [HTTPS] 🇦🇺 【ER3_AU】AU/澳大利亚_1"
+      - "[HTTPS] 🇦🇺 [HTTPS] 🇦🇺 【ER3_AU】AU/澳大利亚_2"
+      - "[HTTPS] 🇦🇺 [HTTPS] 🇦🇺 【ER3_AU】AU/澳大利亚_3"
+      - "[HTTPS] 🇦🇺 [HTTPS] 🇦🇺 【ER3_AU】AU/澳大利亚_4"
+      - "[HTTPS] 🇦🇺 [HTTPS] 🇦🇺 【ER3_AU】AU/澳大利亚_5"
+      - "[HTTPS] 🇦🇺 [HTTPS] 🇦🇺 【ER3_AU】AU/澳大利亚_6"
+      - "[HTTPS] 🇦🇺 [HTTPS] 🇦🇺 【ER3_AU】AU/澳大利亚_7"
+      - "[HTTPS] 🇦🇺 [HTTPS] 🇦🇺 【ER3_AU】AU/澳大利亚_8"
       - "[HTTPS] 🇦🇺 [HTTPS] 🇦🇺 【ER3_A】AU/澳大利亚"
       - "[HTTPS] 🇦🇺 [HTTPS] 🇦🇺 【ER3_GE】AU/澳大利亚"
       - "[HTTPS] 🇦🇺 [HTTPS] 🇦🇺 【FASTQ_G】AU/澳大利亚"
       - "[HTTPS] 🇦🇺 [HTTPS] 🇦🇺 【FASTQ_W】AU/澳大利亚"
-      - "加拿大"
-      - "加拿大1"
-      - "加拿大2"
-      - "加拿大3"
-      - "加拿大4"
-      - "加拿大5"
-      - "加拿大6"
-      - "加拿大7"
-      - "加拿大8"
+      - "[HTTPS] 🇨🇦 [HTTPS] 🇨🇦 【ER3_A】CA/加拿大"
+      - "[HTTPS] 🇨🇦 [HTTPS] 🇨🇦 【ER3_CA】CA/加拿大_1"
+      - "[HTTPS] 🇨🇦 [HTTPS] 🇨🇦 【ER3_CA】CA/加拿大_2"
+      - "[HTTPS] 🇨🇦 [HTTPS] 🇨🇦 【ER3_CA】CA/加拿大_3"
+      - "[HTTPS] 🇨🇦 [HTTPS] 🇨🇦 【ER3_CA】CA/加拿大_4"
+      - "[HTTPS] 🇨🇦 [HTTPS] 🇨🇦 【ER3_CA】CA/加拿大_5"
+      - "[HTTPS] 🇨🇦 [HTTPS] 🇨🇦 【ER3_CA】CA/加拿大_6"
+      - "[HTTPS] 🇨🇦 [HTTPS] 🇨🇦 【ER3_CA】CA/加拿大_7"
+      - "[HTTPS] 🇨🇦 [HTTPS] 🇨🇦 【ER3_CA】CA/加拿大_8"
       - "[HTTPS] 🇨🇦 [HTTPS] 🇨🇦 【ER3_GE】CA/加拿大"
       - "[HTTPS] 🇨🇦 [HTTPS] 🇨🇦 【FASTQ_G】CA/加拿大"
       - "[HTTPS] 🇨🇦 [HTTPS] 🇨🇦 【FASTQ_W】CA/加拿大"
@@ -1252,27 +1368,27 @@ proxy-groups:
       - "[VMess] [VMess] [VMess] [VMess] GB_193 |62.15Mb"
       - "[VMess] [VMess] [VMess] [VMess] _109 |48.23Mb"
       - "[VMess] [VMess] [VMess] [VMess] _112 |57.12Mb"
-      - "澳大利亚1"
-      - "澳大利亚2"
-      - "澳大利亚3"
-      - "澳大利亚4"
-      - "澳大利亚5"
-      - "澳大利亚6"
-      - "澳大利亚7"
-      - "澳大利亚8"
+      - "[HTTPS] 🇦🇺 [HTTPS] 🇦🇺 【ER3_AU】AU/澳大利亚_1"
+      - "[HTTPS] 🇦🇺 [HTTPS] 🇦🇺 【ER3_AU】AU/澳大利亚_2"
+      - "[HTTPS] 🇦🇺 [HTTPS] 🇦🇺 【ER3_AU】AU/澳大利亚_3"
+      - "[HTTPS] 🇦🇺 [HTTPS] 🇦🇺 【ER3_AU】AU/澳大利亚_4"
+      - "[HTTPS] 🇦🇺 [HTTPS] 🇦🇺 【ER3_AU】AU/澳大利亚_5"
+      - "[HTTPS] 🇦🇺 [HTTPS] 🇦🇺 【ER3_AU】AU/澳大利亚_6"
+      - "[HTTPS] 🇦🇺 [HTTPS] 🇦🇺 【ER3_AU】AU/澳大利亚_7"
+      - "[HTTPS] 🇦🇺 [HTTPS] 🇦🇺 【ER3_AU】AU/澳大利亚_8"
       - "[HTTPS] 🇦🇺 [HTTPS] 🇦🇺 【ER3_A】AU/澳大利亚"
       - "[HTTPS] 🇦🇺 [HTTPS] 🇦🇺 【ER3_GE】AU/澳大利亚"
       - "[HTTPS] 🇦🇺 [HTTPS] 🇦🇺 【FASTQ_G】AU/澳大利亚"
       - "[HTTPS] 🇦🇺 [HTTPS] 🇦🇺 【FASTQ_W】AU/澳大利亚"
-      - "加拿大"
-      - "加拿大1"
-      - "加拿大2"
-      - "加拿大3"
-      - "加拿大4"
-      - "加拿大5"
-      - "加拿大6"
-      - "加拿大7"
-      - "加拿大8"
+      - "[HTTPS] 🇨🇦 [HTTPS] 🇨🇦 【ER3_A】CA/加拿大"
+      - "[HTTPS] 🇨🇦 [HTTPS] 🇨🇦 【ER3_CA】CA/加拿大_1"
+      - "[HTTPS] 🇨🇦 [HTTPS] 🇨🇦 【ER3_CA】CA/加拿大_2"
+      - "[HTTPS] 🇨🇦 [HTTPS] 🇨🇦 【ER3_CA】CA/加拿大_3"
+      - "[HTTPS] 🇨🇦 [HTTPS] 🇨🇦 【ER3_CA】CA/加拿大_4"
+      - "[HTTPS] 🇨🇦 [HTTPS] 🇨🇦 【ER3_CA】CA/加拿大_5"
+      - "[HTTPS] 🇨🇦 [HTTPS] 🇨🇦 【ER3_CA】CA/加拿大_6"
+      - "[HTTPS] 🇨🇦 [HTTPS] 🇨🇦 【ER3_CA】CA/加拿大_7"
+      - "[HTTPS] 🇨🇦 [HTTPS] 🇨🇦 【ER3_CA】CA/加拿大_8"
       - "[HTTPS] 🇨🇦 [HTTPS] 🇨🇦 【ER3_GE】CA/加拿大"
       - "[HTTPS] 🇨🇦 [HTTPS] 🇨🇦 【FASTQ_G】CA/加拿大"
       - "[HTTPS] 🇨🇦 [HTTPS] 🇨🇦 【FASTQ_W】CA/加拿大"
@@ -1590,27 +1706,27 @@ proxy-groups:
       - "[VMess] [VMess] [VMess] [VMess] GB_193 |62.15Mb"
       - "[VMess] [VMess] [VMess] [VMess] _109 |48.23Mb"
       - "[VMess] [VMess] [VMess] [VMess] _112 |57.12Mb"
-      - "澳大利亚1"
-      - "澳大利亚2"
-      - "澳大利亚3"
-      - "澳大利亚4"
-      - "澳大利亚5"
-      - "澳大利亚6"
-      - "澳大利亚7"
-      - "澳大利亚8"
+      - "[HTTPS] 🇦🇺 [HTTPS] 🇦🇺 【ER3_AU】AU/澳大利亚_1"
+      - "[HTTPS] 🇦🇺 [HTTPS] 🇦🇺 【ER3_AU】AU/澳大利亚_2"
+      - "[HTTPS] 🇦🇺 [HTTPS] 🇦🇺 【ER3_AU】AU/澳大利亚_3"
+      - "[HTTPS] 🇦🇺 [HTTPS] 🇦🇺 【ER3_AU】AU/澳大利亚_4"
+      - "[HTTPS] 🇦🇺 [HTTPS] 🇦🇺 【ER3_AU】AU/澳大利亚_5"
+      - "[HTTPS] 🇦🇺 [HTTPS] 🇦🇺 【ER3_AU】AU/澳大利亚_6"
+      - "[HTTPS] 🇦🇺 [HTTPS] 🇦🇺 【ER3_AU】AU/澳大利亚_7"
+      - "[HTTPS] 🇦🇺 [HTTPS] 🇦🇺 【ER3_AU】AU/澳大利亚_8"
       - "[HTTPS] 🇦🇺 [HTTPS] 🇦🇺 【ER3_A】AU/澳大利亚"
       - "[HTTPS] 🇦🇺 [HTTPS] 🇦🇺 【ER3_GE】AU/澳大利亚"
       - "[HTTPS] 🇦🇺 [HTTPS] 🇦🇺 【FASTQ_G】AU/澳大利亚"
       - "[HTTPS] 🇦🇺 [HTTPS] 🇦🇺 【FASTQ_W】AU/澳大利亚"
-      - "加拿大"
-      - "加拿大1"
-      - "加拿大2"
-      - "加拿大3"
-      - "加拿大4"
-      - "加拿大5"
-      - "加拿大6"
-      - "加拿大7"
-      - "加拿大8"
+      - "[HTTPS] 🇨🇦 [HTTPS] 🇨🇦 【ER3_A】CA/加拿大"
+      - "[HTTPS] 🇨🇦 [HTTPS] 🇨🇦 【ER3_CA】CA/加拿大_1"
+      - "[HTTPS] 🇨🇦 [HTTPS] 🇨🇦 【ER3_CA】CA/加拿大_2"
+      - "[HTTPS] 🇨🇦 [HTTPS] 🇨🇦 【ER3_CA】CA/加拿大_3"
+      - "[HTTPS] 🇨🇦 [HTTPS] 🇨🇦 【ER3_CA】CA/加拿大_4"
+      - "[HTTPS] 🇨🇦 [HTTPS] 🇨🇦 【ER3_CA】CA/加拿大_5"
+      - "[HTTPS] 🇨🇦 [HTTPS] 🇨🇦 【ER3_CA】CA/加拿大_6"
+      - "[HTTPS] 🇨🇦 [HTTPS] 🇨🇦 【ER3_CA】CA/加拿大_7"
+      - "[HTTPS] 🇨🇦 [HTTPS] 🇨🇦 【ER3_CA】CA/加拿大_8"
       - "[HTTPS] 🇨🇦 [HTTPS] 🇨🇦 【ER3_GE】CA/加拿大"
       - "[HTTPS] 🇨🇦 [HTTPS] 🇨🇦 【FASTQ_G】CA/加拿大"
       - "[HTTPS] 🇨🇦 [HTTPS] 🇨🇦 【FASTQ_W】CA/加拿大"
@@ -1928,27 +2044,27 @@ proxy-groups:
       - "[VMess] [VMess] [VMess] [VMess] GB_193 |62.15Mb"
       - "[VMess] [VMess] [VMess] [VMess] _109 |48.23Mb"
       - "[VMess] [VMess] [VMess] [VMess] _112 |57.12Mb"
-      - "澳大利亚1"
-      - "澳大利亚2"
-      - "澳大利亚3"
-      - "澳大利亚4"
-      - "澳大利亚5"
-      - "澳大利亚6"
-      - "澳大利亚7"
-      - "澳大利亚8"
+      - "[HTTPS] 🇦🇺 [HTTPS] 🇦🇺 【ER3_AU】AU/澳大利亚_1"
+      - "[HTTPS] 🇦🇺 [HTTPS] 🇦🇺 【ER3_AU】AU/澳大利亚_2"
+      - "[HTTPS] 🇦🇺 [HTTPS] 🇦🇺 【ER3_AU】AU/澳大利亚_3"
+      - "[HTTPS] 🇦🇺 [HTTPS] 🇦🇺 【ER3_AU】AU/澳大利亚_4"
+      - "[HTTPS] 🇦🇺 [HTTPS] 🇦🇺 【ER3_AU】AU/澳大利亚_5"
+      - "[HTTPS] 🇦🇺 [HTTPS] 🇦🇺 【ER3_AU】AU/澳大利亚_6"
+      - "[HTTPS] 🇦🇺 [HTTPS] 🇦🇺 【ER3_AU】AU/澳大利亚_7"
+      - "[HTTPS] 🇦🇺 [HTTPS] 🇦🇺 【ER3_AU】AU/澳大利亚_8"
       - "[HTTPS] 🇦🇺 [HTTPS] 🇦🇺 【ER3_A】AU/澳大利亚"
       - "[HTTPS] 🇦🇺 [HTTPS] 🇦🇺 【ER3_GE】AU/澳大利亚"
       - "[HTTPS] 🇦🇺 [HTTPS] 🇦🇺 【FASTQ_G】AU/澳大利亚"
       - "[HTTPS] 🇦🇺 [HTTPS] 🇦🇺 【FASTQ_W】AU/澳大利亚"
-      - "加拿大"
-      - "加拿大1"
-      - "加拿大2"
-      - "加拿大3"
-      - "加拿大4"
-      - "加拿大5"
-      - "加拿大6"
-      - "加拿大7"
-      - "加拿大8"
+      - "[HTTPS] 🇨🇦 [HTTPS] 🇨🇦 【ER3_A】CA/加拿大"
+      - "[HTTPS] 🇨🇦 [HTTPS] 🇨🇦 【ER3_CA】CA/加拿大_1"
+      - "[HTTPS] 🇨🇦 [HTTPS] 🇨🇦 【ER3_CA】CA/加拿大_2"
+      - "[HTTPS] 🇨🇦 [HTTPS] 🇨🇦 【ER3_CA】CA/加拿大_3"
+      - "[HTTPS] 🇨🇦 [HTTPS] 🇨🇦 【ER3_CA】CA/加拿大_4"
+      - "[HTTPS] 🇨🇦 [HTTPS] 🇨🇦 【ER3_CA】CA/加拿大_5"
+      - "[HTTPS] 🇨🇦 [HTTPS] 🇨🇦 【ER3_CA】CA/加拿大_6"
+      - "[HTTPS] 🇨🇦 [HTTPS] 🇨🇦 【ER3_CA】CA/加拿大_7"
+      - "[HTTPS] 🇨🇦 [HTTPS] 🇨🇦 【ER3_CA】CA/加拿大_8"
       - "[HTTPS] 🇨🇦 [HTTPS] 🇨🇦 【ER3_GE】CA/加拿大"
       - "[HTTPS] 🇨🇦 [HTTPS] 🇨🇦 【FASTQ_G】CA/加拿大"
       - "[HTTPS] 🇨🇦 [HTTPS] 🇨🇦 【FASTQ_W】CA/加拿大"
@@ -2267,27 +2383,27 @@ proxy-groups:
       - "[VMess] [VMess] [VMess] [VMess] GB_193 |62.15Mb"
       - "[VMess] [VMess] [VMess] [VMess] _109 |48.23Mb"
       - "[VMess] [VMess] [VMess] [VMess] _112 |57.12Mb"
-      - "澳大利亚1"
-      - "澳大利亚2"
-      - "澳大利亚3"
-      - "澳大利亚4"
-      - "澳大利亚5"
-      - "澳大利亚6"
-      - "澳大利亚7"
-      - "澳大利亚8"
+      - "[HTTPS] 🇦🇺 [HTTPS] 🇦🇺 【ER3_AU】AU/澳大利亚_1"
+      - "[HTTPS] 🇦🇺 [HTTPS] 🇦🇺 【ER3_AU】AU/澳大利亚_2"
+      - "[HTTPS] 🇦🇺 [HTTPS] 🇦🇺 【ER3_AU】AU/澳大利亚_3"
+      - "[HTTPS] 🇦🇺 [HTTPS] 🇦🇺 【ER3_AU】AU/澳大利亚_4"
+      - "[HTTPS] 🇦🇺 [HTTPS] 🇦🇺 【ER3_AU】AU/澳大利亚_5"
+      - "[HTTPS] 🇦🇺 [HTTPS] 🇦🇺 【ER3_AU】AU/澳大利亚_6"
+      - "[HTTPS] 🇦🇺 [HTTPS] 🇦🇺 【ER3_AU】AU/澳大利亚_7"
+      - "[HTTPS] 🇦🇺 [HTTPS] 🇦🇺 【ER3_AU】AU/澳大利亚_8"
       - "[HTTPS] 🇦🇺 [HTTPS] 🇦🇺 【ER3_A】AU/澳大利亚"
       - "[HTTPS] 🇦🇺 [HTTPS] 🇦🇺 【ER3_GE】AU/澳大利亚"
       - "[HTTPS] 🇦🇺 [HTTPS] 🇦🇺 【FASTQ_G】AU/澳大利亚"
       - "[HTTPS] 🇦🇺 [HTTPS] 🇦🇺 【FASTQ_W】AU/澳大利亚"
-      - "加拿大"
-      - "加拿大1"
-      - "加拿大2"
-      - "加拿大3"
-      - "加拿大4"
-      - "加拿大5"
-      - "加拿大6"
-      - "加拿大7"
-      - "加拿大8"
+      - "[HTTPS] 🇨🇦 [HTTPS] 🇨🇦 【ER3_A】CA/加拿大"
+      - "[HTTPS] 🇨🇦 [HTTPS] 🇨🇦 【ER3_CA】CA/加拿大_1"
+      - "[HTTPS] 🇨🇦 [HTTPS] 🇨🇦 【ER3_CA】CA/加拿大_2"
+      - "[HTTPS] 🇨🇦 [HTTPS] 🇨🇦 【ER3_CA】CA/加拿大_3"
+      - "[HTTPS] 🇨🇦 [HTTPS] 🇨🇦 【ER3_CA】CA/加拿大_4"
+      - "[HTTPS] 🇨🇦 [HTTPS] 🇨🇦 【ER3_CA】CA/加拿大_5"
+      - "[HTTPS] 🇨🇦 [HTTPS] 🇨🇦 【ER3_CA】CA/加拿大_6"
+      - "[HTTPS] 🇨🇦 [HTTPS] 🇨🇦 【ER3_CA】CA/加拿大_7"
+      - "[HTTPS] 🇨🇦 [HTTPS] 🇨🇦 【ER3_CA】CA/加拿大_8"
       - "[HTTPS] 🇨🇦 [HTTPS] 🇨🇦 【ER3_GE】CA/加拿大"
       - "[HTTPS] 🇨🇦 [HTTPS] 🇨🇦 【FASTQ_G】CA/加拿大"
       - "[HTTPS] 🇨🇦 [HTTPS] 🇨🇦 【FASTQ_W】CA/加拿大"
@@ -2622,27 +2738,27 @@ proxy-groups:
       - "[VMess] [VMess] [VMess] [VMess] GB_193 |62.15Mb"
       - "[VMess] [VMess] [VMess] [VMess] _109 |48.23Mb"
       - "[VMess] [VMess] [VMess] [VMess] _112 |57.12Mb"
-      - "澳大利亚1"
-      - "澳大利亚2"
-      - "澳大利亚3"
-      - "澳大利亚4"
-      - "澳大利亚5"
-      - "澳大利亚6"
-      - "澳大利亚7"
-      - "澳大利亚8"
+      - "[HTTPS] 🇦🇺 [HTTPS] 🇦🇺 【ER3_AU】AU/澳大利亚_1"
+      - "[HTTPS] 🇦🇺 [HTTPS] 🇦🇺 【ER3_AU】AU/澳大利亚_2"
+      - "[HTTPS] 🇦🇺 [HTTPS] 🇦🇺 【ER3_AU】AU/澳大利亚_3"
+      - "[HTTPS] 🇦🇺 [HTTPS] 🇦🇺 【ER3_AU】AU/澳大利亚_4"
+      - "[HTTPS] 🇦🇺 [HTTPS] 🇦🇺 【ER3_AU】AU/澳大利亚_5"
+      - "[HTTPS] 🇦🇺 [HTTPS] 🇦🇺 【ER3_AU】AU/澳大利亚_6"
+      - "[HTTPS] 🇦🇺 [HTTPS] 🇦🇺 【ER3_AU】AU/澳大利亚_7"
+      - "[HTTPS] 🇦🇺 [HTTPS] 🇦🇺 【ER3_AU】AU/澳大利亚_8"
       - "[HTTPS] 🇦🇺 [HTTPS] 🇦🇺 【ER3_A】AU/澳大利亚"
       - "[HTTPS] 🇦🇺 [HTTPS] 🇦🇺 【ER3_GE】AU/澳大利亚"
       - "[HTTPS] 🇦🇺 [HTTPS] 🇦🇺 【FASTQ_G】AU/澳大利亚"
       - "[HTTPS] 🇦🇺 [HTTPS] 🇦🇺 【FASTQ_W】AU/澳大利亚"
-      - "加拿大"
-      - "加拿大1"
-      - "加拿大2"
-      - "加拿大3"
-      - "加拿大4"
-      - "加拿大5"
-      - "加拿大6"
-      - "加拿大7"
-      - "加拿大8"
+      - "[HTTPS] 🇨🇦 [HTTPS] 🇨🇦 【ER3_A】CA/加拿大"
+      - "[HTTPS] 🇨🇦 [HTTPS] 🇨🇦 【ER3_CA】CA/加拿大_1"
+      - "[HTTPS] 🇨🇦 [HTTPS] 🇨🇦 【ER3_CA】CA/加拿大_2"
+      - "[HTTPS] 🇨🇦 [HTTPS] 🇨🇦 【ER3_CA】CA/加拿大_3"
+      - "[HTTPS] 🇨🇦 [HTTPS] 🇨🇦 【ER3_CA】CA/加拿大_4"
+      - "[HTTPS] 🇨🇦 [HTTPS] 🇨🇦 【ER3_CA】CA/加拿大_5"
+      - "[HTTPS] 🇨🇦 [HTTPS] 🇨🇦 【ER3_CA】CA/加拿大_6"
+      - "[HTTPS] 🇨🇦 [HTTPS] 🇨🇦 【ER3_CA】CA/加拿大_7"
+      - "[HTTPS] 🇨🇦 [HTTPS] 🇨🇦 【ER3_CA】CA/加拿大_8"
       - "[HTTPS] 🇨🇦 [HTTPS] 🇨🇦 【ER3_GE】CA/加拿大"
       - "[HTTPS] 🇨🇦 [HTTPS] 🇨🇦 【FASTQ_G】CA/加拿大"
       - "[HTTPS] 🇨🇦 [HTTPS] 🇨🇦 【FASTQ_W】CA/加拿大"
