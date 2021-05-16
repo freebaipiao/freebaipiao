@@ -6,3 +6,6 @@
 # 使用方法
 v2ray：点击对应文件，把节点信息base64码复制后，到软件界面ctrl+v即可
 clash：点击对应文件，点右上角的raw，当前跳转网址即为订阅链接地址（也可配合cdn加速使用）
+
+website:[https://www.freebaipiao.com](https://www.freebaipiao.com)
+有更详细的介绍(虽然也没详细哪里去)
