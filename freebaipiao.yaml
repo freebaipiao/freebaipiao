@@ -6,7 +6,7 @@ log-level: info
 external-controller: :9090
 proxies:
   - {name: "31.171.153.163:39772 tg@freebaipiao", server: 31.171.153.163, port: 39772, type: ss, cipher: aes-256-gcm, password: CUndSZnYsPKcu6Kj8THVMBHD}
-  - {name: "89.187.168.41:40093" tg@freebaipiao, server: 89.187.168.41, port: 40093, type: ss, cipher: aes-256-gcm, password: x23Z4LGkGDkThZ9Kaz4DURQp}
+  - {name: "89.187.168.41:40093 tg@freebaipiao", server: 89.187.168.41, port: 40093, type: ss, cipher: aes-256-gcm, password: x23Z4LGkGDkThZ9Kaz4DURQp}
   - {name: "拉脱维亚 tg@freebaipiao", server: 188.92.78.145, port: 40093, type: ss, cipher: aes-256-gcm, password: x23Z4LGkGDkThZ9Kaz4DURQp}
   - {name: "加拿大 tg@freebaipiao", server: ca01.v2net.top, port: 443, type: vmess, uuid: FD62FBFE-DD70-4772-B712-BB74F4C3264A, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /ray, ws-headers: {Host: ca01.v2net.top}}
   - {name: "英国 tg@freebaipiao", server: node10-v2ray.cloudddns.icu, port: 58888, type: vmess, uuid: 6eed0024-10a8-4ada-a8b8-c8516be06800, alterId: 2, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /, ws-headers: {Host: node10-v2ray.cloudddns.icu}}
