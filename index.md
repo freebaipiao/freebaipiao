@@ -7,6 +7,8 @@
 更多内容请关注频道查阅
 
 # 订阅
+**特别说明：cdn链接会有延迟（说不清时间）**
+最后更新：2021.5.30
 ## Clash配置文件（shadowrocket请使用此链接）
 
 - `https://raw.githubusercontent.com/freebaipiao/freebaipiao/main/freebaipiao.yaml`
