@@ -28,9 +28,9 @@
 复制对应软件的订阅，打开软件导入即可
 **推荐使用Clash**
 
-# 附软件下载链接:
+# 附软件的Github Releases:
 ## Clash Desktop : 
-https://github.com/Dreamacro/clash
+https://github.com/Fndroid/clash_for_windows_pkg
 
 ## Clash For Android : 
 https://github.com/Kr328/ClashForAndroid
