@@ -30,6 +30,7 @@
 
 # 捐赠
 目前仅支持微信支付。
+
 ![](https://cdn.jsdelivr.net/gh/freebaipiao/freebaipiao@web/wechatpay.png)
 
 # 附软件的Github Releases:
