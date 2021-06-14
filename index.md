@@ -28,6 +28,10 @@
 复制对应软件的订阅，打开软件导入即可
 **推荐使用Clash**
 
+# 捐赠
+目前仅支持微信支付。
+![](https://cdn.jsdelivr.net/gh/freebaipiao/freebaipiao@web/wechatpay.png)
+
 # 附软件的Github Releases:
 ## Clash Desktop : 
 https://github.com/Fndroid/clash_for_windows_pkg
