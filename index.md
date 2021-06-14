@@ -32,7 +32,6 @@
 
 ![](https://cdn.jsdelivr.net/gh/freebaipiao/freebaipiao@web/wechatpay.png)
 
-
 # 附软件的Github Releases:
 ## Clash Desktop : 
 https://github.com/Fndroid/clash_for_windows_pkg
