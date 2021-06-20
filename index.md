@@ -34,7 +34,7 @@
 
 > 捐赠列表：
 > 
-> 感谢 未知 捐赠 0.01 cny
+> 感谢 Anonymous 捐赠 0.01 cny
 
 # 附软件的Github Releases:
 ## Clash Desktop : 
