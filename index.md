@@ -28,9 +28,12 @@
 **推荐使用Clash**
 
 # 捐赠
-目前仅支持微信支付。
+目前仅支持微信支付。感谢大家的支持！
 
 ![](https://cdn.jsdelivr.net/gh/freebaipiao/freebaipiao@web/wechatpay.png)
+
+> 捐赠列表：
+> 感谢 未知 捐赠 0.01 cny
 
 # 附软件的Github Releases:
 ## Clash Desktop : 
