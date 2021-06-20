@@ -33,6 +33,7 @@
 ![](https://cdn.jsdelivr.net/gh/freebaipiao/freebaipiao@web/wechatpay.png)
 
 > 捐赠列表：
+> 
 > 感谢 未知 捐赠 0.01 cny
 
 # 附软件的Github Releases:
