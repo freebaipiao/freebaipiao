@@ -8,7 +8,7 @@
 
 # 订阅
 **特别说明：cdn链接会有延迟（说不清时间）**
-最后更新：2021.6.14
+最后更新：2021/7/6
 ## Clash配置文件（shadowrocket请使用此链接）
 
 - `https://raw.githubusercontent.com/freebaipiao/freebaipiao/main/freebaipiao.yaml`
@@ -19,6 +19,13 @@
 
 - `https://raw.githubusercontent.com/freebaipiao/freebaipiao/main/freebaipiaov2.txt`  
 - `https://cdn.jsdelivr.net/gh/freebaipiao/freebaipiao@main/freebaipiaov2.txt`
+
+
+## 原节点链接
+
+
+- `https://raw.githubusercontent.com/freebaipiao/freebaipiao/main/link.txt`
+- `https://cdn.jsdelivr.net/gh/freebaipiao/freebaipiao@main/link.txt`
 
 除了免费节点，还可试试在线代理：[https://j.bulink.xyz/](https://j.bulink.xyz/)
 
