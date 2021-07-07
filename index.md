@@ -42,9 +42,10 @@
 > 捐赠列表：
 > 
 > 感谢 Anonymous 捐赠 0.01 cny
+> 感谢 Anonymous 捐赠 0.10 cny
 
 # 附软件的Github Releases:
-## Clash Desktop : 
+## Clash For Windows : 
 https://github.com/Fndroid/clash_for_windows_pkg
 
 ## Clash For Android : 
@@ -61,5 +62,5 @@ https://github.com/2dust/v2rayN/
 
 # 转载请保留本站信息
 
-# tg群组
+# tg频道（欢迎关注）
 [https://t.me/freebaipiao](https://t.me/freebaipiao)
