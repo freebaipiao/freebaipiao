@@ -8,7 +8,7 @@
 
 # 订阅
 **特别说明：cdn链接会有延迟（说不清时间）**
-最后更新：2021/7/6
+最后更新：2021/8/4
 ## Clash配置文件（shadowrocket请使用此链接）
 
 - `https://raw.githubusercontent.com/freebaipiao/freebaipiao/main/freebaipiao.yaml`
@@ -42,6 +42,7 @@
 > 捐赠列表：
 > 
 > 感谢 Anonymous 捐赠 0.01 cny
+> 
 > 感谢 Anonymous 捐赠 0.10 cny
 
 # 附软件的Github Releases:
