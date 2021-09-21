@@ -49,14 +49,23 @@
 ## Clash For Windows : 
 https://github.com/Fndroid/clash_for_windows_pkg
 
+#### 复制下方链接打开直接下载clash for windows
+https://github.com/Fndroid/clash_for_windows_pkg/releases/download/0.18.1/Clash.for.Windows.Setup.0.18.1.ia32.exe
+
 ## Clash For Android : 
 https://github.com/Kr328/ClashForAndroid
+
+#### 复制下方链接打开直接下载clash for Android
+https://github.com/Kr328/ClashForAndroid/releases/download/v2.4.12/cfa-2.4.12-premium-universal-release.apk
 
 ## V2rayNG(Android):
 https://github.com/2dust/v2rayNG/
 
 ## V2rayN(Windows):
 https://github.com/2dust/v2rayN/
+
+## 其他系统:
+~~我相信你们一定可以自己解决
 
 # **声明**
 资源来自于互联网，您使用本站所分享的资源即意味着因使用本站资源所产生的**一切责任**应由**您自己**来**承担**，与本站及其负责人**无关**
