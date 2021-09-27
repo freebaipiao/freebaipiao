@@ -74,5 +74,7 @@ https://github.com/2dust/v2rayN/
 
 # 转载请保留本站信息
 
-# tg频道（欢迎关注）
-[https://t.me/freebaipiao](https://t.me/freebaipiao)
+# tg联系方式
+频道： [https://t.me/freebaipiao](https://t.me/freebaipiao)
+
+群组： [https://t.me/aifxproxy](https://t.me/aifxproxy)
