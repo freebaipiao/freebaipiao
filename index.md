@@ -4,6 +4,9 @@
 
 [点击加入Telegram频道](https://t.me/freebaipiao)
 
+
+[点击加入Telegram群组](https://t.me/aifxproxy)
+
 更多内容请关注频道查阅
 
 # 订阅
@@ -51,14 +54,8 @@
 ## Clash For Windows : 
 https://github.com/Fndroid/clash_for_windows_pkg
 
-#### 复制下方链接打开直接下载clash for windows
-https://github.com/Fndroid/clash_for_windows_pkg/releases/download/0.18.1/Clash.for.Windows.Setup.0.18.1.ia32.exe
-
 ## Clash For Android : 
 https://github.com/Kr328/ClashForAndroid
-
-#### 复制下方链接打开直接下载clash for Android
-https://github.com/Kr328/ClashForAndroid/releases/download/v2.4.12/cfa-2.4.12-premium-universal-release.apk
 
 ## V2rayNG(Android):
 https://github.com/2dust/v2rayNG/
