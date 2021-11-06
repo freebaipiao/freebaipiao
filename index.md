@@ -32,15 +32,7 @@
 
 除了免费节点，还可试试在线代理：[https://j.bulink.xyz/](https://j.bulink.xyz/)
 
-你可以尝试在下方输入你要访问的网站(例如:google.com)
-<form action="https://js.svvme.com/-----">
-
-<input type="text" name=""><input type="submit" value="进入">
-
-</form>
-
-
-
+https://js.svvme.com/
 
 # 使用方法
 复制对应软件的订阅，打开软件导入即可
