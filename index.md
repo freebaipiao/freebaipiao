@@ -85,3 +85,4 @@ https://github.com/2dust/v2rayN/
 
 群组： [https://t.me/aifxproxy](https://t.me/aifxproxy)
 ![:统计](https://count.getloli.com/get/@freebaipiao?theme=rule34)
+<a href="https://icp.gov.moe/?keyword=20216039" target="_blank">萌ICP备20216039号</a>
