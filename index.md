@@ -42,6 +42,7 @@ https://js.svvme.com/
 目前仅支持微信支付。感谢大家的支持！
 
 ![](https://cdn.jsdelivr.net/gh/freebaipiao/freebaipiao@web/wechatpay.png)
+![](https://cdn.jsdelivr.net/gh/jiasswee/pic@main/alipayjiasswee.jpg)
 
 > 捐赠列表：
 > 
