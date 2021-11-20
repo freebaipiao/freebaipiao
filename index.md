@@ -39,7 +39,7 @@ https://js.svvme.com/
 **推荐使用Clash**
 
 # 捐赠
-目前仅支持微信支付。感谢大家的支持！
+目前仅支持微信支付以及支付宝。感谢大家的支持！
 
 ![](https://cdn.jsdelivr.net/gh/freebaipiao/freebaipiao@web/wechatpay.png)
 ![jiasswee alipay](https://cdn.jsdelivr.net/gh/jiasswee/pic@main/alipayjiasswee.png)
