@@ -51,6 +51,12 @@ https://js.svvme.com/
 > 感谢 Anonymous 捐赠 0.10 cny
 > 
 > 感谢 @LiteEvolution 捐赠 8.15 cny (八月十五中秋节特殊含意)
+> 
+> 感谢 @LiteEvolution 捐赠x2 3.00cny (感谢大佬啊啊啊啊)
+
+
+
+
 
 # 附软件的Github Releases:
 ## Clash For Windows : 
