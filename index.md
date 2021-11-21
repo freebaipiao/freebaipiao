@@ -52,7 +52,9 @@ https://js.svvme.com/
 > 
 > 感谢 @LiteEvolution 捐赠 8.15 cny (八月十五中秋节特殊含意)
 > 
-> 感谢 @LiteEvolution 捐赠x2 3.00cny (感谢大佬啊啊啊啊)
+> 感谢 @LiteEvolution 捐赠x2 3.00 cny (感谢大佬啊啊啊啊)
+> 
+> 感谢 龙哥(未备注,采用花名) 捐赠 0.03 cny
 
 
 
