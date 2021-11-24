@@ -3,125 +3,205 @@ socks-port: 7891
 allow-lan: true
 mode: Rule
 log-level: info
-external-controller: :9090
+external-controller: 127.0.0.1:9090
+proxy-providers:
+  Dler Cloud 1(香港):
+    type: http
+    url: "https://api.dler.io/sub?target=clash&url=https%3A%2F%2Fdler.cloud%2Fsubscribe%2FMPxV3abdpTPcemh8&emoji=false&list=true&include=%E6%B8%AF&exclude=%E5%8D%B0%E5%BA%A6|%E5%8F%B0%E6%B9%BE|%E5%9C%9F%E8%80%B3%E5%85%B6|%E5%B7%B4%E8%A5%BF|%E5%BE%B7%E5%9B%BD|%E6%96%B0%E5%8A%A0%E5%9D%A1|%E6%B3%A2%E5%85%B0|%E6%BE%B3%E6%B4%B2|%E7%BE%8E%E5%9B%BD|%E8%8B%B1%E5%9B%BD|%E8%8D%B7%E5%85%B0|%E9%98%BF%E6%A0%B9%E5%BB%B7|%E9%9F%A9%E5%9B%BD|%E9%A9%AC%E6%9D%A5%E8%A5%BF%E4%BA%9A&udp=true&tfo=false&scv=false&fdn=false&sort=false"
+    interval: 3600
+    path: ./Dler Cloud 1(香港).yaml
+    health-check:
+      enable: true
+      interval: 600
+      url: http://www.gstatic.com/generate_204
+  Dler Cloud 1(日本):
+    type: http
+    url: "https://api.dler.io/sub?target=clash&url=https%3A%2F%2Fdler.cloud%2Fsubscribe%2FMPxV3abdpTPcemh8&emoji=false&list=true&include=%E6%97%A5%E6%9C%AC|%E6%97%A5&exclude=IPV6&udp=false&tfo=false&scv=false&fdn=false&sort=false"
+    interval: 3600
+    path: ./Dler Cloud 1(日本).yaml
+    health-check:
+      enable: true
+      interval: 600
+      url: http://www.gstatic.com/generate_204
+  Dler Cloud 1(台湾):
+    type: http
+    url: "https://api.dler.io/sub?target=clash&url=https%3A%2F%2Fdler.cloud%2Fsubscribe%2FMPxV3abdpTPcemh8&emoji=false&list=true&include=%E5%8F%B0%E6%B9%BE&udp=false&tfo=false&scv=false&fdn=false&sort=false"
+    interval: 3600
+    path: ./Dler Cloud 1(台湾).yaml
+    health-check:
+      enable: true
+      interval: 600
+      url: http://www.gstatic.com/generate_204
+  Dler Cloud 1(韩国):
+    type: http
+    url: "https://api.dler.io/sub?target=clash&url=https%3A%2F%2Fdler.cloud%2Fsubscribe%2FMPxV3abdpTPcemh8&emoji=false&list=true&include=%E9%9F%A9%E5%9B%BD&udp=false&tfo=false&scv=false&fdn=false&sort=false"
+    interval: 3600
+    path: ./Dler Cloud 1(韩国).yaml
+    health-check:
+      enable: true
+      interval: 600
+      url: http://www.gstatic.com/generate_204
+  Dler Cloud 1(美国):
+    type: http
+    url: "https://api.dler.io/sub?target=clash&url=https%3A%2F%2Fdler.cloud%2Fsubscribe%2FMPxV3abdpTPcemh8&emoji=false&list=true&include=%E7%BE%8E%E5%9B%BD|%E7%BE%8E&udp=false&tfo=false&scv=false&fdn=false&sort=false"
+    interval: 3600
+    path: ./Dler Cloud 1(美国).yaml
+    health-check:
+      enable: true
+      interval: 600
+      url: http://www.gstatic.com/generate_204
+  Dler Cloud 1(新加坡):
+    type: http
+    url: "https://api.dler.io/sub?target=clash&url=https%3A%2F%2Fdler.cloud%2Fsubscribe%2FMPxV3abdpTPcemh8&emoji=false&list=true&include=%E6%96%B0%E5%8A%A0%E5%9D%A1|%E9%A9%AC%E6%9D%A5%E8%A5%BF%E4%BA%9A|%E6%96%B0&udp=false&tfo=false&scv=false&fdn=false&sort=false"
+    interval: 3600
+    path: ./Dler Cloud 1(新加坡).yaml
+    health-check:
+      enable: true
+      interval: 600
+      url: http://www.gstatic.com/generate_204
+  Dler Cloud 1(其他):
+    type: http
+    url: "https://api.dler.io/sub?target=clash&url=https%3A%2F%2Fdler.cloud%2Fsubscribe%2FMPxV3abdpTPcemh8&emoji=false&list=true&include=&exclude=%E6%B8%AF|%E6%97%A5%E6%9C%AC|%E5%8F%B0%E6%B9%BE|%E9%9F%A9%E5%9B%BD|%E7%BE%8E%E5%9B%BD|%E6%96%B0%E5%8A%A0%E5%9D%A1|%E5%89%A9%E4%BD%99|%E8%BF%87%E6%9C%9F|%E5%8A%A0%E5%85%A5|%E5%AE%98%E7%BD%91|ASYNCHRONOUS|%E8%AE%A2%E9%98%85|IPV6|%E9%A9%AC%E6%9D%A5%E8%A5%BF%E4%BA%9A|%E6%97%A5|%E6%96%B0|%E7%BE%8E&udp=false&tfo=false&scv=false&fdn=false&sort=false"
+    interval: 3600
+    path: ./Dler Cloud 1(其他).yaml
+    health-check:
+      enable: true
+      interval: 600
+      url: http://www.gstatic.com/generate_204
 proxies:
-  - {name: "整理：tg@freebaipiao", server: 8.210.55.79, port: 80, type: vmess, uuid: d064d11b-477c-4c5d-a2d8-9fd599ef8e79, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /, ws-headers: {Host: 8.210.55.79}}
-  - {name: "[跨越长城提供] [NAT/江门]  新加坡 SG 3 高速", server: cmjm2.xhbao.me, port: 18882, type: vmess, uuid: d064d11b-477c-4c5d-a2d8-9fd599ef8e79, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /, ws-headers: {Host: cmjm2.xhbao.me}}
-  - {name: "[跨越长城提供] [直连]  香港2 AZHK 0x", server: 20.205.58.253, port: 11101, type: vmess, uuid: d064d11b-477c-4c5d-a2d8-9fd599ef8e79, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /, ws-headers: {Host: 20.205.58.253}}
-  - {name: "[跨越长城提供] [直连]  香港6 1M Netflix HK 80端口 1x", server: 8.210.55.79, port: 80, type: vmess, uuid: d064d11b-477c-4c5d-a2d8-9fd599ef8e79, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /, ws-headers: {Host: 8.210.55.79}}
-  - {name: "[跨越长城提供] [直连]  新加坡1 Netflix SG", server: 137.184.250.44, port: 8888, type: vmess, uuid: d064d11b-477c-4c5d-a2d8-9fd599ef8e79, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /, ws-headers: {Host: 137.184.250.44}}
-  - {name: "[跨越长城提供] [直连]  新加坡3 Netflix SG", server: 206.189.87.180, port: 8888, type: vmess, uuid: d064d11b-477c-4c5d-a2d8-9fd599ef8e79, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /, ws-headers: {Host: 206.189.87.180}}
-  - {name: "[跨越长城提供] [直连]  美国6 Netflix US", server: 66.181.34.155, port: 34300, type: vmess, uuid: d064d11b-477c-4c5d-a2d8-9fd599ef8e79, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /, ws-headers: {Host: 66.181.34.155}}
-  - {name: "[跨越长城提供] [直连]  澳大利亚 Netflix AU", server: 3.25.120.18, port: 8888, type: vmess, uuid: d064d11b-477c-4c5d-a2d8-9fd599ef8e79, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /, ws-headers: {Host: 3.25.120.18}}
-  - {name: "[跨越长城提供] [直连]  俄罗斯", server: 185.246.154.6, port: 24388, type: vmess, uuid: d064d11b-477c-4c5d-a2d8-9fd599ef8e79, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /, ws-headers: {Host: 185.246.154.6}}
-  - {name: "[跨越长城提供] [直连]  德国 Netflix DE 0.5x", server: dg1.stupidfellow.cf, port: 80, type: vmess, uuid: d064d11b-477c-4c5d-a2d8-9fd599ef8e79, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /, ws-headers: {Host: dg1.stupidfellow.cf}}
-  - {name: "[跨越长城提供] [直连]  爱尔兰 Netflix IE", server: 52.48.89.93, port: 9999, type: vmess, uuid: d064d11b-477c-4c5d-a2d8-9fd599ef8e79, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /, ws-headers: {Host: 52.48.89.93}}
-  - {name: "[跨越长城提供] [直连/反代优选]  卢森堡 跑BT CF优化 0.2x", server: 104.16.167.146, port: 443, type: vmess, uuid: d064d11b-477c-4c5d-a2d8-9fd599ef8e79, alterId: 1, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: kycc, ws-headers: {Host: lsb.stupidfellow.cf}}
+ #HTTP/S
+ #Socks5
+ #Shadowsocks/R
+ #V2Ray
+ #Trojan
+
 proxy-groups:
   - name: 🚀 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
+      - 香港
+      - 日本
+      - 台湾
+      - 韩国
+      - 美国
+      - 新加坡
+      - 其他
       - DIRECT
-      - "整理：tg@freebaipiao"
-      - "[跨越长城提供] [NAT/江门]  新加坡 SG 3 高速"
-      - "[跨越长城提供] [直连]  香港2 AZHK 0x"
-      - "[跨越长城提供] [直连]  香港6 1M Netflix HK 80端口 1x"
-      - "[跨越长城提供] [直连]  新加坡1 Netflix SG"
-      - "[跨越长城提供] [直连]  新加坡3 Netflix SG"
-      - "[跨越长城提供] [直连]  美国6 Netflix US"
-      - "[跨越长城提供] [直连]  澳大利亚 Netflix AU"
-      - "[跨越长城提供] [直连]  俄罗斯"
-      - "[跨越长城提供] [直连]  德国 Netflix DE 0.5x"
-      - "[跨越长城提供] [直连]  爱尔兰 Netflix IE"
-      - "[跨越长城提供] [直连/反代优选]  卢森堡 跑BT CF优化 0.2x"
-  - name: ♻️ 自动选择
-    type: url-test
-    url: http://www.gstatic.com/generate_204
-    interval: 300
-    tolerance: 50
+  - name: 哔哩哔哩番剧用
+    type: select
     proxies:
-      - "整理：tg@freebaipiao"
-      - "[跨越长城提供] [NAT/江门]  新加坡 SG 3 高速"
-      - "[跨越长城提供] [直连]  香港2 AZHK 0x"
-      - "[跨越长城提供] [直连]  香港6 1M Netflix HK 80端口 1x"
-      - "[跨越长城提供] [直连]  新加坡1 Netflix SG"
-      - "[跨越长城提供] [直连]  新加坡3 Netflix SG"
-      - "[跨越长城提供] [直连]  美国6 Netflix US"
-      - "[跨越长城提供] [直连]  澳大利亚 Netflix AU"
-      - "[跨越长城提供] [直连]  俄罗斯"
-      - "[跨越长城提供] [直连]  德国 Netflix DE 0.5x"
-      - "[跨越长城提供] [直连]  爱尔兰 Netflix IE"
-      - "[跨越长城提供] [直连/反代优选]  卢森堡 跑BT CF优化 0.2x"
+      - 🎯 全球直连
+      - 香港
+      - 台湾
+  - name: 香港
+    type: select
+    proxies:
+      - ♻️ 自动选择 [香港]
+    use:
+      - Dler Cloud 1(香港)
+  - name: 日本
+    type: select
+    proxies:
+      - ♻️ 自动选择 [日本]
+    use:
+      - Dler Cloud 1(日本)
+  - name: 台湾
+    type: select
+    proxies:
+      - ♻️ 自动选择 [台湾]
+    use:
+      - Dler Cloud 1(台湾)
+  - name: 韩国
+    type: select
+    proxies:
+      - ♻️ 自动选择 [韩国]
+    use:
+      - Dler Cloud 1(韩国)
+  - name: 美国
+    type: select
+    proxies:
+      - ♻️ 自动选择 [美国]
+    use:
+      - Dler Cloud 1(美国)
+  - name: 新加坡
+    type: select
+    proxies:
+      - ♻️ 自动选择 [新加坡]
+    use:
+      - Dler Cloud 1(新加坡)
+  - name: 其他
+    type: select
+    use:
+      - Dler Cloud 1(其他)
+  - name: 📺 巴哈姆特
+    type: select
+    proxies:
+      - 台湾
+      - 🚀 节点选择
+      - DIRECT
   - name: 🌍 国外媒体
     type: select
     proxies:
       - 🚀 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - "整理：tg@freebaipiao"
-      - "[跨越长城提供] [NAT/江门]  新加坡 SG 3 高速"
-      - "[跨越长城提供] [直连]  香港2 AZHK 0x"
-      - "[跨越长城提供] [直连]  香港6 1M Netflix HK 80端口 1x"
-      - "[跨越长城提供] [直连]  新加坡1 Netflix SG"
-      - "[跨越长城提供] [直连]  新加坡3 Netflix SG"
-      - "[跨越长城提供] [直连]  美国6 Netflix US"
-      - "[跨越长城提供] [直连]  澳大利亚 Netflix AU"
-      - "[跨越长城提供] [直连]  俄罗斯"
-      - "[跨越长城提供] [直连]  德国 Netflix DE 0.5x"
-      - "[跨越长城提供] [直连]  爱尔兰 Netflix IE"
-      - "[跨越长城提供] [直连/反代优选]  卢森堡 跑BT CF优化 0.2x"
+      - 香港
+      - 日本
+      - 台湾
+      - 韩国
+      - 美国
+      - 新加坡
+      - 其他
   - name: 📲 电报信息
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - "整理：tg@freebaipiao"
-      - "[跨越长城提供] [NAT/江门]  新加坡 SG 3 高速"
-      - "[跨越长城提供] [直连]  香港2 AZHK 0x"
-      - "[跨越长城提供] [直连]  香港6 1M Netflix HK 80端口 1x"
-      - "[跨越长城提供] [直连]  新加坡1 Netflix SG"
-      - "[跨越长城提供] [直连]  新加坡3 Netflix SG"
-      - "[跨越长城提供] [直连]  美国6 Netflix US"
-      - "[跨越长城提供] [直连]  澳大利亚 Netflix AU"
-      - "[跨越长城提供] [直连]  俄罗斯"
-      - "[跨越长城提供] [直连]  德国 Netflix DE 0.5x"
-      - "[跨越长城提供] [直连]  爱尔兰 Netflix IE"
-      - "[跨越长城提供] [直连/反代优选]  卢森堡 跑BT CF优化 0.2x"
+      - 香港
+      - 日本
+      - 台湾
+      - 韩国
+      - 美国
+      - 新加坡
+      - 其他
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🚀 节点选择
-      - "整理：tg@freebaipiao"
-      - "[跨越长城提供] [NAT/江门]  新加坡 SG 3 高速"
-      - "[跨越长城提供] [直连]  香港2 AZHK 0x"
-      - "[跨越长城提供] [直连]  香港6 1M Netflix HK 80端口 1x"
-      - "[跨越长城提供] [直连]  新加坡1 Netflix SG"
-      - "[跨越长城提供] [直连]  新加坡3 Netflix SG"
-      - "[跨越长城提供] [直连]  美国6 Netflix US"
-      - "[跨越长城提供] [直连]  澳大利亚 Netflix AU"
-      - "[跨越长城提供] [直连]  俄罗斯"
-      - "[跨越长城提供] [直连]  德国 Netflix DE 0.5x"
-      - "[跨越长城提供] [直连]  爱尔兰 Netflix IE"
-      - "[跨越长城提供] [直连/反代优选]  卢森堡 跑BT CF优化 0.2x"
+      - 香港
+      - 日本
+      - 台湾
+      - 韩国
+      - 美国
+      - 新加坡
+      - 其他
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - "整理：tg@freebaipiao"
-      - "[跨越长城提供] [NAT/江门]  新加坡 SG 3 高速"
-      - "[跨越长城提供] [直连]  香港2 AZHK 0x"
-      - "[跨越长城提供] [直连]  香港6 1M Netflix HK 80端口 1x"
-      - "[跨越长城提供] [直连]  新加坡1 Netflix SG"
-      - "[跨越长城提供] [直连]  新加坡3 Netflix SG"
-      - "[跨越长城提供] [直连]  美国6 Netflix US"
-      - "[跨越长城提供] [直连]  澳大利亚 Netflix AU"
-      - "[跨越长城提供] [直连]  俄罗斯"
-      - "[跨越长城提供] [直连]  德国 Netflix DE 0.5x"
-      - "[跨越长城提供] [直连]  爱尔兰 Netflix IE"
-      - "[跨越长城提供] [直连/反代优选]  卢森堡 跑BT CF优化 0.2x"
+      - 香港
+      - 日本
+      - 台湾
+      - 韩国
+      - 美国
+      - 新加坡
+      - 其他
+  - name: 📢 谷歌FCM
+    type: select
+    proxies:
+      - 🚀 节点选择
+      - 🎯 全球直连
+      - ♻️ 自动选择
+      - 香港
+      - 日本
+      - 台湾
+      - 韩国
+      - 美国
+      - 新加坡
+      - 其他
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -144,19 +224,97 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - "整理：tg@freebaipiao"
-      - "[跨越长城提供] [NAT/江门]  新加坡 SG 3 高速"
-      - "[跨越长城提供] [直连]  香港2 AZHK 0x"
-      - "[跨越长城提供] [直连]  香港6 1M Netflix HK 80端口 1x"
-      - "[跨越长城提供] [直连]  新加坡1 Netflix SG"
-      - "[跨越长城提供] [直连]  新加坡3 Netflix SG"
-      - "[跨越长城提供] [直连]  美国6 Netflix US"
-      - "[跨越长城提供] [直连]  澳大利亚 Netflix AU"
-      - "[跨越长城提供] [直连]  俄罗斯"
-      - "[跨越长城提供] [直连]  德国 Netflix DE 0.5x"
-      - "[跨越长城提供] [直连]  爱尔兰 Netflix IE"
-      - "[跨越长城提供] [直连/反代优选]  卢森堡 跑BT CF优化 0.2x"
+      - 香港
+      - 日本
+      - 台湾
+      - 韩国
+      - 美国
+      - 新加坡
+      - 其他
+  - name: ♻️ 自动选择
+    type: url-test
+    url: http://www.gstatic.com/generate_204
+    interval: 300
+    use:
+      - Dler Cloud 1(香港)
+      - Dler Cloud 1(日本)
+      - Dler Cloud 1(台湾)
+      - Dler Cloud 1(韩国)
+      - Dler Cloud 1(新加坡)
+  - name: ♻️ 自动选择 [香港]
+    type: url-test
+    url: http://www.gstatic.com/generate_204
+    interval: 300
+    use:
+      - Dler Cloud 1(香港)
+  - name: ♻️ 自动选择 [日本]
+    type: url-test
+    url: http://www.gstatic.com/generate_204
+    interval: 300
+    use:
+      - Dler Cloud 1(日本)
+  - name: ♻️ 自动选择 [台湾]
+    type: url-test
+    url: http://www.gstatic.com/generate_204
+    interval: 300
+    use:
+      - Dler Cloud 1(台湾)
+  - name: ♻️ 自动选择 [韩国]
+    type: url-test
+    url: http://www.gstatic.com/generate_204
+    interval: 300
+    use:
+      - Dler Cloud 1(韩国)
+  - name: ♻️ 自动选择 [美国]
+    type: url-test
+    url: http://www.gstatic.com/generate_204
+    interval: 300
+    use:
+      - Dler Cloud 1(美国)
+  - name: ♻️ 自动选择 [新加坡]
+    type: url-test
+    url: http://www.gstatic.com/generate_204
+    interval: 300
+    use:
+      - Dler Cloud 1(新加坡)
 rules:
+ - DOMAIN,upos-hz-mirrorakam.akamaized.net,哔哩哔哩番剧用
+ - DOMAIN-SUFFIX,acgvideo.com,哔哩哔哩番剧用
+ - DOMAIN-SUFFIX,bilibili.com,哔哩哔哩番剧用
+ - DOMAIN-SUFFIX,biliapi.com,哔哩哔哩番剧用
+ - DOMAIN-SUFFIX,biliapi.net,哔哩哔哩番剧用
+ - DOMAIN-SUFFIX,appsflyer.com,哔哩哔哩番剧用
+ - IP-CIDR,45.43.32.234/32,哔哩哔哩番剧用
+ - IP-CIDR,119.29.29.29/32,哔哩哔哩番剧用
+ - IP-CIDR,128.1.62.200/32,哔哩哔哩番剧用
+ - IP-CIDR,128.1.62.201/32,哔哩哔哩番剧用
+ - IP-CIDR,150.116.92.250/32,哔哩哔哩番剧用
+ - IP-CIDR,164.52.76.18/32,哔哩哔哩番剧用
+ - IP-CIDR,203.107.1.33/32,哔哩哔哩番剧用
+ - IP-CIDR,203.107.1.34/32,哔哩哔哩番剧用
+ - IP-CIDR,203.107.1.65/32,哔哩哔哩番剧用
+ - IP-CIDR,203.107.1.66/32,哔哩哔哩番剧用
+ - DOMAIN,prd-priconne-redive.akamaized.net,日本
+ - DOMAIN,img-pc.so-net.tw,台湾
+ - DOMAIN,api-priconne-redive.cygames.jp,日本
+ - DOMAIN,api-pc.so-net.tw,台湾
+ - DOMAIN,api2-pc.so-net.tw,台湾
+ - DOMAIN,api3-pc.so-net.tw,台湾
+ - DOMAIN,api4-pc-pc.so-net.tw,台湾
+ - DOMAIN-SUFFIX,akabeesoft2.com,日本
+ - DOMAIN-SUFFIX,akabeesoft3.com,日本
+ - DOMAIN-SUFFIX,akatsukiworks.com,日本
+ - DOMAIN-SUFFIX,alicesoft.com,日本
+ - DOMAIN-SUFFIX,cosmiccute.com,日本
+ - DOMAIN-SUFFIX,ddo.jp,日本
+ - DOMAIN-SUFFIX,dmm-extension.com,日本
+ - DOMAIN-SUFFIX,dmm.co.jp,日本
+ - DOMAIN-SUFFIX,dmm.com,日本
+ - DOMAIN-SUFFIX,dmm.hk,香港
+ - DOMAIN-SUFFIX,hibiki-site.com,日本
+ - DOMAIN-SUFFIX,minori.ph,日本
+ - DOMAIN-SUFFIX,tenco.cc,日本
+ - DOMAIN-SUFFIX,wheel-soft.com,日本
  - DOMAIN-SUFFIX,acl4ssr,🎯 全球直连
  - DOMAIN-SUFFIX,ip6-localhost,🎯 全球直连
  - DOMAIN-SUFFIX,ip6-loopback,🎯 全球直连
@@ -182,6 +340,18 @@ rules:
  - DOMAIN-SUFFIX,routerlogin.com,🎯 全球直连
  - DOMAIN-SUFFIX,tendawifi.com,🎯 全球直连
  - DOMAIN-SUFFIX,zte.home,🎯 全球直连
+ - DOMAIN-SUFFIX,ol.epicgames.com,🎯 全球直连
+ - DOMAIN,dl.google.com,🎯 全球直连
+ - DOMAIN,mtalk.google.com,🎯 全球直连
+ - DOMAIN-SUFFIX,googletraveladservices.com,🎯 全球直连
+ - DOMAIN-SUFFIX,tracking-protection.cdn.mozilla.net,🎯 全球直连
+ - DOMAIN,livew.l.qq.com,🎯 全球直连
+ - DOMAIN,vd.l.qq.com,🎯 全球直连
+ - DOMAIN,analytics.strava.com,🎯 全球直连
+ - DOMAIN,msg.umeng.com,🎯 全球直连
+ - DOMAIN,msg.umengcloud.com,🎯 全球直连
+ - DOMAIN,app.adjust.com,🎯 全球直连
+ - DOMAIN,bdtj.tagtic.cn,🎯 全球直连
  - DOMAIN-KEYWORD,admarvel,🛑 全球拦截
  - DOMAIN-KEYWORD,admaster,🛑 全球拦截
  - DOMAIN-KEYWORD,adsage,🛑 全球拦截
@@ -1842,6 +2012,41 @@ rules:
  - DOMAIN-SUFFIX,tralog.ganji.com,🍃 应用净化
  - DOMAIN-SUFFIX,up.qingdaonews.com,🍃 应用净化
  - DOMAIN-SUFFIX,vaserviece.10jqka.com.cn,🍃 应用净化
+ - DOMAIN,alt1-mtalk.google.com,📢 谷歌FCM
+ - DOMAIN,alt2-mtalk.google.com,📢 谷歌FCM
+ - DOMAIN,alt3-mtalk.google.com,📢 谷歌FCM
+ - DOMAIN,alt4-mtalk.google.com,📢 谷歌FCM
+ - DOMAIN,alt5-mtalk.google.com,📢 谷歌FCM
+ - DOMAIN,alt6-mtalk.google.com,📢 谷歌FCM
+ - DOMAIN,alt7-mtalk.google.com,📢 谷歌FCM
+ - DOMAIN,alt8-mtalk.google.com,📢 谷歌FCM
+ - DOMAIN,mtalk.google.com,📢 谷歌FCM
+ - IP-CIDR,64.233.177.188/32,📢 谷歌FCM,no-resolve
+ - IP-CIDR,64.233.186.188/32,📢 谷歌FCM,no-resolve
+ - IP-CIDR,64.233.187.188/32,📢 谷歌FCM,no-resolve
+ - IP-CIDR,64.233.188.188/32,📢 谷歌FCM,no-resolve
+ - IP-CIDR,64.233.189.188/32,📢 谷歌FCM,no-resolve
+ - IP-CIDR,74.125.23.188/32,📢 谷歌FCM,no-resolve
+ - IP-CIDR,74.125.24.188/32,📢 谷歌FCM,no-resolve
+ - IP-CIDR,74.125.28.188/32,📢 谷歌FCM,no-resolve
+ - IP-CIDR,74.125.127.188/32,📢 谷歌FCM,no-resolve
+ - IP-CIDR,74.125.137.188/32,📢 谷歌FCM,no-resolve
+ - IP-CIDR,74.125.203.188/32,📢 谷歌FCM,no-resolve
+ - IP-CIDR,74.125.204.188/32,📢 谷歌FCM,no-resolve
+ - IP-CIDR,74.125.206.188/32,📢 谷歌FCM,no-resolve
+ - IP-CIDR,108.177.125.188/32,📢 谷歌FCM,no-resolve
+ - IP-CIDR,142.250.4.188/32,📢 谷歌FCM,no-resolve
+ - IP-CIDR,142.250.10.188/32,📢 谷歌FCM,no-resolve
+ - IP-CIDR,142.250.31.188/32,📢 谷歌FCM,no-resolve
+ - IP-CIDR,142.250.96.188/32,📢 谷歌FCM,no-resolve
+ - IP-CIDR,172.217.194.188/32,📢 谷歌FCM,no-resolve
+ - IP-CIDR,172.217.218.188/32,📢 谷歌FCM,no-resolve
+ - IP-CIDR,172.217.219.188/32,📢 谷歌FCM,no-resolve
+ - IP-CIDR,172.253.63.188/32,📢 谷歌FCM,no-resolve
+ - IP-CIDR,172.253.122.188/32,📢 谷歌FCM,no-resolve
+ - IP-CIDR,173.194.175.188/32,📢 谷歌FCM,no-resolve
+ - IP-CIDR,173.194.218.188/32,📢 谷歌FCM,no-resolve
+ - IP-CIDR,209.85.233.188/32,📢 谷歌FCM,no-resolve
  - DOMAIN-SUFFIX,265.com,🎯 全球直连
  - DOMAIN-SUFFIX,2mdn.net,🎯 全球直连
  - DOMAIN-SUFFIX,alt1-mtalk.google.com,🎯 全球直连
@@ -1994,6 +2199,18 @@ rules:
  - IP-CIDR,192.35.50.0/24,🍎 苹果服务,no-resolve
  - IP-CIDR,198.183.17.0/24,🍎 苹果服务,no-resolve
  - IP-CIDR,205.180.175.0/24,🍎 苹果服务,no-resolve
+ - DOMAIN-SUFFIX,t.me,📲 电报信息
+ - DOMAIN-SUFFIX,tdesktop.com,📲 电报信息
+ - DOMAIN-SUFFIX,telegra.ph,📲 电报信息
+ - DOMAIN-SUFFIX,telegram.me,📲 电报信息
+ - DOMAIN-SUFFIX,telegram.org,📲 电报信息
+ - DOMAIN-SUFFIX,telesco.pe,📲 电报信息
+ - IP-CIDR,91.108.0.0/16,📲 电报信息,no-resolve
+ - IP-CIDR,109.239.140.0/24,📲 电报信息,no-resolve
+ - IP-CIDR,149.154.160.0/20,📲 电报信息,no-resolve
+ - IP-CIDR6,2001:67c:4e8::/48,📲 电报信息,no-resolve
+ - IP-CIDR6,2001:b28:f23d::/48,📲 电报信息,no-resolve
+ - IP-CIDR6,2001:b28:f23f::/48,📲 电报信息,no-resolve
  - DOMAIN-SUFFIX,edgedatg.com,🌍 国外媒体
  - DOMAIN-SUFFIX,go.com,🌍 国外媒体
  - DOMAIN-KEYWORD,abematv.akamaized.net,🌍 国外媒体
@@ -2025,11 +2242,11 @@ rules:
  - DOMAIN-SUFFIX,bbcfmt.hs.llnwd.net,🌍 国外媒体
  - DOMAIN-SUFFIX,bbci.co,🌍 国外媒体
  - DOMAIN-SUFFIX,bbci.co.uk,🌍 国外媒体
- - DOMAIN,gamer-cds.cdn.hinet.net,🌍 国外媒体
- - DOMAIN,gamer2-cds.cdn.hinet.net,🌍 国外媒体
- - DOMAIN-SUFFIX,bahamut.com.tw,🌍 国外媒体
- - DOMAIN-SUFFIX,gamer.com.tw,🌍 国外媒体
- - DOMAIN-SUFFIX,hinet.net,🌍 国外媒体
+ - DOMAIN,gamer-cds.cdn.hinet.net,📺 巴哈姆特
+ - DOMAIN,gamer2-cds.cdn.hinet.net,📺 巴哈姆特
+ - DOMAIN-SUFFIX,bahamut.com.tw,📺 巴哈姆特
+ - DOMAIN-SUFFIX,gamer.com.tw,📺 巴哈姆特
+ - DOMAIN-SUFFIX,hinet.net,📺 巴哈姆特
  - DOMAIN-KEYWORD,voddazn,🌍 国外媒体
  - DOMAIN,d151l6v8er5bdm.cloudfront.net,🌍 国外媒体
  - DOMAIN-SUFFIX,d151l6v8er5bdm.cloudfront.net,🌍 国外媒体
@@ -2231,24 +2448,11 @@ rules:
  - DOMAIN-SUFFIX,youtu.be,🌍 国外媒体
  - DOMAIN-SUFFIX,youtube.com,🌍 国外媒体
  - DOMAIN-SUFFIX,ytimg.com,🌍 国外媒体
- - DOMAIN-SUFFIX,t.me,📲 电报信息
- - DOMAIN-SUFFIX,tdesktop.com,📲 电报信息
- - DOMAIN-SUFFIX,telegra.ph,📲 电报信息
- - DOMAIN-SUFFIX,telegram.me,📲 电报信息
- - DOMAIN-SUFFIX,telegram.org,📲 电报信息
- - DOMAIN-SUFFIX,telesco.pe,📲 电报信息
- - IP-CIDR,91.108.0.0/16,📲 电报信息,no-resolve
- - IP-CIDR,109.239.140.0/24,📲 电报信息,no-resolve
- - IP-CIDR,149.154.160.0/20,📲 电报信息,no-resolve
- - IP-CIDR6,2001:67c:4e8::/48,📲 电报信息,no-resolve
- - IP-CIDR6,2001:b28:f23d::/48,📲 电报信息,no-resolve
- - IP-CIDR6,2001:b28:f23f::/48,📲 电报信息,no-resolve
  - DOMAIN-SUFFIX,1password.com,🚀 节点选择
  - DOMAIN-SUFFIX,bit.no.com,🚀 节点选择
  - DOMAIN-SUFFIX,btlibrary.me,🚀 节点选择
  - DOMAIN-SUFFIX,cccat.io,🚀 节点选择
  - DOMAIN-SUFFIX,cloudcone.com,🚀 节点选择
- - DOMAIN-SUFFIX,dubox.com,🚀 节点选择
  - DOMAIN-SUFFIX,gameloft.com,🚀 节点选择
  - DOMAIN-SUFFIX,inoreader.com,🚀 节点选择
  - DOMAIN-SUFFIX,ip138.com,🚀 节点选择
@@ -2539,8 +2743,6 @@ rules:
  - DOMAIN-SUFFIX,livejasmin.com,🚀 节点选择
  - DOMAIN-SUFFIX,phncdn.com,🚀 节点选择
  - DOMAIN-SUFFIX,phprcdn.com,🚀 节点选择
- - DOMAIN-SUFFIX,pornhub.com,🚀 节点选择
- - DOMAIN-SUFFIX,pornhubpremium.com,🚀 节点选择
  - DOMAIN-SUFFIX,rdtcdn.com,🚀 节点选择
  - DOMAIN-SUFFIX,redtube.com,🚀 节点选择
  - DOMAIN-SUFFIX,sb-cd.com,🚀 节点选择
@@ -2574,6 +2776,8 @@ rules:
  - DOMAIN-SUFFIX,telegram.me,🚀 节点选择
  - DOMAIN-SUFFIX,telegram.org,🚀 节点选择
  - DOMAIN-SUFFIX,telesco.pe,🚀 节点选择
+ - DOMAIN-SUFFIX,e-hentai.org,🚀 节点选择
+ - DOMAIN-SUFFIX,exhentai.org,🚀 节点选择
  - IP-CIDR,91.108.0.0/16,🚀 节点选择,no-resolve
  - IP-CIDR,109.239.140.0/24,🚀 节点选择,no-resolve
  - IP-CIDR,149.154.160.0/20,🚀 节点选择,no-resolve
@@ -2629,7 +2833,6 @@ rules:
  - DOMAIN-KEYWORD,alipay,🎯 全球直连
  - DOMAIN-KEYWORD,appzapp,🎯 全球直连
  - DOMAIN-KEYWORD,baidupcs,🎯 全球直连
- - DOMAIN-KEYWORD,bilibili,🎯 全球直连
  - DOMAIN-KEYWORD,ccgslb,🎯 全球直连
  - DOMAIN-KEYWORD,chinacache,🎯 全球直连
  - DOMAIN-KEYWORD,duobao,🎯 全球直连
@@ -2702,12 +2905,6 @@ rules:
  - DOMAIN-SUFFIX,acg.tv,🎯 全球直连
  - DOMAIN-SUFFIX,acgvideo.com,🎯 全球直连
  - DOMAIN-SUFFIX,b23.tv,🎯 全球直连
- - DOMAIN-SUFFIX,biliapi.com,🎯 全球直连
- - DOMAIN-SUFFIX,biliapi.net,🎯 全球直连
- - DOMAIN-SUFFIX,biligame.com,🎯 全球直连
- - DOMAIN-SUFFIX,biligame.net,🎯 全球直连
- - DOMAIN-SUFFIX,bilivideo.com,🎯 全球直连
- - DOMAIN-SUFFIX,hdslb.com,🎯 全球直连
  - DOMAIN-SUFFIX,im9.com,🎯 全球直连
  - DOMAIN-SUFFIX,battle.net,🎯 全球直连
  - DOMAIN-SUFFIX,battlenet.com,🎯 全球直连
@@ -2765,6 +2962,7 @@ rules:
  - DOMAIN-SUFFIX,iflytek.com,🎯 全球直连
  - DOMAIN-SUFFIX,71.am,🎯 全球直连
  - DOMAIN-SUFFIX,71edge.com,🎯 全球直连
+ - DOMAIN-SUFFIX,losadhwselfff2332dasd.xyz,🎯 全球直连
  - DOMAIN-SUFFIX,iqiyi.com,🎯 全球直连
  - DOMAIN-SUFFIX,iqiyipic.com,🎯 全球直连
  - DOMAIN-SUFFIX,ppsimg.com,🎯 全球直连
