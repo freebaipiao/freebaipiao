@@ -5,12 +5,13 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - name: 整理：@freebaipiao
-    type: ss
+  - name: "@freebaipiao整理"
+    type: vmess
     server: www.freebaipiao.tk
     port: "80"
-    cipher: aes-256-gcm
-    password: asd
+    uuid: d064d11b-477c-4c5d-a2d8-9fd599ef8e79
+    alterId: "2"
+    cipher: none
   - name: "电报群 Telegram group: t.me/gfwservice"
     server: 8.210.55.79
     port: 80
@@ -24,9 +25,21 @@ proxies:
     ws-path: /
     ws-headers:
       Host: 8.210.55.79
+  - name: "[跨越长城提供] [NAT/汕头] 香港2 AZHK Nnko提供 1x"
+    type: vmess
+    server: st.ddnspro.cn
+    port: 28888
+    uuid: d064d11b-477c-4c5d-a2d8-9fd599ef8e79
+    alterId: 1
+    cipher: auto
+    network: ws
+    ws-path: /
+    ws-headers:
+      Host: st.ddnspro.cn
+    _index: 1
   - name: "[跨越长城提供] [NAT/江门] 新加坡 SG 3 高速"
     type: vmess
-    server: jmyd.stupidfellow.cf
+    server: 120.240.86.3
     port: 18882
     uuid: d064d11b-477c-4c5d-a2d8-9fd599ef8e79
     alterId: 1
@@ -34,10 +47,10 @@ proxies:
     network: ws
     ws-path: /
     ws-headers:
-      Host: jmyd.stupidfellow.cf
-  - name: "[跨越长城提供] [直连] 香港1 CMI 解锁流媒体"
-    server: 103.234.55.118
-    port: 8888
+      Host: 120.240.86.3
+  - name: "[跨越长城提供] [直连] 香港2 AZHK Nnko提供 1x"
+    server: 20.205.124.103
+    port: 28888
     type: vmess
     uuid: d064d11b-477c-4c5d-a2d8-9fd599ef8e79
     alterId: 1
@@ -47,7 +60,8 @@ proxies:
     network: ws
     ws-path: /
     ws-headers:
-      Host: 103.234.55.118
+      Host: 20.205.124.103
+    _index: 3
   - name: "[跨越长城提供] [直连] 香港6 1M Netflix HK 80端口 1x"
     server: 8.210.55.79
     port: 80
@@ -61,9 +75,9 @@ proxies:
     ws-path: /
     ws-headers:
       Host: 8.210.55.79
-  - name: "[跨越长城提供] [直连] 新加坡1 Netflix SG"
-    server: 174.138.27.180
-    port: 9999
+  - name: "[跨越长城提供] [直连] 香港11 AZ HK"
+    server: 20.187.88.204
+    port: 8888
     type: vmess
     uuid: d064d11b-477c-4c5d-a2d8-9fd599ef8e79
     alterId: 1
@@ -73,7 +87,7 @@ proxies:
     network: ws
     ws-path: /
     ws-headers:
-      Host: 174.138.27.180
+      Host: 20.187.88.204
   - name: "[跨越长城提供] [直连] 新加坡3 Netflix SG"
     server: 206.189.87.180
     port: 8888
@@ -87,31 +101,6 @@ proxies:
     ws-path: /
     ws-headers:
       Host: 206.189.87.180
-    _index: 5
-  - name: "[跨越长城提供] [直连/CN2 GIA] 新加坡6  Netflix SG 0.1x"
-    type: vmess
-    server: 8.214.43.151
-    port: 50885
-    uuid: d064d11b-477c-4c5d-a2d8-9fd599ef8e79
-    alterId: 1
-    cipher: auto
-    network: ws
-    ws-path: /
-    ws-headers:
-      Host: 8.214.43.151
-  - name: "[跨越长城提供] [直连] 美国7 Netflix US"
-    server: 192.3.127.109
-    port: 8888
-    type: vmess
-    uuid: d064d11b-477c-4c5d-a2d8-9fd599ef8e79
-    alterId: 1
-    cipher: auto
-    tls: false
-    skip-cert-verify: false
-    network: ws
-    ws-path: /
-    ws-headers:
-      Host: 192.3.127.109
   - name: "[跨越长城提供] [直连] 美国8"
     server: 107.161.50.42
     port: 22401
@@ -138,6 +127,19 @@ proxies:
     ws-path: /
     ws-headers:
       Host: 3.25.120.18
+  - name: "[跨越长城提供] [直连] 俄罗斯"
+    server: 185.246.154.6
+    port: 56752
+    type: vmess
+    uuid: d064d11b-477c-4c5d-a2d8-9fd599ef8e79
+    alterId: 1
+    cipher: auto
+    tls: false
+    skip-cert-verify: false
+    network: ws
+    ws-path: /
+    ws-headers:
+      Host: 185.246.154.6
   - name: "[跨越长城提供] [直连] 德国 Netflix DE 0.5x"
     server: 18.185.81.194
     port: 21888
@@ -164,8 +166,8 @@ proxies:
     ws-path: /
     ws-headers:
       Host: 52.48.89.93
-  - name: "[跨越长城提供] [直连] 印度尼西亚"
-    server: 112.175.232.145
+  - name: "[跨越长城提供] [直连] 巴基斯坦 注册专用 开奈飞神车"
+    server: 202.141.247.110
     port: 54111
     type: vmess
     uuid: d064d11b-477c-4c5d-a2d8-9fd599ef8e79
@@ -176,7 +178,20 @@ proxies:
     network: ws
     ws-path: /
     ws-headers:
-      Host: 112.175.232.145
+      Host: 202.141.247.110
+  - name: "[跨越长城提供] [直连] 卢森堡 跑BT CF优化 0.1x"
+    server: lsb.stupidfellow.cf
+    port: 80
+    type: vmess
+    uuid: d064d11b-477c-4c5d-a2d8-9fd599ef8e79
+    alterId: 1
+    cipher: auto
+    tls: false
+    skip-cert-verify: false
+    network: ws
+    ws-path: /
+    ws-headers:
+      Host: lsb.stupidfellow.cf
   - name: "[跨越长城提供] [直连/反代优选] 卢森堡 跑BT CF优化 0.2x"
     type: vmess
     server: 104.17.170.210
@@ -195,20 +210,21 @@ proxy-groups:
     proxies:
       - ♻️ 自动选择
       - DIRECT
-      - 整理：@freebaipiao
+      - "@freebaipiao整理"
       - "电报群 Telegram group: t.me/gfwservice"
+      - "[跨越长城提供] [NAT/汕头] 香港2 AZHK Nnko提供 1x"
       - "[跨越长城提供] [NAT/江门] 新加坡 SG 3 高速"
-      - "[跨越长城提供] [直连] 香港1 CMI 解锁流媒体"
+      - "[跨越长城提供] [直连] 香港2 AZHK Nnko提供 1x"
       - "[跨越长城提供] [直连] 香港6 1M Netflix HK 80端口 1x"
-      - "[跨越长城提供] [直连] 新加坡1 Netflix SG"
+      - "[跨越长城提供] [直连] 香港11 AZ HK"
       - "[跨越长城提供] [直连] 新加坡3 Netflix SG"
-      - "[跨越长城提供] [直连/CN2 GIA] 新加坡6  Netflix SG 0.1x"
-      - "[跨越长城提供] [直连] 美国7 Netflix US"
       - "[跨越长城提供] [直连] 美国8"
       - "[跨越长城提供] [直连] 澳大利亚 Netflix AU"
+      - "[跨越长城提供] [直连] 俄罗斯"
       - "[跨越长城提供] [直连] 德国 Netflix DE 0.5x"
       - "[跨越长城提供] [直连] 爱尔兰 Netflix IE"
-      - "[跨越长城提供] [直连] 印度尼西亚"
+      - "[跨越长城提供] [直连] 巴基斯坦 注册专用 开奈飞神车"
+      - "[跨越长城提供] [直连] 卢森堡 跑BT CF优化 0.1x"
       - "[跨越长城提供] [直连/反代优选] 卢森堡 跑BT CF优化 0.2x"
   - name: ♻️ 自动选择
     type: url-test
@@ -216,20 +232,21 @@ proxy-groups:
     interval: 300
     tolerance: 50
     proxies:
-      - 整理：@freebaipiao
+      - "@freebaipiao整理"
       - "电报群 Telegram group: t.me/gfwservice"
+      - "[跨越长城提供] [NAT/汕头] 香港2 AZHK Nnko提供 1x"
       - "[跨越长城提供] [NAT/江门] 新加坡 SG 3 高速"
-      - "[跨越长城提供] [直连] 香港1 CMI 解锁流媒体"
+      - "[跨越长城提供] [直连] 香港2 AZHK Nnko提供 1x"
       - "[跨越长城提供] [直连] 香港6 1M Netflix HK 80端口 1x"
-      - "[跨越长城提供] [直连] 新加坡1 Netflix SG"
+      - "[跨越长城提供] [直连] 香港11 AZ HK"
       - "[跨越长城提供] [直连] 新加坡3 Netflix SG"
-      - "[跨越长城提供] [直连/CN2 GIA] 新加坡6  Netflix SG 0.1x"
-      - "[跨越长城提供] [直连] 美国7 Netflix US"
       - "[跨越长城提供] [直连] 美国8"
       - "[跨越长城提供] [直连] 澳大利亚 Netflix AU"
+      - "[跨越长城提供] [直连] 俄罗斯"
       - "[跨越长城提供] [直连] 德国 Netflix DE 0.5x"
       - "[跨越长城提供] [直连] 爱尔兰 Netflix IE"
-      - "[跨越长城提供] [直连] 印度尼西亚"
+      - "[跨越长城提供] [直连] 巴基斯坦 注册专用 开奈飞神车"
+      - "[跨越长城提供] [直连] 卢森堡 跑BT CF优化 0.1x"
       - "[跨越长城提供] [直连/反代优选] 卢森堡 跑BT CF优化 0.2x"
   - name: 🌍 国外媒体
     type: select
@@ -238,18 +255,19 @@ proxy-groups:
       - ♻️ 自动选择
       - 🎯 全球直连
       - "电报群 Telegram group: t.me/gfwservice"
+      - "[跨越长城提供] [NAT/汕头] 香港2 AZHK Nnko提供 1x"
       - "[跨越长城提供] [NAT/江门] 新加坡 SG 3 高速"
-      - "[跨越长城提供] [直连] 香港1 CMI 解锁流媒体"
+      - "[跨越长城提供] [直连] 香港2 AZHK Nnko提供 1x"
       - "[跨越长城提供] [直连] 香港6 1M Netflix HK 80端口 1x"
-      - "[跨越长城提供] [直连] 新加坡1 Netflix SG"
+      - "[跨越长城提供] [直连] 香港11 AZ HK"
       - "[跨越长城提供] [直连] 新加坡3 Netflix SG"
-      - "[跨越长城提供] [直连/CN2 GIA] 新加坡6  Netflix SG 0.1x"
-      - "[跨越长城提供] [直连] 美国7 Netflix US"
       - "[跨越长城提供] [直连] 美国8"
       - "[跨越长城提供] [直连] 澳大利亚 Netflix AU"
+      - "[跨越长城提供] [直连] 俄罗斯"
       - "[跨越长城提供] [直连] 德国 Netflix DE 0.5x"
       - "[跨越长城提供] [直连] 爱尔兰 Netflix IE"
-      - "[跨越长城提供] [直连] 印度尼西亚"
+      - "[跨越长城提供] [直连] 巴基斯坦 注册专用 开奈飞神车"
+      - "[跨越长城提供] [直连] 卢森堡 跑BT CF优化 0.1x"
       - "[跨越长城提供] [直连/反代优选] 卢森堡 跑BT CF优化 0.2x"
   - name: 📲 电报信息
     type: select
@@ -257,18 +275,19 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - "电报群 Telegram group: t.me/gfwservice"
+      - "[跨越长城提供] [NAT/汕头] 香港2 AZHK Nnko提供 1x"
       - "[跨越长城提供] [NAT/江门] 新加坡 SG 3 高速"
-      - "[跨越长城提供] [直连] 香港1 CMI 解锁流媒体"
+      - "[跨越长城提供] [直连] 香港2 AZHK Nnko提供 1x"
       - "[跨越长城提供] [直连] 香港6 1M Netflix HK 80端口 1x"
-      - "[跨越长城提供] [直连] 新加坡1 Netflix SG"
+      - "[跨越长城提供] [直连] 香港11 AZ HK"
       - "[跨越长城提供] [直连] 新加坡3 Netflix SG"
-      - "[跨越长城提供] [直连/CN2 GIA] 新加坡6  Netflix SG 0.1x"
-      - "[跨越长城提供] [直连] 美国7 Netflix US"
       - "[跨越长城提供] [直连] 美国8"
       - "[跨越长城提供] [直连] 澳大利亚 Netflix AU"
+      - "[跨越长城提供] [直连] 俄罗斯"
       - "[跨越长城提供] [直连] 德国 Netflix DE 0.5x"
       - "[跨越长城提供] [直连] 爱尔兰 Netflix IE"
-      - "[跨越长城提供] [直连] 印度尼西亚"
+      - "[跨越长城提供] [直连] 巴基斯坦 注册专用 开奈飞神车"
+      - "[跨越长城提供] [直连] 卢森堡 跑BT CF优化 0.1x"
       - "[跨越长城提供] [直连/反代优选] 卢森堡 跑BT CF优化 0.2x"
   - name: Ⓜ️ 微软服务
     type: select
@@ -276,18 +295,19 @@ proxy-groups:
       - 🎯 全球直连
       - 🚀 节点选择
       - "电报群 Telegram group: t.me/gfwservice"
+      - "[跨越长城提供] [NAT/汕头] 香港2 AZHK Nnko提供 1x"
       - "[跨越长城提供] [NAT/江门] 新加坡 SG 3 高速"
-      - "[跨越长城提供] [直连] 香港1 CMI 解锁流媒体"
+      - "[跨越长城提供] [直连] 香港2 AZHK Nnko提供 1x"
       - "[跨越长城提供] [直连] 香港6 1M Netflix HK 80端口 1x"
-      - "[跨越长城提供] [直连] 新加坡1 Netflix SG"
+      - "[跨越长城提供] [直连] 香港11 AZ HK"
       - "[跨越长城提供] [直连] 新加坡3 Netflix SG"
-      - "[跨越长城提供] [直连/CN2 GIA] 新加坡6  Netflix SG 0.1x"
-      - "[跨越长城提供] [直连] 美国7 Netflix US"
       - "[跨越长城提供] [直连] 美国8"
       - "[跨越长城提供] [直连] 澳大利亚 Netflix AU"
+      - "[跨越长城提供] [直连] 俄罗斯"
       - "[跨越长城提供] [直连] 德国 Netflix DE 0.5x"
       - "[跨越长城提供] [直连] 爱尔兰 Netflix IE"
-      - "[跨越长城提供] [直连] 印度尼西亚"
+      - "[跨越长城提供] [直连] 巴基斯坦 注册专用 开奈飞神车"
+      - "[跨越长城提供] [直连] 卢森堡 跑BT CF优化 0.1x"
       - "[跨越长城提供] [直连/反代优选] 卢森堡 跑BT CF优化 0.2x"
   - name: 🍎 苹果服务
     type: select
@@ -295,18 +315,19 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - "电报群 Telegram group: t.me/gfwservice"
+      - "[跨越长城提供] [NAT/汕头] 香港2 AZHK Nnko提供 1x"
       - "[跨越长城提供] [NAT/江门] 新加坡 SG 3 高速"
-      - "[跨越长城提供] [直连] 香港1 CMI 解锁流媒体"
+      - "[跨越长城提供] [直连] 香港2 AZHK Nnko提供 1x"
       - "[跨越长城提供] [直连] 香港6 1M Netflix HK 80端口 1x"
-      - "[跨越长城提供] [直连] 新加坡1 Netflix SG"
+      - "[跨越长城提供] [直连] 香港11 AZ HK"
       - "[跨越长城提供] [直连] 新加坡3 Netflix SG"
-      - "[跨越长城提供] [直连/CN2 GIA] 新加坡6  Netflix SG 0.1x"
-      - "[跨越长城提供] [直连] 美国7 Netflix US"
       - "[跨越长城提供] [直连] 美国8"
       - "[跨越长城提供] [直连] 澳大利亚 Netflix AU"
+      - "[跨越长城提供] [直连] 俄罗斯"
       - "[跨越长城提供] [直连] 德国 Netflix DE 0.5x"
       - "[跨越长城提供] [直连] 爱尔兰 Netflix IE"
-      - "[跨越长城提供] [直连] 印度尼西亚"
+      - "[跨越长城提供] [直连] 巴基斯坦 注册专用 开奈飞神车"
+      - "[跨越长城提供] [直连] 卢森堡 跑BT CF优化 0.1x"
       - "[跨越长城提供] [直连/反代优选] 卢森堡 跑BT CF优化 0.2x"
   - name: 🎯 全球直连
     type: select
@@ -331,18 +352,19 @@ proxy-groups:
       - 🎯 全球直连
       - ♻️ 自动选择
       - "电报群 Telegram group: t.me/gfwservice"
+      - "[跨越长城提供] [NAT/汕头] 香港2 AZHK Nnko提供 1x"
       - "[跨越长城提供] [NAT/江门] 新加坡 SG 3 高速"
-      - "[跨越长城提供] [直连] 香港1 CMI 解锁流媒体"
+      - "[跨越长城提供] [直连] 香港2 AZHK Nnko提供 1x"
       - "[跨越长城提供] [直连] 香港6 1M Netflix HK 80端口 1x"
-      - "[跨越长城提供] [直连] 新加坡1 Netflix SG"
+      - "[跨越长城提供] [直连] 香港11 AZ HK"
       - "[跨越长城提供] [直连] 新加坡3 Netflix SG"
-      - "[跨越长城提供] [直连/CN2 GIA] 新加坡6  Netflix SG 0.1x"
-      - "[跨越长城提供] [直连] 美国7 Netflix US"
       - "[跨越长城提供] [直连] 美国8"
       - "[跨越长城提供] [直连] 澳大利亚 Netflix AU"
+      - "[跨越长城提供] [直连] 俄罗斯"
       - "[跨越长城提供] [直连] 德国 Netflix DE 0.5x"
       - "[跨越长城提供] [直连] 爱尔兰 Netflix IE"
-      - "[跨越长城提供] [直连] 印度尼西亚"
+      - "[跨越长城提供] [直连] 巴基斯坦 注册专用 开奈飞神车"
+      - "[跨越长城提供] [直连] 卢森堡 跑BT CF优化 0.1x"
       - "[跨越长城提供] [直连/反代优选] 卢森堡 跑BT CF优化 0.2x"
 rules:
   - DOMAIN-SUFFIX,acl4ssr,🎯 全球直连
