@@ -17,6 +17,7 @@ clash：点击对应文件，点右上角的raw，当前跳转网址即为订阅
 
 # 网站
 链接： [https://www.freebaipiao.tk](https://www.freebaipiao.tk)
+[https://freebaipiao.eu.org (CDN) ](https://freebaipiao.eu.org)
 有更详细的介绍(虽然也没详细哪里去)
 
 网站内附有jsdeliver cdn 订阅链接
