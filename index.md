@@ -1,5 +1,6 @@
 <head>
   <meta http-equiv="Content-Language" content="zh-cn" />
+  <meta http-equiv="content-Type" content="text/html; charset=gb2312" >
 </head>
 # freebaipiao
 
