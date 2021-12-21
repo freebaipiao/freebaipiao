@@ -1,3 +1,6 @@
+<head>
+  <meta http-equiv="Content-Language" content="zh-cn" />
+</head>
 # freebaipiao
 
 免费分享ssr，ss，vmess，trojan节点，订阅，tg代理，免费破解软件等白嫖资源,
