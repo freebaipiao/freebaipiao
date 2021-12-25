@@ -6,9 +6,9 @@ log-level: info
 external-controller: :9090
 proxies:
   - {name: 🇺🇸 US_CA tg @freebaipiao, server: 173.230.145.10, port: 11014, type: vmess, uuid: 06494420-3f3d-42c1-b539-a1c67b8882b4, alterId: 0, cipher: auto, tls: false, network: ws, ws-path: /freebaipiao, ws-headers: {Host: 173.230.145.10}, udp: true}
-  - {name: 🇺🇸 US_LA tg @freebaipiao 自己优选CFip, server: 162.159.204.142, port: 443, type: vmess, uuid: fc9169e2-9f57-4c18-9258-2910a4594868, alterId: 0, cipher: auto, tls: true, network: ws, ws-path: /freebaipiao, ws-headers: {Host: haxusla.aifx.eu.org}, udp: true}
+  - {name: 🇺🇸 US_LA tg @freebaipiao 自己优选CFip, server: 162.159.204.48, port: 443, type: vmess, uuid: fc9169e2-9f57-4c18-9258-2910a4594868, alterId: 0, cipher: auto, tls: true, network: ws, ws-path: /freebaipiao, ws-headers: {Host: haxusla.aifx.eu.org}, udp: true}
   - {name: "🇭🇰 [自建] AZ香港 tg @freebaipiao", server: 207.46.147.77, port: 10112, type: vmess, uuid: 0c92c2b8-d1e8-43af-e939-5d441a437a5f, alterId: 0, cipher: auto, tls: false, network: ws, ws-path: /freebaipiao, ws-headers: {Host: 207.46.147.77}, udp: true}
-  - {name: 🇩🇪 德国自行优选ip tg @freebaipiao, server: 162.159.204.142, port: 443, type: vmess, uuid: 3a99233e-f49a-4c1d-f402-efaabb40a533, alterId: 0, cipher: auto, tls: true, network: ws, ws-path: /freebaipiao, ws-headers: {Host: haxeu4.aifx.eu.org}, udp: true}
+  - {name: 🇩🇪 德国自行优选ip tg @freebaipiao, server: 162.159.204.48, port: 443, type: vmess, uuid: 3a99233e-f49a-4c1d-f402-efaabb40a533, alterId: 0, cipher: auto, tls: true, network: ws, ws-path: /freebaipiao, ws-headers: {Host: haxeu4.aifx.eu.org}, udp: true}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
