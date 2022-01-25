@@ -1,10 +1,11 @@
-mixed-port: 7890
+port: 7890
+socks-port: 7891
 allow-lan: true
 mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - name: 提供:@gfwservice ; 整理:@freebaipiao
+  - name: 电报群@gfwservice;整理@freebaipiao
     type: vmess
     server: 8.210.55.79
     port: 80
@@ -41,20 +42,6 @@ proxies:
       path: /theuploadapi
       headers:
         Host: hgcnat.hk.tgproxy.wtf
-  - name: 香港|06|1M|80端口
-    server: hk.aliyun.tgproxy.wtf
-    port: 80
-    type: vmess
-    uuid: d064d11b-477c-4c5d-a2d8-9fd599ef8e79
-    alterId: 0
-    cipher: auto
-    tls: false
-    skip-cert-verify: false
-    network: ws
-    ws-opts:
-      path: /theuploadapi
-      headers:
-        Host: hk.aliyun.tgproxy.wtf
   - name: 中国台湾|01|流解|0x|HINET
     server: nat.tw.tgproxy.wtf
     port: 10562
@@ -69,6 +56,20 @@ proxies:
       path: /theuploadapi
       headers:
         Host: nat.tw.tgproxy.wtf
+  - name: 日本|03|LINODE|0.7x|流解
+    server: linode.jp.tgproxy.wtf
+    port: 28888
+    type: vmess
+    uuid: d064d11b-477c-4c5d-a2d8-9fd599ef8e79
+    alterId: 0
+    cipher: auto
+    tls: true
+    skip-cert-verify: false
+    network: ws
+    ws-opts:
+      path: /theuploadapi
+      headers:
+        Host: linode.jp.tgproxy.wtf
   - name: 美国|主力|流解|拉斯维加斯
     server: us.lv.buyvm.tgproxy.wtf
     port: 21888
@@ -181,9 +182,37 @@ proxies:
       path: /
       headers:
         Host: 169.239.129.33
+  - name: 拉脱维亚|01|流解|0x
+    server: lv.tgproxy.wtf
+    port: 2052
+    type: vmess
+    uuid: d064d11b-477c-4c5d-a2d8-9fd599ef8e79
+    alterId: 0
+    cipher: auto
+    tls: true
+    skip-cert-verify: false
+    network: ws
+    ws-opts:
+      path: /theuploadapi
+      headers:
+        Host: lv.tgproxy.wtf
+  - name: 拉脱维亚|01|流解|反代优选
+    server: cf.kycc-nodes.bike
+    port: 2052
+    type: vmess
+    uuid: d064d11b-477c-4c5d-a2d8-9fd599ef8e79
+    alterId: 0
+    cipher: auto
+    tls: true
+    skip-cert-verify: false
+    network: ws
+    ws-opts:
+      path: /theuploadapi
+      headers:
+        Host: cf.lv.tgproxy.wtf
   - name: 卢森堡|01|BT|0x
     server: buyvm.lu.tgproxy.wtf
-    port: 443
+    port: 2052
     type: vmess
     uuid: d064d11b-477c-4c5d-a2d8-9fd599ef8e79
     alterId: 0
@@ -195,17 +224,31 @@ proxies:
       path: /theuploadapi
       headers:
         Host: buyvm.lu.tgproxy.wtf
+  - name: 卢森堡|01|BT|反代优选
+    server: cf.kycc-nodes.bike
+    port: 2052
+    type: vmess
+    uuid: d064d11b-477c-4c5d-a2d8-9fd599ef8e79
+    alterId: 0
+    cipher: auto
+    tls: true
+    skip-cert-verify: false
+    network: ws
+    ws-opts:
+      path: /theuploadapi
+      headers:
+        Host: cf.buyvm.lu.tgproxy.wtf
 proxy-groups:
   - name: 🚀 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - DIRECT
-      - 提供:@gfwservice ; 整理:@freebaipiao
+      - 电报群@gfwservice;整理@freebaipiao
       - 卢森堡|0x|01|BT|上海移动
       - 香港|03|流解|HGC
-      - 香港|06|1M|80端口
       - 中国台湾|01|流解|0x|HINET
+      - 日本|03|LINODE|0.7x|流解
       - 美国|主力|流解|拉斯维加斯
       - 美国|主|03|AWSUS|0.1x|流解
       - 美国|04|流解
@@ -214,17 +257,20 @@ proxy-groups:
       - 印度|流解
       - 瑞士|流解
       - 南非|流解
+      - 拉脱维亚|01|流解|0x
+      - 拉脱维亚|01|流解|反代优选
       - 卢森堡|01|BT|0x
+      - 卢森堡|01|BT|反代优选
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - 提供:@gfwservice ; 整理:@freebaipiao
+      - 电报群@gfwservice;整理@freebaipiao
       - 卢森堡|0x|01|BT|上海移动
       - 香港|03|流解|HGC
-      - 香港|06|1M|80端口
       - 中国台湾|01|流解|0x|HINET
+      - 日本|03|LINODE|0.7x|流解
       - 美国|主力|流解|拉斯维加斯
       - 美国|主|03|AWSUS|0.1x|流解
       - 美国|04|流解
@@ -233,18 +279,21 @@ proxy-groups:
       - 印度|流解
       - 瑞士|流解
       - 南非|流解
+      - 拉脱维亚|01|流解|0x
+      - 拉脱维亚|01|流解|反代优选
       - 卢森堡|01|BT|0x
+      - 卢森堡|01|BT|反代优选
   - name: 🌍 国外媒体
     type: select
     proxies:
       - 🚀 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 提供:@gfwservice ; 整理:@freebaipiao
+      - 电报群@gfwservice;整理@freebaipiao
       - 卢森堡|0x|01|BT|上海移动
       - 香港|03|流解|HGC
-      - 香港|06|1M|80端口
       - 中国台湾|01|流解|0x|HINET
+      - 日本|03|LINODE|0.7x|流解
       - 美国|主力|流解|拉斯维加斯
       - 美国|主|03|AWSUS|0.1x|流解
       - 美国|04|流解
@@ -253,17 +302,20 @@ proxy-groups:
       - 印度|流解
       - 瑞士|流解
       - 南非|流解
+      - 拉脱维亚|01|流解|0x
+      - 拉脱维亚|01|流解|反代优选
       - 卢森堡|01|BT|0x
+      - 卢森堡|01|BT|反代优选
   - name: 📲 电报信息
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - 提供:@gfwservice ; 整理:@freebaipiao
+      - 电报群@gfwservice;整理@freebaipiao
       - 卢森堡|0x|01|BT|上海移动
       - 香港|03|流解|HGC
-      - 香港|06|1M|80端口
       - 中国台湾|01|流解|0x|HINET
+      - 日本|03|LINODE|0.7x|流解
       - 美国|主力|流解|拉斯维加斯
       - 美国|主|03|AWSUS|0.1x|流解
       - 美国|04|流解
@@ -272,17 +324,20 @@ proxy-groups:
       - 印度|流解
       - 瑞士|流解
       - 南非|流解
+      - 拉脱维亚|01|流解|0x
+      - 拉脱维亚|01|流解|反代优选
       - 卢森堡|01|BT|0x
+      - 卢森堡|01|BT|反代优选
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🚀 节点选择
-      - 提供:@gfwservice ; 整理:@freebaipiao
+      - 电报群@gfwservice;整理@freebaipiao
       - 卢森堡|0x|01|BT|上海移动
       - 香港|03|流解|HGC
-      - 香港|06|1M|80端口
       - 中国台湾|01|流解|0x|HINET
+      - 日本|03|LINODE|0.7x|流解
       - 美国|主力|流解|拉斯维加斯
       - 美国|主|03|AWSUS|0.1x|流解
       - 美国|04|流解
@@ -291,17 +346,20 @@ proxy-groups:
       - 印度|流解
       - 瑞士|流解
       - 南非|流解
+      - 拉脱维亚|01|流解|0x
+      - 拉脱维亚|01|流解|反代优选
       - 卢森堡|01|BT|0x
+      - 卢森堡|01|BT|反代优选
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - 提供:@gfwservice ; 整理:@freebaipiao
+      - 电报群@gfwservice;整理@freebaipiao
       - 卢森堡|0x|01|BT|上海移动
       - 香港|03|流解|HGC
-      - 香港|06|1M|80端口
       - 中国台湾|01|流解|0x|HINET
+      - 日本|03|LINODE|0.7x|流解
       - 美国|主力|流解|拉斯维加斯
       - 美国|主|03|AWSUS|0.1x|流解
       - 美国|04|流解
@@ -310,7 +368,10 @@ proxy-groups:
       - 印度|流解
       - 瑞士|流解
       - 南非|流解
+      - 拉脱维亚|01|流解|0x
+      - 拉脱维亚|01|流解|反代优选
       - 卢森堡|01|BT|0x
+      - 卢森堡|01|BT|反代优选
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -333,11 +394,11 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 提供:@gfwservice ; 整理:@freebaipiao
+      - 电报群@gfwservice;整理@freebaipiao
       - 卢森堡|0x|01|BT|上海移动
       - 香港|03|流解|HGC
-      - 香港|06|1M|80端口
       - 中国台湾|01|流解|0x|HINET
+      - 日本|03|LINODE|0.7x|流解
       - 美国|主力|流解|拉斯维加斯
       - 美国|主|03|AWSUS|0.1x|流解
       - 美国|04|流解
@@ -346,7 +407,10 @@ proxy-groups:
       - 印度|流解
       - 瑞士|流解
       - 南非|流解
+      - 拉脱维亚|01|流解|0x
+      - 拉脱维亚|01|流解|反代优选
       - 卢森堡|01|BT|0x
+      - 卢森堡|01|BT|反代优选
 rules:
   - DOMAIN-SUFFIX,acl4.ssr,🎯 全球直连
   - DOMAIN-SUFFIX,ip6-localhost,🎯 全球直连
