@@ -37,7 +37,7 @@ proxies:
   - {name: "[美国03 tg@freebaipiao]", server: 104.243.18.61, port: 47793, type: ss, cipher: aes-256-gcm, password: BAOcexLFkd, udp: true}
   - {name: "[美国04 tg@freebaipiao]", server: freedom.txwg.top, port: 55797, type: vmess, uuid: bdae08c6-d9fa-4235-900c-884a408458fc, alterId: 64, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /, ws-headers: {Host: freedom.txwg.top}, udp: true}
   - {name: "[美国05 tg@freebaipiao]", server: 104.243.17.154, port: 12412, type: vmess, uuid: 00c0d880-5cf8-4393-9b72-1d1ca958a9a5, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
-  - {name: "[美国06 tg@freebaipiao]", server: 104.243.17.154, port: 39390, type: ss, cipher: chacha20-poly1305, password: BILVhJ42YJ, udp: true}
+  - {name: "[美国06 tg@freebaipiao]", server: 104.243.17.154, port: 39390, type: ss, cipher: chacha20-ietf-poly1305, password: BILVhJ42YJ, udp: true}
   - {name: "[美国07 tg@freebaipiao]", server: fly.littleonezy.cn, port: 12580, type: vmess, uuid: 644095d3-c64a-4b5c-a220-b3b162184b8b, alterId: 64, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /vmess/, ws-headers: {Host: fly.littleonezy.cn}, udp: true}
   - {name: "[美国08 tg@freebaipiao]", server: 89.208.245.157, port: 1234, type: ss, cipher: aes-256-gcm, password: !<str> 1234, udp: true}
   - {name: "[美国09 tg@freebaipiao]", server: 156.251.189.244, port: 36837, type: vmess, uuid: d35c3589-6742-42a3-b86f-426f8a92ba44, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
