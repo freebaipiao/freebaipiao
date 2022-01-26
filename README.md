@@ -2,7 +2,6 @@
 免费分享ssr，ss，vmess，trojan节点，订阅，tg代理，免费破解软件等白嫖资源
 
 [点击加入Telegram频道](https://t.me/freebaipiao)
-<script async src="https://telegram.org/js/telegram-widget.js?15" data-telegram-share-url="https://t.me/freebaipiao" data-comment="点击加入我们的频道"></script>
 
 [点击加入Telegram群组](https://t.me/aifxproxy)
 
