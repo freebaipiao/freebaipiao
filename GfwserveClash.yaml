@@ -6,27 +6,22 @@ log-level: info
 external-controller: :9090
 proxies:
   - {name: "提供:@gfwservice ; 整理:@freebaipiao", server: aws.xjp.tgproxy.wtf, port: 21888, type: vmess, uuid: d064d11b-477c-4c5d-a2d8-9fd599ef8e79, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /theuploadapi, headers: {Host: aws.xjp.tgproxy.wtf}}}
-  - {name: 卢森堡|0x|01|BT|上海移动, server: shcms.ddnnss.xyz, port: 61990, type: vmess, uuid: d064d11b-477c-4c5d-a2d8-9fd599ef8e79, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /theuploadapi, headers: {Host: buyvm.lu.tgproxy.wtf}}}
   - {name: 香港|03|流解|HGC, server: hgcnat.hk.tgproxy.wtf, port: 10553, type: vmess, uuid: d064d11b-477c-4c5d-a2d8-9fd599ef8e79, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /theuploadapi, headers: {Host: hgcnat.hk.tgproxy.wtf}}}
   - {name: 中国台湾|01|流解|0x|HINET, server: nat.tw.tgproxy.wtf, port: 10562, type: vmess, uuid: d064d11b-477c-4c5d-a2d8-9fd599ef8e79, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /theuploadapi, headers: {Host: nat.tw.tgproxy.wtf}}}
   - {name: 韩国|01|AWSKR|0.1x|移动起飞, server: aws.kr.tgproxy.wtf, port: 21888, type: vmess, uuid: d064d11b-477c-4c5d-a2d8-9fd599ef8e79, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /theuploadapi, headers: {Host: aws.kr.tgproxy.wtf}}}
-  - {name: 日本|主|03|AWSJP|0.1x|流解, server: aws.jp.tgproxy.wtf, port: 21888, type: vmess, uuid: d064d11b-477c-4c5d-a2d8-9fd599ef8e79, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /theuploadapi, headers: {Host: aws.jp.tgproxy.wtf}}}
+  - {name: 韩国|02|AWSKR|0.1x|移动起飞, server: aws1.kr.tgproxy.wtf, port: 21888, type: vmess, uuid: d064d11b-477c-4c5d-a2d8-9fd599ef8e79, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /theuploadapi, headers: {Host: aws1.kr.tgproxy.wtf}}}
+  - {name: 日本|主|03|AWS|0.1x|流解, server: aws.jp.tgproxy.wtf, port: 21888, type: vmess, uuid: d064d11b-477c-4c5d-a2d8-9fd599ef8e79, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /theuploadapi, headers: {Host: aws.jp.tgproxy.wtf}}}
   - {name: 日本|04|LINODE|0.7x|流解, server: linode.jp.tgproxy.wtf, port: 28888, type: vmess, uuid: d064d11b-477c-4c5d-a2d8-9fd599ef8e79, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /theuploadapi, headers: {Host: linode.jp.tgproxy.wtf}}}
-  - {name: 新加坡|04|AWS|0.1x|流解, server: aws.xjp.tgproxy.wtf, port: 21888, type: vmess, uuid: d064d11b-477c-4c5d-a2d8-9fd599ef8e79, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /theuploadapi, headers: {Host: aws.xjp.tgproxy.wtf}}}
+  - {name: 日本|05|快车道|流解, server: kcd.jp.tgproxy.wtf, port: 28888, type: vmess, uuid: d064d11b-477c-4c5d-a2d8-9fd599ef8e79, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /theuploadapi, headers: {Host: kcd.jp.tgproxy.wtf}}}
+  - {name: 新加坡|04|LINODE|0.7x|流解, server: lin-sg.tgproxy.wtf, port: 443, type: vmess, uuid: d064d11b-477c-4c5d-a2d8-9fd599ef8e79, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /theuploadapi, headers: {Host: lin-sg.tgproxy.wtf}}}
   - {name: 美国|主力|流解|拉斯维加斯, server: us.lv.buyvm.tgproxy.wtf, port: 21888, type: vmess, uuid: d064d11b-477c-4c5d-a2d8-9fd599ef8e79, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /theuploadapi, headers: {Host: us.lv.buyvm.tgproxy.wtf}}}
-  - {name: 美国|主|03|AWSUS|0.1x|流解, server: aws.us.tgproxy.wtf, port: 21888, type: vmess, uuid: d064d11b-477c-4c5d-a2d8-9fd599ef8e79, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /theuploadapi, headers: {Host: aws.us.tgproxy.wtf}}}
+  - {name: 美国|主|04|AWSUS|0.1x|流解, server: aws.us.tgproxy.wtf, port: 21888, type: vmess, uuid: d064d11b-477c-4c5d-a2d8-9fd599ef8e79, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /theuploadapi, headers: {Host: aws.us.tgproxy.wtf}}}
   - {name: 美国|04|流解, server: inap.us.tgproxy.wtf, port: 8888, type: vmess, uuid: d064d11b-477c-4c5d-a2d8-9fd599ef8e79, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /theuploadapi, headers: {Host: inap.us.tgproxy.wtf}}}
   - {name: 法国|02|OVH, server: ovh.fr.tgproxy.wtf, port: 8888, type: vmess, uuid: d064d11b-477c-4c5d-a2d8-9fd599ef8e79, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /theuploadapi, headers: {Host: ovh.fr.tgproxy.wtf}}}
-  - {name: 法国|02|被墙, server: fr.ovh.tgproxy.wtf, port: 11134, type: vmess, uuid: d064d11b-477c-4c5d-a2d8-9fd599ef8e79, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /theuploadapi, headers: {Host: fr.ovh.tgproxy.wtf}}}
-  - {name: 印度|流解, server: 103.150.30.239, port: 11201, type: vmess, uuid: d064d11b-477c-4c5d-a2d8-9fd599ef8e79, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: 103.150.30.239}}}
-  - {name: 印度|AWSIN|0.1x|流解, server: aws.in.tgproxy.wtf, port: 21888, type: vmess, uuid: d064d11b-477c-4c5d-a2d8-9fd599ef8e79, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /theuploadapi, headers: {Host: aws.in.tgproxy.wtf}}}
   - {name: 俄罗斯|Justhost|0.1x|流解, server: justhost.ru.tgproxy.wtf, port: 21888, type: vmess, uuid: d064d11b-477c-4c5d-a2d8-9fd599ef8e79, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /theuploadapi, headers: {Host: justhost.ru.tgproxy.wtf}}}
   - {name: 瑞士|流解, server: 45.91.92.191, port: 23102, type: vmess, uuid: d064d11b-477c-4c5d-a2d8-9fd599ef8e79, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: 45.91.92.191}}}
-  - {name: 南非|流解, server: 169.239.129.33, port: 12501, type: vmess, uuid: d064d11b-477c-4c5d-a2d8-9fd599ef8e79, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: 169.239.129.33}}}
   - {name: 拉脱维亚|01|流解|0x, server: lv.tgproxy.wtf, port: 2052, type: vmess, uuid: d064d11b-477c-4c5d-a2d8-9fd599ef8e79, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /theuploadapi, headers: {Host: lv.tgproxy.wtf}}}
-  - {name: 拉脱维亚|01|流解|反代优选, server: cf.kycc-nodes.bike, port: 2052, type: vmess, uuid: d064d11b-477c-4c5d-a2d8-9fd599ef8e79, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /theuploadapi, headers: {Host: cf.lv.tgproxy.wtf}}}
   - {name: 卢森堡|01|BT|0x, server: buyvm.lu.tgproxy.wtf, port: 2052, type: vmess, uuid: d064d11b-477c-4c5d-a2d8-9fd599ef8e79, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /theuploadapi, headers: {Host: buyvm.lu.tgproxy.wtf}}}
-  - {name: 卢森堡|01|BT|反代优选, server: cf.kycc-nodes.bike, port: 2052, type: vmess, uuid: d064d11b-477c-4c5d-a2d8-9fd599ef8e79, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /theuploadapi, headers: {Host: cf.buyvm.lu.tgproxy.wtf}}}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
@@ -34,54 +29,44 @@ proxy-groups:
       - ♻️ 自动选择
       - DIRECT
       - "提供:@gfwservice ; 整理:@freebaipiao"
-      - 卢森堡|0x|01|BT|上海移动
       - 香港|03|流解|HGC
       - 中国台湾|01|流解|0x|HINET
       - 韩国|01|AWSKR|0.1x|移动起飞
-      - 日本|主|03|AWSJP|0.1x|流解
+      - 韩国|02|AWSKR|0.1x|移动起飞
+      - 日本|主|03|AWS|0.1x|流解
       - 日本|04|LINODE|0.7x|流解
-      - 新加坡|04|AWS|0.1x|流解
+      - 日本|05|快车道|流解
+      - 新加坡|04|LINODE|0.7x|流解
       - 美国|主力|流解|拉斯维加斯
-      - 美国|主|03|AWSUS|0.1x|流解
+      - 美国|主|04|AWSUS|0.1x|流解
       - 美国|04|流解
       - 法国|02|OVH
-      - 法国|02|被墙
-      - 印度|流解
-      - 印度|AWSIN|0.1x|流解
       - 俄罗斯|Justhost|0.1x|流解
       - 瑞士|流解
-      - 南非|流解
       - 拉脱维亚|01|流解|0x
-      - 拉脱维亚|01|流解|反代优选
       - 卢森堡|01|BT|0x
-      - 卢森堡|01|BT|反代优选
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
       - "提供:@gfwservice ; 整理:@freebaipiao"
-      - 卢森堡|0x|01|BT|上海移动
       - 香港|03|流解|HGC
       - 中国台湾|01|流解|0x|HINET
       - 韩国|01|AWSKR|0.1x|移动起飞
-      - 日本|主|03|AWSJP|0.1x|流解
+      - 韩国|02|AWSKR|0.1x|移动起飞
+      - 日本|主|03|AWS|0.1x|流解
       - 日本|04|LINODE|0.7x|流解
-      - 新加坡|04|AWS|0.1x|流解
+      - 日本|05|快车道|流解
+      - 新加坡|04|LINODE|0.7x|流解
       - 美国|主力|流解|拉斯维加斯
-      - 美国|主|03|AWSUS|0.1x|流解
+      - 美国|主|04|AWSUS|0.1x|流解
       - 美国|04|流解
       - 法国|02|OVH
-      - 法国|02|被墙
-      - 印度|流解
-      - 印度|AWSIN|0.1x|流解
       - 俄罗斯|Justhost|0.1x|流解
       - 瑞士|流解
-      - 南非|流解
       - 拉脱维亚|01|流解|0x
-      - 拉脱维亚|01|流解|反代优选
       - 卢森堡|01|BT|0x
-      - 卢森堡|01|BT|反代优选
   - name: 🌍 国外媒体
     type: select
     proxies:
@@ -89,108 +74,88 @@ proxy-groups:
       - ♻️ 自动选择
       - 🎯 全球直连
       - "提供:@gfwservice ; 整理:@freebaipiao"
-      - 卢森堡|0x|01|BT|上海移动
       - 香港|03|流解|HGC
       - 中国台湾|01|流解|0x|HINET
       - 韩国|01|AWSKR|0.1x|移动起飞
-      - 日本|主|03|AWSJP|0.1x|流解
+      - 韩国|02|AWSKR|0.1x|移动起飞
+      - 日本|主|03|AWS|0.1x|流解
       - 日本|04|LINODE|0.7x|流解
-      - 新加坡|04|AWS|0.1x|流解
+      - 日本|05|快车道|流解
+      - 新加坡|04|LINODE|0.7x|流解
       - 美国|主力|流解|拉斯维加斯
-      - 美国|主|03|AWSUS|0.1x|流解
+      - 美国|主|04|AWSUS|0.1x|流解
       - 美国|04|流解
       - 法国|02|OVH
-      - 法国|02|被墙
-      - 印度|流解
-      - 印度|AWSIN|0.1x|流解
       - 俄罗斯|Justhost|0.1x|流解
       - 瑞士|流解
-      - 南非|流解
       - 拉脱维亚|01|流解|0x
-      - 拉脱维亚|01|流解|反代优选
       - 卢森堡|01|BT|0x
-      - 卢森堡|01|BT|反代优选
   - name: 📲 电报信息
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
       - "提供:@gfwservice ; 整理:@freebaipiao"
-      - 卢森堡|0x|01|BT|上海移动
       - 香港|03|流解|HGC
       - 中国台湾|01|流解|0x|HINET
       - 韩国|01|AWSKR|0.1x|移动起飞
-      - 日本|主|03|AWSJP|0.1x|流解
+      - 韩国|02|AWSKR|0.1x|移动起飞
+      - 日本|主|03|AWS|0.1x|流解
       - 日本|04|LINODE|0.7x|流解
-      - 新加坡|04|AWS|0.1x|流解
+      - 日本|05|快车道|流解
+      - 新加坡|04|LINODE|0.7x|流解
       - 美国|主力|流解|拉斯维加斯
-      - 美国|主|03|AWSUS|0.1x|流解
+      - 美国|主|04|AWSUS|0.1x|流解
       - 美国|04|流解
       - 法国|02|OVH
-      - 法国|02|被墙
-      - 印度|流解
-      - 印度|AWSIN|0.1x|流解
       - 俄罗斯|Justhost|0.1x|流解
       - 瑞士|流解
-      - 南非|流解
       - 拉脱维亚|01|流解|0x
-      - 拉脱维亚|01|流解|反代优选
       - 卢森堡|01|BT|0x
-      - 卢森堡|01|BT|反代优选
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🚀 节点选择
       - "提供:@gfwservice ; 整理:@freebaipiao"
-      - 卢森堡|0x|01|BT|上海移动
       - 香港|03|流解|HGC
       - 中国台湾|01|流解|0x|HINET
       - 韩国|01|AWSKR|0.1x|移动起飞
-      - 日本|主|03|AWSJP|0.1x|流解
+      - 韩国|02|AWSKR|0.1x|移动起飞
+      - 日本|主|03|AWS|0.1x|流解
       - 日本|04|LINODE|0.7x|流解
-      - 新加坡|04|AWS|0.1x|流解
+      - 日本|05|快车道|流解
+      - 新加坡|04|LINODE|0.7x|流解
       - 美国|主力|流解|拉斯维加斯
-      - 美国|主|03|AWSUS|0.1x|流解
+      - 美国|主|04|AWSUS|0.1x|流解
       - 美国|04|流解
       - 法国|02|OVH
-      - 法国|02|被墙
-      - 印度|流解
-      - 印度|AWSIN|0.1x|流解
       - 俄罗斯|Justhost|0.1x|流解
       - 瑞士|流解
-      - 南非|流解
       - 拉脱维亚|01|流解|0x
-      - 拉脱维亚|01|流解|反代优选
       - 卢森堡|01|BT|0x
-      - 卢森堡|01|BT|反代优选
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
       - "提供:@gfwservice ; 整理:@freebaipiao"
-      - 卢森堡|0x|01|BT|上海移动
       - 香港|03|流解|HGC
       - 中国台湾|01|流解|0x|HINET
       - 韩国|01|AWSKR|0.1x|移动起飞
-      - 日本|主|03|AWSJP|0.1x|流解
+      - 韩国|02|AWSKR|0.1x|移动起飞
+      - 日本|主|03|AWS|0.1x|流解
       - 日本|04|LINODE|0.7x|流解
-      - 新加坡|04|AWS|0.1x|流解
+      - 日本|05|快车道|流解
+      - 新加坡|04|LINODE|0.7x|流解
       - 美国|主力|流解|拉斯维加斯
-      - 美国|主|03|AWSUS|0.1x|流解
+      - 美国|主|04|AWSUS|0.1x|流解
       - 美国|04|流解
       - 法国|02|OVH
-      - 法国|02|被墙
-      - 印度|流解
-      - 印度|AWSIN|0.1x|流解
       - 俄罗斯|Justhost|0.1x|流解
       - 瑞士|流解
-      - 南非|流解
       - 拉脱维亚|01|流解|0x
-      - 拉脱维亚|01|流解|反代优选
       - 卢森堡|01|BT|0x
-      - 卢森堡|01|BT|反代优选
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -214,27 +179,22 @@ proxy-groups:
       - 🎯 全球直连
       - ♻️ 自动选择
       - "提供:@gfwservice ; 整理:@freebaipiao"
-      - 卢森堡|0x|01|BT|上海移动
       - 香港|03|流解|HGC
       - 中国台湾|01|流解|0x|HINET
       - 韩国|01|AWSKR|0.1x|移动起飞
-      - 日本|主|03|AWSJP|0.1x|流解
+      - 韩国|02|AWSKR|0.1x|移动起飞
+      - 日本|主|03|AWS|0.1x|流解
       - 日本|04|LINODE|0.7x|流解
-      - 新加坡|04|AWS|0.1x|流解
+      - 日本|05|快车道|流解
+      - 新加坡|04|LINODE|0.7x|流解
       - 美国|主力|流解|拉斯维加斯
-      - 美国|主|03|AWSUS|0.1x|流解
+      - 美国|主|04|AWSUS|0.1x|流解
       - 美国|04|流解
       - 法国|02|OVH
-      - 法国|02|被墙
-      - 印度|流解
-      - 印度|AWSIN|0.1x|流解
       - 俄罗斯|Justhost|0.1x|流解
       - 瑞士|流解
-      - 南非|流解
       - 拉脱维亚|01|流解|0x
-      - 拉脱维亚|01|流解|反代优选
       - 卢森堡|01|BT|0x
-      - 卢森堡|01|BT|反代优选
 rules:
  - DOMAIN-SUFFIX,acl4.ssr,🎯 全球直连
  - DOMAIN-SUFFIX,ip6-localhost,🎯 全球直连
