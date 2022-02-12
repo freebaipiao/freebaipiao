@@ -64,12 +64,14 @@ https://js.svvme.com/
 
 
 
-# 附软件的Github Releases:
+# 附软件的Github links:(可能需要翻墙访问
 ## Clash For Windows : 
 https://github.com/Fndroid/clash_for_windows_pkg
 
 ## Clash For Android : 
 https://github.com/Kr328/ClashForAndroid
+#### 推荐版本: 2.4.14 下载链接:
+https://github.com/Kr328/ClashForAndroid/releases/download/v2.4.14/cfa-2.4.14-premium-arm64-v8a-release.apk
 
 ## V2rayNG(Android):
 https://github.com/2dust/v2rayNG/
