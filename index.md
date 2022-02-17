@@ -62,9 +62,10 @@ https://js.svvme.com/
 
 
 
+# 友链
+[节点分享](https://node.hudaye.space/)
 
-
-# 附软件的Github links:(可能需要翻墙访问
+# 附软件的Github links:(可能需要翻墙访问)
 ## Clash For Windows : 
 https://github.com/Fndroid/clash_for_windows_pkg
 
