@@ -33,10 +33,14 @@
 
 - `https://raw.githubusercontent.com/freebaipiao/freebaipiao/main/link.txt`
 - `https://cdn.jsdelivr.net/gh/freebaipiao/freebaipiao@main/link.txt`
+# 在线代理：/Online Proxy
+[https://j.bulink.xyz](https://j.bulink.xyz/)
 
-除了免费节点，还可试试在线代理：[https://j.bulink.xyz/](https://j.bulink.xyz/)
+[https://js.svvme.com](https://js.svvme.com/)
 
-https://js.svvme.com/
+[https://oracleusa.ml](https://oracleusa.ml/)
+
+[https://jsproxy.aifx.gq](https://jsproxy.aifx.gq/)
 
 # 使用方法/help
 复制对应软件的订阅，打开软件导入即可
